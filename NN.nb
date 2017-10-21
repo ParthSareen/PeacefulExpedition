@@ -1,0 +1,544 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     28744,        536]
+NotebookOptionsPosition[     27831,        515]
+NotebookOutlinePosition[     28177,        530]
+CellTagsIndexPosition[     28134,        527]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"extra", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Academic Decathlon\nAcademic Triathlon\nAmerican Mathematics \
+Competitions\nAmerican Regions Math League\nCaribou Mathematics Competition\n\
+Chemistry Olympiad\nClean Tech Competition\nCreative Communication Poetry \
+Contest\nEconChallenge\nEducators Rising\nFIRST Robotics Competition\nHigh \
+School Innovation Challenge\nIntel International Science and Engineering Fair\
+\nKids Philosophy Slam\nMath League\nNational Academic Quiz Tournament\n\
+National French Contest\nNational History Bee\nNational Spelling Bee\nOdyssey \
+of the Mind\nPoetry Out Loud\nQuestions Unlimited\nQuiz Bowl\nScience Bowl\n\
+Science Olympiad\>\"", ",", 
+        "\"\<Adopt-A-Physicist\nArchitecture Club\nAstronomy Club\nBiology \
+Club\nChemistry Club\nEconomics Club\nElectronics Club\nEngineering Club\n\
+English Club\nDistributive Education Clubs of America\nHistory Club\nLife \
+Sciences Club\nLiterature Club\nLiterary Magazine Club\nMath Club\nMu Alpha \
+Theta: Math Honor Society\nNational Honor Society\nPeer Tutoring\nPoetry Club\
+\nPhysics Club\nPsychology Club\nQuill and Scroll\nRobotics Club\nScience \
+National Honors Society\nTrivia and Quiz Clubs\nWeb design/coding club\n\
+Writing Club\>\"", ",", 
+        "\"\<Animation\nAnime/Manga Club\nArt Club\nArt: drawing, painting\n\
+Blacksmithing\nCartooning\nCeramics\nDrama Club\nFashion design\nGraphic \
+Design\nJewelry Making\nPhotography\nSculpture\nSewing\nHigh School Theater \
+Program\nCommunity Theater Program\nVideo Game Development Club\nWeaving\n\
+Woodworking\>\"", ",", 
+        "\"\<African American Student Alliances/Clubs\nAmerican Sign Language \
+Club\nChinese Club\nFrench Club\nGerman Club\nInternational Food Club\nLatin \
+Club\nPacific Islanders Club\nRussian Club\nSouth Asian Student Society\n\
+Spanish Club\nStudent Diplomacy Corps\>\"", ",", 
+        "\"\<4-H\nCommunity Festivals\nDo Something\nHabitat for Humanity\n\
+JUNTOS\nKey Club\nKids Helping Kids\nLeo Club\nMountaineers Club\nSisters on \
+the Runway\>\"", ",", 
+        "\"\<Community Youth Board\nStudent Council\nStudent Government\n\
+Community Government\>\"", ",", 
+        "\"\<National Beta Club\nPeer Leadership Group\>\"", ",", 
+        "\"\<School or local magazine/journal\nSchool or local newspaper\n\
+School or local radio station\nSchool or local television channel\nSchool or \
+local web site\nWork on a movie\nYearbook Committee\>\"", ",", 
+        "\"\<Civil Air Patrol\nJunior ROTC\>\"", ",", 
+        "\"\<School Chorus/Choir\nCommunity Chorus/Choir\nChurch Chorus/Choir\
+\nChamber Music Group\nConcert Band\nEnsembles\nSinging Lessons\nMarching \
+Band\nJazz Band\nOrchestra\nSolo music\nYour own band\nTri-M Music Honor \
+Society\>\"", ",", 
+        "\"\<Comedy Club\nChoreography\nClassic Film Club\nDance\nFilm \
+Production Club\nInternational Thespian Society\nMiming\nPuppetry\nSlam \
+Poetry Club\nHigh School Theater Group\nCommunity Theater Group\>\"", ",", 
+        "\"\<Church groups\nFellowship of Christian Athletes\nJewish Student \
+Union\nMissionary work\nYouth Groups\>\"", ",", 
+        "\"\<The Civil War Reenactors\nDungeons and Dragons Club\nGamers Club\
+\nLARPing (Live Action Role Playing)\nRenaissance Faires\>\"", ",", 
+        "\"\<Amnesty International\nAnimal Rights Club\nBreast Cancer \
+Awareness\nCancer Foundation\nEnvironmental Club\nFair Trade Club\n\
+Gay-Straight Alliance\nGirls Lean International\nNOW \[Dash] National \
+Organization for Women\nSADD \[Dash] Students Against Destructive Decisions\n\
+Save Darfur \>\"", ",", 
+        "\"\<Boy Scouts\nChess Club\nEquestrian Club\nEntrepreneurship Club\n\
+Girl Scouts\nHorticulture Club\nModel Railroads\nQuilt Making\>\"", ",", 
+        "\"\<Debate Club\nEuro Challenge\nForeign Affairs Club\nForensics \
+Team\nHigh School Democrats of America\nHigh School Fed Challenge\nJunior \
+Statesmen of America\nMock Trial Club\nModel Congress Club\nModel United \
+Nations\nNational Speech and Debate Association\nSpeech Club\nTeenage \
+Republicans\nYoung Democrats of America\>\"", ",", 
+        "\"\<Adopt-a-Highway\nAnimal rescue\nBest Buddies International\n\
+Church outreach\nHospital volunteer\nInternational volunteer program\n\
+Mentoring\nRed Cross Club\nTutoring\nUNICEF High School Clubs\nVolunteer Fire \
+Department\nWork with a local charity\nWork with a local soup kitchen\>\"", 
+        ",", "\"\<accordion\nacoustic guitar\nAeolian harp\nAlphorn\nalto \
+saxophone\nbaby grand piano\nbagpipe\nbanjo\nbaritone horn\nbass\nbass \
+clarinet\nbass drum\nbass guitar\nbassoon\nbell\nbongo drum\nbouzouki\nbugle\n\
+cello\nCeltic harp\nchimes\nclarinet\nclassical guitar\nclavichord\nclavier\n\
+concertina\nconga drum\ncontrabass\ncornet\ncowbell\ncymbals\ndouble bass\n\
+drum\ndrumsticks\nelectric guitar\nelectric organ\nEnglish horn\neuphonium\n\
+fiddle\nfife\nflugelhorn\nflute\nFrench horn\nglockenspiel\ngong\ngrand piano\
+\nguitar\nhammered dulcimer\nharmonica\nharmonium\nharp\nharpsichord\nhelicon\
+\nhorn\nhurdy gurdy\njaw harp\nJew's harp\nkazoo\nkettledrum\nkeyboard\nlute\n\
+lyre\nmallets\nmandolin\nmaracas\nmarimba\nmellophone\nmelodeon\nmoog \
+synthesizer\nmusical instruments\nmusical saw\nmute\noboe\nocarina\norgan\n\
+pan pipes\npenny whistle\npercussion\npiano\npiccolo\npipa\npipe organ\n\
+player piano\npump organ\nrainstick\nrattle\nrecorder\nreed\nsaw\nsaxophone\n\
+sitar\nslide whistle\nsnare drum\nspinet\nspoons\nsteel drum\nsousaphone\n\
+steel drum\nsteel guitar\nstring bass\nstring instruments\nstrings\n\
+synthesizer\ntabla\ntambourine\ntheramin\nthumb piano\ntimpani\ntin whistle\n\
+tom-tom drum\ntriangle\ntrombone\ntrumpet\ntuba\ntubular bells\nukulele\n\
+upright piano\nvalve\nvibraphone\nviola\nviola da gamba\nviolin\nviolincello\n\
+vuvuzela\nWagner tuba\nwashboard\nwhistle\nwind chime\nwind instruments\n\
+woodwind instruments\nxylophone\>\""}], "}"}]}], "]"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.717604321452831*^9, 3.717604328884033*^9}, {
+  3.717604443269672*^9, 3.717604445486272*^9}, {3.7176045252273803`*^9, 
+  3.7176045431326685`*^9}, {3.71760457464388*^9, 3.7176045837910233`*^9}, {
+  3.7176046703755302`*^9, 3.717604834202821*^9}, {3.7176063052058783`*^9, 
+  3.7176063620530057`*^9}, {3.717606420170836*^9, 3.7176064207707624`*^9}, {
+  3.7176114688068*^9, 
+  3.7176116698820257`*^9}},ExpressionUUID->"030ebf0e-d590-4443-9401-\
+906139ee376f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sport", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{
+      "{", "\"\<Baseball and softball\nbadminton\nBasketball\nBodybuilding\n\
+Cheerleading\nClimbing\nCycling\nDance\nFencing\nFootball\nGolf\nGymnastics\n\
+Hiking\nHockey\nIntramural Sports\nLacrosse\nMartial Arts\nPing Pong\n\
+Quidditch\nSkate Board\nSkiing\nSoccer\nSwimming\nTennis\nTrack & Field\n\
+Ultimate Frisbee\nVolleyball\nWater Polo\nYoga\>\"", "}"}]}], "]"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7176063745769124`*^9, 3.717606402145943*^9}, {
+  3.7176102191276827`*^9, 3.7176102342120905`*^9}, {3.7176103907669363`*^9, 
+  3.717610391788866*^9}},ExpressionUUID->"9acde9c3-d647-4733-ade5-\
+ff11e77ca71b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"essential", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{
+      "{", "\"\<eating\ndinner\nbreakfast\nlunch\nwashroom\npoo\npee\npiss\n\
+crap\nbathing\nshowering\ndressing\nsleep\nwake\nfeed\nfood\nsick\ndrowsy\n\
+fatigue\ntired\nthirst\ndrink\nvegetables\nmeats\ndairy\ncheese\nham\nbeef\n\
+water\njuice\nmilk\nbrush teeth\nwash face\nwash body\nshave\ndeoderant\nclip \
+nails\nbarber\ncut hair\ndress hair\nstyle hair\nmakeup\nperiod\ntampon\n\
+chicken\nburgers\>\"", "}"}]}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7176070164934893`*^9, 3.7176070603930664`*^9}, {
+  3.717607100825529*^9, 3.7176071498596497`*^9}, {3.7176072078402576`*^9, 
+  3.71760726529694*^9}, {3.7176073585723743`*^9, 3.7176073703234744`*^9}, {
+  3.7176074009085274`*^9, 
+  3.7176074109428654`*^9}},ExpressionUUID->"6f7b1c44-b630-4acc-85e0-\
+2fe0a19a7fc2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"leisure", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<fishing\ncamping\nboating\nbeach\nsocial gathering\nchill\nyard \
+work\nwalking\ngolf\n\>\"", ",", 
+        "\"\<43 things\nacademia.edu\nabout.me\nadvogato\nanobii\nasianavenue\
+\nasmallworld\nathlinks\naudimated.com\nbebo\nbiip.no\nblackplanet\nbolt.com\n\
+busuu\nbuzznet\ncafemom\ncare2\ncaringbridge\nclassmates.com\ncloob\n\
+clusterblunk\ncouchsurfing\ncozycot\ncrunchyroll\ncucumbertown\ncyworld\n\
+dailybooth\ndailystrength\ndelicious\ndeviantart\ndiaspora\ndisaboom\ndol2day\
+\ndontstayin\ndraugiem.lv\ndouban\ndoximity\nwechat\nqq\nweixing\ndreamwidth\n\
+dxy.cn\nelftown\nello\nelixio\nenglish,baby!\nepernicus\neons.com\netoro\n\
+experience project\nfacebook\nfetlife\nfilmaffinity\nfilmow\nfledgewing\n\
+flixster\nflickr\nfocus.com\nfotki\nfoursquare\nfriendica\nfriends reunited\n\
+friendster\nfuelmyblog\nfyuse\ngaia online\ngamerdna\ngapyear.com\ngather.com\
+\ngays.com\ngeni.com\ngentlemint\ngetglue\ngirlsaskguys\ngogoyoko\ngoodreads\n\
+goodwizz\ngoogle+\ngovloop\ngoogle plus\ngrindr\nfrono.net\nhabbo\nhi5\n\
+hospitality club\nhotlist\nhr.com\nhub culture\nlbibo\nidentiti\nindaba music\
+\ninfluenster\ninstagram\nirc-galleria\nitalki\nitsmy\njaiku\njiepang\n\
+kaixin001\nkiwibox\nlaibhaari\nlast.fm\nlate night shots\nlibrarything\n\
+lifeknot\nlinkedin\nlinkexpats\nlistography\nlivejournal\nlivemocha\n\
+makeoutclub\nmeetin\nmeettheboss\nmillatfacebook\nminds\nmixi\nmoco space\n\
+mog\nmouthshut.com\nmubu\nmyheritage\nmylife\nmy opera\nmyspace\n\
+nasza-klasa.pl\nnetlog\nnexopia\nning\nodnoklassniki\nopen diargy\norkut\n\
+outeveywhere\npatientslikeme\npartyflock\npingsta\npinterest\nplaxo\nplayfire\
+\nplaylist.com\nplurk\npoolwo\nqapacity\nquechuo\nquora\nqzone\nraptr\n\
+ravelry\nrenren\nrevernation.com\nrooster teeth\nryze\nscience stage\n\
+sgrouples\nsharethemusic\nshelfari\nsina weibo\nskoob\nskyrock\nsmartican\n\
+socialvibe\nsonico.com\nsoundcloud\nspaces\nspot.im\nspring.me\nstage 32\n\
+stickam\nstreetlife\nstudivz students circle network\nstumbleupon\ntagged\n\
+talkbiznow\ntaltopia\ntaringa!\nteach street\ntermwiki\nthe sphere\n\
+travbuddy.com\ntravellerspoint\ntsu\ntribe.net\ntrombi.com\ntuenti\ntumblr\n\
+twitter\ntylted\nuntappd\nuplike\nvk\nvampirefreaks.com\nviadeo\nvirb\nvox\n\
+wattpad\nsayn\nweeworld\nwe heart it\nwellwer\nwepolls.com\nwe-kennt-wen\n\
+weread\nwooxie\nwriteaprisoner.com\nxanga\nsing\nst3\nyammer\nyelp, inc\nyelp\
+\nyookos\nzoo.gr\nsoundcloud\>\"", ",", 
+        "\"\<video games\nxbox\nps3\nplaystation\nnintendo\nds\ngameboy\n\
+computer games\nconsole games\n\>\"", ",", 
+        "\"\<movies\ncartoons\ncomics\ntv\ntelevision\ntv series\>\""}], 
+       "}"}]}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7176074918299527`*^9, 3.7176075452657337`*^9}, {
+  3.7176076059459553`*^9, 3.717608121226304*^9}, {3.7176086403481236`*^9, 
+  3.7176087347746506`*^9}, {3.717609155717534*^9, 3.7176091957671304`*^9}, {
+  3.7176092654322004`*^9, 3.7176092838809524`*^9}, {3.7176108856265316`*^9, 
+  3.7176108950269003`*^9}},ExpressionUUID->"3b0d8398-aeab-43aa-8a9c-\
+079953d39e59"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"school", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{
+      "{", "\"\<Science\nDesign and technology (ICT)\nHistory\nGeography\nArt \
+and design\nMusic\nPhysical Education\nReligious education\nLanguage Arts\n\
+Mathematics\nScience\nHealth\nHandwriting\nPhysical Education (P.E.)\nArt\n\
+Music\nInstrumental Music \[Dash] specific instrument\nMovement or Eurythmy\n\
+Handwork or handcrafts\nLife Lab or gardening\nDramatics\nDance\nSpanish or \
+other foreign language\nLeadership\nSpecial Education Day Class\nResource \
+Program\nSpeech\nAdaptive P.E.\nOccupational Therapy\nMiddle School Subjects\n\
+CORE \[Dash] core subjects class\nReading\nLanguage arts\nSpeech and Debate\n\
+English\nBasic Math\nPre-algebra\nConsumer Math\nAlgebra\nGeometry\nHonors \
+Math in Algebra or Geometry\nLife Science\nEarth Science\nPhysical Science\n\
+Health\nSocial Studies\nGeography\nAncient Civilizations\nMedieval and \
+Renaissance\nU.S. History and Government\nFrench / Spanish / Latin\nComputer \
+Science or Lab\nArt\nHome Economics\nWoodshop\nMetal Shop\nBusiness \
+Technology\nInstrumental Music\nBand\nChoir\nSpecial Education Day Class\n\
+Resource Program\nSpeech Therapy\nOccupational Therapy\nHigh School Subjects\n\
+English I\nEnglish II\nEnglish III\nEnglish IV\nRemedial English\nESL \[Dash] \
+English as second language\nWorld Literature\nAncient Literature\nMedieval \
+Literature\nRenaissance Literature\nModern Literature\nBritish Literature\n\
+American Literature\nShort Story\nClassical literature\nShakespeare\nHeroes, \
+Myth and Legend\nFilm as Literature\nComposition\nCreative Writing\nPoetry\n\
+Grammar\nVocabulary\nDebate\nSpeech\nJournalism\nPublishing Skills\n\
+Photojournalism\nYearbook\nStudy Skills\nResearch Skills\nArt I\nArt II\nArt \
+III\nArt IV\nArt Appreciation\nArt History\nDrawing\nPainting\nSculpture\n\
+Ceramics\nPottery\nInstrumental Music\nMusic Appreciation\nMusic History\n\
+Music Theory\nMusic Fundamentals\nBand\nOrchestra\nChoir\nVoice\nClassical \
+Music Studies\nPerforming Arts\nTheatre Arts -{Beg., interm., and advanced}\n\
+Improvisational Theater\nDance\nComputer Aided Design {Digital Media}\n\
+Photography\nVideography\nHistory of Film\nFilm Production\nLeather Working\n\
+Drafting\nMetal Work\nSmall Engine Mechanics\nAuto Mechanics\nGeneral Science\
+\nPhysics\nPhysical Science\nChemistry\nOrganic Chemistry\nLife Science\n\
+Biology\nZoology\nMarine Biology\nBotany\nEarth Science\nGeology\n\
+Oceanography\nMeteorology\nAstronomy\nAnimal Science\nEquine Science\n\
+Veterinary Science\nForensic Science\nEcology\nEnvironmental Science\n\
+Gardening\nFood Science\nSpanish\nFrench\nJapanese\nGerman\nLatin\nGreek\n\
+Hebrew\nChinese\nLiterature\nCulture\nHistory\nSign Language\nRemedial Math\n\
+Fundamental Math or Basic Math\nMathematics\nPre-Algebra\nIntroduction to \
+Algebra\nAlgebra\nAlgebra I\nAlgebra II\nIntermediate Algebra\nGeometry\n\
+Trigonometry\nPrecalculus\nCalculus\nStatistics\nBusiness Math\nConsumer Math\
+\nAccounting\nPersonal Finance and Investing\nAncient History\nMedieval \
+History\nGreek and Roman History\nRenaissance History with US History\nModern \
+History with US History\nWorld History\nHistory of (\[LongDash]\[LongDash]-)\n\
+World Geography\nUS History\nWorld Religions\nWorld Current Events {Global \
+Issues}\nGovernment\nCivics\nEconomics\nPolitical Science\nSocial Sciences\n\
+Psychology\nSociology\nAnthropology\nGenealogy\nPhilosophy\nLogic I\nLogic II\
+\nCritical Thinking\nRhetoric\nHealth\nBasic First Aid and Safety\nNutrition\n\
+Healthful Living {Personal Health}\nDrill Team\nHonor Guard\nPageantry\nFlag\n\
+Cheer\nAdapted P.E\nKeyboarding\nWord Processing\nComputer Aided Drafting\n\
+Computer Applications:  (\[LongDash]\[LongDash])\nCertification in (\
+\[LongDash]\[Dash])\nComputer Graphics\nDigital Arts\nPhotoshop\nProgramming\n\
+Computer Repair\nWeb Design\nDesktop Publishing\nCulinary Arts\nChild \
+Development\nHome Management\nHome Organization\nBasic Yard Care\nFinancial \
+Management\nDriver\[CloseCurlyQuote]s Education\nPersonal Organization\n\
+Social Skills\nCareer Planning\nAP Courses in any core subject\nHonors \
+Courses in any core subject\nStudy Skills\nSAT Prep\nWork-Study\nLifeskills\n\
+Resource Program\nSpeech\nSpecial Day Class\>\"", "}"}]}], "]"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.717609308251517*^9, 
+  3.717609673013788*^9}},ExpressionUUID->"f46fd5e3-7d47-421d-8bc9-\
+22eb6deb6763"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"c", "=", 
+  RowBox[{"Classify", "[", 
+   RowBox[{"<|", 
+    RowBox[{
+     RowBox[{"\"\<school\>\"", "\[Rule]", "school"}], ",", 
+     RowBox[{"\"\<extracurricular\>\"", "\[Rule]", "extra"}], ",", 
+     RowBox[{"\"\<sport\>\"", "\[Rule]", "sport"}], ",", 
+     RowBox[{"\"\<essential\>\"", "\[Rule]", "essential"}], ",", 
+     RowBox[{"\"\<leisure\>\"", "\[Rule]", "leisure"}]}], "|>"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7176067799537716`*^9, 3.717606806959712*^9}, 
+   3.717606921682059*^9, {3.71760742593723*^9, 3.7176074305971746`*^9}, {
+   3.7176088633850713`*^9, 3.717608868141776*^9}, {3.717609678656975*^9, 
+   3.7176096863668203`*^9}},ExpressionUUID->"ef7446cf-6cbb-4ed2-a9e3-\
+d9c0459955d8"],
+
+Cell[BoxData[
+ TagBox[
+  TemplateBox[{RowBox[{
+      StyleBox[
+       TagBox["ClassifierFunction", "SummaryHead"], 
+       "NonInterpretableSummary"], 
+      StyleBox["[", "NonInterpretableSummary"], 
+      DynamicModuleBox[{
+       Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+       TemplateBox[{
+         PaneSelectorBox[{False -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource[
+                  "FEBitmaps", "SquarePlusIconMedium"]], 
+                 ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}]], 
+               GraphicsBox[{{
+                  PointSize[0.13], 
+                  GrayLevel[0.45], 
+                  
+                  PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                   1.1339776261519132`, 0.8056918676854272}, {
+                   0.5279892326667741, 0.6574306661126254}, {
+                   0.022147046479890797`, 1.4937877187998898`}}], 
+                  GrayLevel[0.7], 
+                  
+                  PointBox[{{-0.9815166384819979, 
+                   0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+                  GrayLevel[0.55], 
+                  AbsoluteThickness[1.5], 
+                  LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+                Axes -> {False, False}, AxesLabel -> {None, None}, 
+                 AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                   AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+                 Frame -> {{True, True}, {True, True}}, 
+                 FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                 Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.7]], 
+                 FrameTicks -> {{None, None}, {None, None}}, 
+                 GridLines -> {None, None}, 
+                 LabelStyle -> {FontFamily -> "Arial"}, 
+                 Method -> {"ScalingFunctions" -> None}, 
+                 PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> 
+                 True, PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+                 Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+                ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                FrameTicks -> None, FrameStyle -> Directive[
+                  Opacity[0.5], 
+                  Thickness[Tiny], 
+                  RGBColor[0.368417, 0.506779, 0.709798]], Background -> 
+                GrayLevel[0.94]], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Input type: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Text\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox["\"Classes: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{
+                    ",", "\",\"", "\"essential\"", "\"extracurricular\"", 
+                    "\"leisure\"", "\"school\"", "\"sport\""}, 
+                    "RowWithSeparators"], "SummaryItem"]}]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             BaselinePosition -> {1, 1}], True -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource[
+                  "FEBitmaps", "SquareMinusIconMedium"]], 
+                 ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}]], 
+               GraphicsBox[{{
+                  PointSize[0.13], 
+                  GrayLevel[0.45], 
+                  
+                  PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                   1.1339776261519132`, 0.8056918676854272}, {
+                   0.5279892326667741, 0.6574306661126254}, {
+                   0.022147046479890797`, 1.4937877187998898`}}], 
+                  GrayLevel[0.7], 
+                  
+                  PointBox[{{-0.9815166384819979, 
+                   0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+                  GrayLevel[0.55], 
+                  AbsoluteThickness[1.5], 
+                  LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+                Axes -> {False, False}, AxesLabel -> {None, None}, 
+                 AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                   AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+                 Frame -> {{True, True}, {True, True}}, 
+                 FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                 Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.7]], 
+                 FrameTicks -> {{None, None}, {None, None}}, 
+                 GridLines -> {None, None}, 
+                 LabelStyle -> {FontFamily -> "Arial"}, 
+                 Method -> {"ScalingFunctions" -> None}, 
+                 PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> 
+                 True, PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+                 Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+                ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                FrameTicks -> None, FrameStyle -> Directive[
+                  Opacity[0.5], 
+                  Thickness[Tiny], 
+                  RGBColor[0.368417, 0.506779, 0.709798]], Background -> 
+                GrayLevel[0.94]], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Input type: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Text\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox["\"Classes: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{
+                    ",", "\",\"", "\"essential\"", "\"extracurricular\"", 
+                    "\"leisure\"", "\"school\"", "\"sport\""}, 
+                    "RowWithSeparators"], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Markov\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    "\"Number of training examples: \"", 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["749", "SummaryItem"]}]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             BaselinePosition -> {1, 1}]}, 
+          Dynamic[Typeset`open$$], ImageSize -> Automatic]}, "SummaryPanel", 
+        DisplayFunction -> (
+         ButtonBox[#, Active -> False, Alignment -> Left, 
+          Appearance -> {
+           "Default" -> 
+            FrontEnd`FileName[{"Typeset", "SummaryBox"}, "Panel.9.png"]}, 
+          FrameMargins -> 7, BaseStyle -> {}, 
+          DefaultBaseStyle -> {"Panel", Background -> None}, BaselinePosition -> 
+          Baseline]& )], DynamicModuleValues :> {}], 
+      StyleBox["]", "NonInterpretableSummary"]}]},
+   "CopyTag",
+   DisplayFunction->(#& ),
+   InterpretationFunction->("ClassifierFunction[\[Ellipsis]]"& )],
+  False,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.717606923162301*^9, 3.7176074321552124`*^9, 3.7176088703910456`*^9, {
+   3.7176096892903347`*^9, 3.7176096942650485`*^9}, 3.7176101189959145`*^9, 
+   3.717610237521047*^9, {3.7176103950589495`*^9, 
+   3.7176104017484274`*^9}},ExpressionUUID->"b22808e6-734b-45f6-93b7-\
+81e1fb3721db"]
+}, Open  ]]
+},
+WindowSize->{681, 716},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 6617, 102, 5748, "Input",ExpressionUUID->"030ebf0e-d590-4443-9401-906139ee376f"],
+Cell[7178, 124, 883, 19, 561, "Input",ExpressionUUID->"9acde9c3-d647-4733-ade5-ff11e77ca71b"],
+Cell[8064, 145, 1043, 21, 884, "Input",ExpressionUUID->"6f7b1c44-b630-4acc-85e0-2fe0a19a7fc2"],
+Cell[9110, 168, 3334, 53, 4475, "Input",ExpressionUUID->"3b0d8398-aeab-43aa-8a9c-079953d39e59"],
+Cell[12447, 223, 4615, 68, 4760, "Input",ExpressionUUID->"f46fd5e3-7d47-421d-8bc9-22eb6deb6763"],
+Cell[CellGroupData[{
+Cell[17087, 295, 735, 15, 48, "Input",ExpressionUUID->"ef7446cf-6cbb-4ed2-a9e3-d9c0459955d8"],
+Cell[17825, 312, 9990, 200, 71, "Output",ExpressionUUID->"b22808e6-734b-45f6-93b7-81e1fb3721db"]
+}, Open  ]]
+}
+]
+*)
+

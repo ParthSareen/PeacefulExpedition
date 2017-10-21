@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     64568,       1603]
-NotebookOptionsPosition[     62599,       1561]
-NotebookOutlinePosition[     62945,       1576]
-CellTagsIndexPosition[     62902,       1573]
+NotebookDataLength[     64087,       1596]
+NotebookOptionsPosition[     62119,       1554]
+NotebookOutlinePosition[     62465,       1569]
+CellTagsIndexPosition[     62422,       1566]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1526,37 +1526,30 @@ a156082ab40e"]
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"Table", "[", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\<C:\\\\Users\\\\Adam \
+Yu\\\\source\\\\repos\\\\PeacefulExpedition\\\\sigmoid.csv\>\"", ",", 
    RowBox[{
-    RowBox[{"69", "*", "2", 
-     RowBox[{"(", 
-      RowBox[{
-       RowBox[{"LogisticSigmoid", "[", 
-        RowBox[{"x", "/", "10"}], "]"}], "-", ".5"}], ")"}]}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0", ",", "60"}], "}"}]}], "]"}], "//", 
-  "Round"}]], "Input",
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"69", "*", "2", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"LogisticSigmoid", "[", 
+          RowBox[{"x", "/", "15"}], "]"}], "-", ".5"}], ")"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "60"}], "}"}]}], "]"}], "//", "Round"}]}], 
+  "]"}]], "Input",
  CellChangeTimes->{{3.7176118282956505`*^9, 
-  3.7176119209149046`*^9}},ExpressionUUID->"0c916786-6ab6-46e2-8a25-\
+  3.717611980261493*^9}},ExpressionUUID->"0c916786-6ab6-46e2-8a25-\
 ad0afc74e1a1"],
 
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-  "0", ",", "3", ",", "7", ",", "10", ",", "14", ",", "17", ",", "20", ",", 
-   "23", ",", "26", ",", "29", ",", "32", ",", "35", ",", "37", ",", "39", 
-   ",", "42", ",", "44", ",", "46", ",", "48", ",", "49", ",", "51", ",", 
-   "53", ",", "54", ",", "55", ",", "56", ",", "58", ",", "59", ",", "59", 
-   ",", "60", ",", "61", ",", "62", ",", "62", ",", "63", ",", "64", ",", 
-   "64", ",", "65", ",", "65", ",", "65", ",", "66", ",", "66", ",", "66", 
-   ",", "67", ",", "67", ",", "67", ",", "67", ",", "67", ",", "67", ",", 
-   "68", ",", "68", ",", "68", ",", "68", ",", "68", ",", "68", ",", "68", 
-   ",", "68", ",", "68", ",", "68", ",", "68", ",", "69", ",", "69", ",", 
-   "69", ",", "69"}], "}"}]], "Output",
+Cell[BoxData["\<\"C:\\\\Users\\\\Adam \
+Yu\\\\source\\\\repos\\\\PeacefulExpedition\\\\sigmoid.csv\"\>"], "Output",
  CellChangeTimes->{{3.7176118594852233`*^9, 
-  3.717611921268293*^9}},ExpressionUUID->"50e3c1e2-da53-4808-a6a6-\
-d01d3cc974ea"]
+  3.7176119850754957`*^9}},ExpressionUUID->"18cac973-ae02-47fc-98c3-\
+45985eda726f"]
 }, Open  ]]
 },
 WindowSize->{681, 716},
@@ -1579,7 +1572,7 @@ Cell[558, 20, 799, 22, 162, "Input",ExpressionUUID->"5f166ab4-8336-412f-bff4-472
 Cell[1360, 44, 1084, 22, 86, "Input",ExpressionUUID->"fa02ee63-b705-42a4-8724-2ac218ec5029"],
 Cell[CellGroupData[{
 Cell[2469, 70, 284, 8, 28, "Input",ExpressionUUID->"14ace59d-a1bb-49f5-8f77-2a6013d70ac0"],
-Cell[2756, 80, 2307, 45, 544, "Output",ExpressionUUID->"9df59a8b-b44d-4423-8249-1b28c2d457be"]
+Cell[2756, 80, 2307, 45, 487, "Output",ExpressionUUID->"9df59a8b-b44d-4423-8249-1b28c2d457be"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[5100, 130, 235, 5, 28, "Input",ExpressionUUID->"b32a26ad-b2ba-4455-849a-503bd1295d34"],
@@ -1595,15 +1588,15 @@ Cell[16451, 370, 38503, 999, 327, "Output",ExpressionUUID->"ad486ac2-989d-4df7-b
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[54991, 1374, 359, 11, 28, "Input",ExpressionUUID->"36952f10-aa1c-4821-ab4a-4753ad5da7b4"],
-Cell[55353, 1387, 2001, 43, 473, "Output",ExpressionUUID->"349d5b62-64be-4879-be10-a129ce94643a"]
+Cell[55353, 1387, 2001, 43, 530, "Output",ExpressionUUID->"349d5b62-64be-4879-be10-a129ce94643a"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[57391, 1435, 522, 13, 28, "Input",ExpressionUUID->"a104ca3a-fe8d-438e-97c6-f276b6466507"],
-Cell[57916, 1450, 3272, 72, 279, "Output",ExpressionUUID->"36b5f2c0-bca2-4b37-9a1e-a156082ab40e"]
+Cell[57916, 1450, 3272, 72, 246, "Output",ExpressionUUID->"36b5f2c0-bca2-4b37-9a1e-a156082ab40e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[61225, 1527, 467, 14, 28, "Input",ExpressionUUID->"0c916786-6ab6-46e2-8a25-ad0afc74e1a1"],
-Cell[61695, 1543, 888, 15, 71, "Output",ExpressionUUID->"50e3c1e2-da53-4808-a6a6-d01d3cc974ea"]
+Cell[61225, 1527, 630, 18, 48, "Input",ExpressionUUID->"0c916786-6ab6-46e2-8a25-ad0afc74e1a1"],
+Cell[61858, 1547, 245, 4, 32, "Output",ExpressionUUID->"18cac973-ae02-47fc-98c3-45985eda726f"]
 }, Open  ]]
 }
 ]

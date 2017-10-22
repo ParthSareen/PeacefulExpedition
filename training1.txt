@@ -228,3 +228,231 @@ I will finish the app implementation
 work
 I will lift weights
 sport
+I will read on computability theory
+work
+I will listen to rap music
+leisure
+I will listen to classical music
+leisure
+I will play with megablocks
+leisure
+I will do yoga
+sport
+I will play golf
+sport
+I will play squash
+sport
+I will eat squash
+essential
+I will go see a play
+leisure
+I will creatively write
+leisure
+I will write my lab report
+work
+I will do calligrayphy
+leisure
+I will go ice skating
+sport
+I will play fantasy sports
+leisure
+I will do woodworking
+leisure
+I will play with my yoyo
+leisure
+I will play with my yo-yo
+leisure
+I will go surfing
+sport
+I will play quidditch
+sport
+I will go mountain climbing
+sport
+I will go to my dance lesson
+extracurricular
+I will dance 
+extracurricular 
+I will volunteer at the hospital 
+extracurricular
+I will work on my assignment
+work
+I will be hydrating myself
+essential
+I will graph a sigmoid function
+work
+I will browse instagram this evening
+leisure
+I will be doing a lot of photography
+leisure
+I will be doing my personal finance
+work
+I will be gardening
+leisure
+I will go to my art lesson
+extracurricular
+I will go to a hackathon
+leisure
+I will drink hard coffee
+essential
+I will clean my room
+work 
+I will design an app
+work
+I will work on my typing speed
+work
+I will play chess
+leisure
+I will go to chess club
+extracurricular
+I will practice for my exam
+work
+I will fix my car
+work
+I will fly to China
+essential
+I will write a list of 1300+ swear words
+work
+I will design a lab experiment
+work
+I will conduct my job interviews
+work
+I will go clothes shopping
+essential
+I will prepare my afidavit
+work
+I will attend the debate club meeting
+extracurricular
+I will eat a club sandwich
+essential
+I will prepare for a science fair
+extracurricular
+I will write an article for the school newspaper
+extracurricular
+I will practice my piano scales
+extracurricular
+I will prepare financial statements
+work
+I will play hungry hungry hippos
+leisure 
+I will play risk
+leisure
+I will paly poker 
+leisure
+I will drink bubble tea
+essential
+I will go ziplining
+leisure
+I will write a math contest
+extracurricular
+I will write my labreport
+work
+I will conduct my depositions
+work
+I will write a concerto
+extracurricular
+I will finish my programming project
+work
+I will read my emails
+work
+I will go windsailing
+sport
+I will go surfing
+sport
+I will go boating
+leisure
+I will go to a restaurant to eat
+essential
+I will tutor my peers
+work
+I will play cricket
+sport
+I will go hiking
+sport
+I will play lacrosse
+sport
+I will box
+sport
+I will play rugby later tonight
+sport
+I will go scuba diving
+sport
+I will go volunteer at the homeless shelter
+extracurricular
+I will study at the library
+work
+i will conduct my lab experiment
+work
+I will write poems
+work
+I will go to my swimming competition
+extracurricular
+I will eat my doritos
+essential
+I will write test data 
+work
+I will take my medicine
+essential
+I will do my calculus homework
+work
+I will do my physics problem st
+work
+I will read lecture notes
+work
+I will go to volleyball practice
+sport
+I will go to badminton training
+sport
+I will eat falafel 
+essential
+I will drink beer
+essential
+I will go grocery shopping 
+essential
+I will watch advertisements
+leisure
+I will write a book
+work
+I will do my chemistry homework
+work
+I will prepare my siideshow
+work
+I will smell flowers
+leisure
+I will arrange flowers
+leisure
+I will take recreational drugs
+leisure
+I'm going to play football
+sport
+I'm going to play soccer
+sport
+I will go bowling
+sport
+I will play handball
+sport
+I will be playing softball
+sport
+I will be attending track and field practice
+sport
+I will play billiards
+sport
+I will play pool 
+sport
+I will paint my room
+work
+I will go to nap club
+extracurricular
+I will attend tea club
+extracurricular
+I will listen to techno music
+leisure
+I will perform a topological sort of a directed acyclic graph
+work
+I will build my startup
+work
+
+
+
+
+
+

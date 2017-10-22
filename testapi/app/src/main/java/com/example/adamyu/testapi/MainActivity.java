@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println(2);
                 Runtime rt = Runtime.getRuntime();
                 try {
-                    Process pr = rt.exec("C:\\Users\\Adam\ Yu\\source\\repos\\PeacefulExpedition\\script.wls hello");
+                    Process pr = rt.exec("C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\testapi\\app\\src\\main\\res\\script.wls hello");
+                    //Process pr = rt.exec("powershell.exe Start-Process notepad.exe -verb RunAs");
                     System.out.println(1);
                 } catch (IOException e) {
                     e.printStackTrace();

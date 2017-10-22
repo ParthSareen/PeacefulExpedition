@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     28744,        536]
-NotebookOptionsPosition[     27831,        515]
-NotebookOutlinePosition[     28177,        530]
-CellTagsIndexPosition[     28134,        527]
+NotebookDataLength[     34625,        682]
+NotebookOptionsPosition[     32949,        653]
+NotebookOutlinePosition[     33295,        668]
+CellTagsIndexPosition[     33252,        665]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -132,7 +132,7 @@ Cell[BoxData[
        RowBox[{"StringSplit", "[", 
         RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
       RowBox[{
-      "{", "\"\<Baseball and softball\nbadminton\nBasketball\nBodybuilding\n\
+      "{", "\"\<Baseball\nsoftball\nbadminton\nBasketball\nBodybuilding\n\
 Cheerleading\nClimbing\nCycling\nDance\nFencing\nFootball\nGolf\nGymnastics\n\
 Hiking\nHockey\nIntramural Sports\nLacrosse\nMartial Arts\nPing Pong\n\
 Quidditch\nSkate Board\nSkiing\nSoccer\nSwimming\nTennis\nTrack & Field\n\
@@ -140,7 +140,9 @@ Ultimate Frisbee\nVolleyball\nWater Polo\nYoga\>\"", "}"}]}], "]"}], "]"}]}],
   ";"}]], "Input",
  CellChangeTimes->{{3.7176063745769124`*^9, 3.717606402145943*^9}, {
   3.7176102191276827`*^9, 3.7176102342120905`*^9}, {3.7176103907669363`*^9, 
-  3.717610391788866*^9}},ExpressionUUID->"9acde9c3-d647-4733-ade5-\
+  3.717610391788866*^9}, {3.717614229572034*^9, 3.717614233006837*^9}, {
+  3.7176159835824003`*^9, 
+  3.7176159848158894`*^9}},ExpressionUUID->"9acde9c3-d647-4733-ade5-\
 ff11e77ca71b"],
 
 Cell[BoxData[
@@ -177,8 +179,8 @@ Cell[BoxData[
         RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
       RowBox[{"{", 
        RowBox[{
-       "\"\<fishing\ncamping\nboating\nbeach\nsocial gathering\nchill\nyard \
-work\nwalking\ngolf\n\>\"", ",", 
+       "\"\<enjoy\nrelax\nlisten\nwatch\nplay\nfishing\ncamping\nboating\n\
+beach\nsocial gathering\nchill\nyard work\nwalking\ngolf\n\>\"", ",", 
         "\"\<43 things\nacademia.edu\nabout.me\nadvogato\nanobii\nasianavenue\
 \nasmallworld\nathlinks\naudimated.com\nbebo\nbiip.no\nblackplanet\nbolt.com\n\
 busuu\nbuzznet\ncafemom\ncare2\ncaringbridge\nclassmates.com\ncloob\n\
@@ -218,7 +220,8 @@ computer games\nconsole games\n\>\"", ",",
   3.7176076059459553`*^9, 3.717608121226304*^9}, {3.7176086403481236`*^9, 
   3.7176087347746506`*^9}, {3.717609155717534*^9, 3.7176091957671304`*^9}, {
   3.7176092654322004`*^9, 3.7176092838809524`*^9}, {3.7176108856265316`*^9, 
-  3.7176108950269003`*^9}},ExpressionUUID->"3b0d8398-aeab-43aa-8a9c-\
+  3.7176108950269003`*^9}, {3.717614073660166*^9, 
+  3.717614099870515*^9}},ExpressionUUID->"3b0d8398-aeab-43aa-8a9c-\
 079953d39e59"],
 
 Cell[BoxData[
@@ -291,6 +294,140 @@ Resource Program\nSpeech\nSpecial Day Class\>\"", "}"}]}], "]"}], "]"}]}],
   3.717609673013788*^9}},ExpressionUUID->"f46fd5e3-7d47-421d-8bc9-\
 22eb6deb6763"],
 
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"school1verbs", "=", "\"\<do\nfinish\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"extra1verbs", "=", "\"\<meet\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sport1verbs", "=", "\"\<play\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"essential1verbs", "=", "\"\<eat\ndrink\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"leisure1verbs", "=", "\"\<play\>\""}], ";"}]}], "Input",
+ CellChangeTimes->{{3.717615401384862*^9, 3.7176154541228447`*^9}, {
+  3.7176155456124735`*^9, 3.7176155611849194`*^9}, {3.7176156640157824`*^9, 
+  3.7176156641260557`*^9}},ExpressionUUID->"eb4d411f-71ca-464b-bc6b-\
+89d6441694cc"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "school1classes", "=", 
+   "\"\<math\nphysics\nchemistry\nbiology\nenglish\nhistory\ngym\n\
+french\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"school1nouns", "=", "\"\<problem\nhomework\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sport1nouns", "=", "\"\<ball\>\""}], ";"}]}], "Input",
+ CellChangeTimes->{{3.717615686769109*^9, 3.717615729487769*^9}, {
+  3.717615767299438*^9, 3.717615858209941*^9}, {3.7176158938417215`*^9, 
+  3.7176159191975155`*^9}, {3.7176159592409396`*^9, 3.717616012016395*^9}, {
+  3.71761604420453*^9, 
+  3.717616107886078*^9}},ExpressionUUID->"c1dc8aea-1389-4825-bb45-\
+ad20fe1e7653"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"school1", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"school1verbs", ",", "school1classes", ",", "school1nouns"}], 
+       "}"}]}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.717614965095337*^9, 3.717615007559873*^9}, {
+  3.7176154600077267`*^9, 3.7176154618421516`*^9}, {3.717615734849804*^9, 
+  3.717615738064855*^9}, {3.7176158622858095`*^9, 
+  3.7176158624283333`*^9}},ExpressionUUID->"a736ce0a-48b7-47cb-8728-\
+37f96a257297"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"extra1", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{"{", "extra1verbs", "}"}]}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.717615023074812*^9, 3.717615045444327*^9}, 
+   3.7176154663128443`*^9},ExpressionUUID->"835a8c75-f3ad-43bf-abdd-\
+4feddb5370a7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sport1", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"sport1verbs", ",", "sport1nouns"}], "}"}]}], "]"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7176150492648497`*^9, 3.717615069745376*^9}, {
+   3.717615340317018*^9, 3.7176153410472145`*^9}, 3.7176154705675488`*^9, {
+   3.7176160226493607`*^9, 
+   3.7176160245593543`*^9}},ExpressionUUID->"75a2a31b-877f-4d74-afb6-\
+a5083cb8d1e5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"essential1", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{"{", "essential1verbs", "}"}]}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.71761507274946*^9, 3.7176150964741387`*^9}, 
+   3.7176154793544035`*^9},ExpressionUUID->"dd5129c5-93f3-4d7f-8379-\
+3c68a9dc2ca3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"leisure1", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"ParallelMap", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], ",", 
+      RowBox[{"{", "leisure1verbs", "}"}]}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7176151605615177`*^9, 3.717615168857647*^9}, {
+  3.7176154839397593`*^9, 
+  3.71761549042448*^9}},ExpressionUUID->"3963aa49-f9bd-4009-add7-\
+a58cf4f9c80b"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"c", "=", 
+   RowBox[{"Classify", "[", 
+    RowBox[{"<|", 
+     RowBox[{
+      RowBox[{"\"\<work\>\"", "\[Rule]", "school"}], ",", 
+      RowBox[{"\"\<extracurricular\>\"", "\[Rule]", "extra"}], ",", 
+      RowBox[{"\"\<sport\>\"", "\[Rule]", "sport"}], ",", 
+      RowBox[{"\"\<essential\>\"", "\[Rule]", "essential"}], ",", 
+      RowBox[{"\"\<leisure\>\"", "\[Rule]", "leisure"}]}], "|>"}], "]"}]}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.7176067799537716`*^9, 3.717606806959712*^9}, 
+   3.717606921682059*^9, {3.71760742593723*^9, 3.7176074305971746`*^9}, {
+   3.7176088633850713`*^9, 3.717608868141776*^9}, {3.717609678656975*^9, 
+   3.7176096863668203`*^9}, {3.717614374721989*^9, 
+   3.7176143749354897`*^9}},ExpressionUUID->"527826f6-65f3-4a9f-a13a-\
+a66513e162fa"],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -298,17 +435,16 @@ Cell[BoxData[
   RowBox[{"Classify", "[", 
    RowBox[{"<|", 
     RowBox[{
-     RowBox[{"\"\<school\>\"", "\[Rule]", "school"}], ",", 
-     RowBox[{"\"\<extracurricular\>\"", "\[Rule]", "extra"}], ",", 
-     RowBox[{"\"\<sport\>\"", "\[Rule]", "sport"}], ",", 
-     RowBox[{"\"\<essential\>\"", "\[Rule]", "essential"}], ",", 
-     RowBox[{"\"\<leisure\>\"", "\[Rule]", "leisure"}]}], "|>"}], 
+     RowBox[{"\"\<work\>\"", "\[Rule]", "school1"}], ",", 
+     RowBox[{"\"\<extracurricular\>\"", "\[Rule]", "extra1"}], ",", 
+     RowBox[{"\"\<sport\>\"", "\[Rule]", "sport1"}], ",", 
+     RowBox[{"\"\<essential\>\"", "\[Rule]", "essential1"}], ",", 
+     RowBox[{"\"\<leisure\>\"", "\[Rule]", "leisure1"}]}], "|>"}], 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.7176067799537716`*^9, 3.717606806959712*^9}, 
-   3.717606921682059*^9, {3.71760742593723*^9, 3.7176074305971746`*^9}, {
-   3.7176088633850713`*^9, 3.717608868141776*^9}, {3.717609678656975*^9, 
-   3.7176096863668203`*^9}},ExpressionUUID->"ef7446cf-6cbb-4ed2-a9e3-\
-d9c0459955d8"],
+ CellChangeTimes->{{3.7176151825182123`*^9, 3.717615186482032*^9}, {
+  3.717617970939328*^9, 
+  3.717617975676134*^9}},ExpressionUUID->"609b890e-6c01-44c6-8163-\
+b83415111218"],
 
 Cell[BoxData[
  TagBox[
@@ -385,7 +521,7 @@ Cell[BoxData[
                     
                     TemplateBox[{
                     ",", "\",\"", "\"essential\"", "\"extracurricular\"", 
-                    "\"leisure\"", "\"school\"", "\"sport\""}, 
+                    "\"leisure\"", "\"sport\"", "\"work\""}, 
                     "RowWithSeparators"], "SummaryItem"]}]}}, 
                 GridBoxAlignment -> {
                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
@@ -464,7 +600,7 @@ Cell[BoxData[
                     
                     TemplateBox[{
                     ",", "\",\"", "\"essential\"", "\"extracurricular\"", 
-                    "\"leisure\"", "\"school\"", "\"sport\""}, 
+                    "\"leisure\"", "\"sport\"", "\"work\""}, 
                     "RowWithSeparators"], "SummaryItem"]}]}, {
                   RowBox[{
                     TagBox["\"Method: \"", "SummaryItemAnnotation"], 
@@ -474,7 +610,7 @@ Cell[BoxData[
                     TagBox[
                     "\"Number of training examples: \"", 
                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["749", "SummaryItem"]}]}}, 
+                    TagBox["18", "SummaryItem"]}]}}, 
                 GridBoxAlignment -> {
                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
                 False, GridBoxItemSize -> {
@@ -506,15 +642,17 @@ Cell[BoxData[
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{
-  3.717606923162301*^9, 3.7176074321552124`*^9, 3.7176088703910456`*^9, {
-   3.7176096892903347`*^9, 3.7176096942650485`*^9}, 3.7176101189959145`*^9, 
-   3.717610237521047*^9, {3.7176103950589495`*^9, 
-   3.7176104017484274`*^9}},ExpressionUUID->"b22808e6-734b-45f6-93b7-\
-81e1fb3721db"]
+  3.717615187756211*^9, 3.7176153438820114`*^9, 3.7176154927582164`*^9, 
+   3.7176155654720097`*^9, 3.717615666710446*^9, 3.7176157406292553`*^9, 
+   3.7176158132277117`*^9, 3.71761586458172*^9, {3.7176159024180107`*^9, 
+   3.7176159209755106`*^9}, 3.7176160271023693`*^9, {3.7176160905827217`*^9, 
+   3.7176161130779653`*^9}, 
+   3.7176167494148273`*^9},ExpressionUUID->"a52333fc-8fe1-4ce7-9e9d-\
+3a5030a0142e"]
 }, Open  ]]
 },
 WindowSize->{681, 716},
-WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+WindowMargins->{{-7, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
 StyleDefinitions->"Default.nb"
 ]
@@ -530,13 +668,21 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 6617, 102, 5748, "Input",ExpressionUUID->"030ebf0e-d590-4443-9401-906139ee376f"],
-Cell[7178, 124, 883, 19, 561, "Input",ExpressionUUID->"9acde9c3-d647-4733-ade5-ff11e77ca71b"],
-Cell[8064, 145, 1043, 21, 884, "Input",ExpressionUUID->"6f7b1c44-b630-4acc-85e0-2fe0a19a7fc2"],
-Cell[9110, 168, 3334, 53, 4475, "Input",ExpressionUUID->"3b0d8398-aeab-43aa-8a9c-079953d39e59"],
-Cell[12447, 223, 4615, 68, 4760, "Input",ExpressionUUID->"f46fd5e3-7d47-421d-8bc9-22eb6deb6763"],
+Cell[7178, 124, 982, 21, 580, "Input",ExpressionUUID->"9acde9c3-d647-4733-ade5-ff11e77ca71b"],
+Cell[8163, 147, 1043, 21, 884, "Input",ExpressionUUID->"6f7b1c44-b630-4acc-85e0-2fe0a19a7fc2"],
+Cell[9209, 170, 3418, 54, 4570, "Input",ExpressionUUID->"3b0d8398-aeab-43aa-8a9c-079953d39e59"],
+Cell[12630, 226, 4615, 68, 4760, "Input",ExpressionUUID->"f46fd5e3-7d47-421d-8bc9-22eb6deb6763"],
+Cell[17248, 296, 702, 16, 143, "Input",ExpressionUUID->"eb4d411f-71ca-464b-bc6b-89d6441694cc"],
+Cell[17953, 314, 681, 16, 219, "Input",ExpressionUUID->"c1dc8aea-1389-4825-bb45-ad20fe1e7653"],
+Cell[18637, 332, 664, 16, 67, "Input",ExpressionUUID->"a736ce0a-48b7-47cb-8728-37f96a257297"],
+Cell[19304, 350, 465, 12, 28, "Input",ExpressionUUID->"835a8c75-f3ad-43bf-abdd-4feddb5370a7"],
+Cell[19772, 364, 614, 16, 28, "Input",ExpressionUUID->"75a2a31b-877f-4d74-afb6-a5083cb8d1e5"],
+Cell[20389, 382, 474, 12, 28, "Input",ExpressionUUID->"dd5129c5-93f3-4d7f-8379-3c68a9dc2ca3"],
+Cell[20866, 396, 496, 13, 28, "Input",ExpressionUUID->"3963aa49-f9bd-4009-add7-a58cf4f9c80b"],
+Cell[21365, 411, 817, 17, 48, "Input",ExpressionUUID->"527826f6-65f3-4a9f-a13a-a66513e162fa"],
 Cell[CellGroupData[{
-Cell[17087, 295, 735, 15, 48, "Input",ExpressionUUID->"ef7446cf-6cbb-4ed2-a9e3-d9c0459955d8"],
-Cell[17825, 312, 9990, 200, 71, "Output",ExpressionUUID->"b22808e6-734b-45f6-93b7-81e1fb3721db"]
+Cell[22207, 432, 613, 14, 48, "Input",ExpressionUUID->"609b890e-6c01-44c6-8163-b83415111218"],
+Cell[22823, 448, 10110, 202, 71, "Output",ExpressionUUID->"a52333fc-8fe1-4ce7-9e9d-3a5030a0142e"]
 }, Open  ]]
 }
 ]

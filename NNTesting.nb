@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     64143,       1602]
-NotebookOptionsPosition[     62173,       1560]
-NotebookOutlinePosition[     62519,       1575]
-CellTagsIndexPosition[     62476,       1572]
+NotebookDataLength[     59432,       1471]
+NotebookOptionsPosition[     58261,       1444]
+NotebookOutlinePosition[     58607,       1459]
+CellTagsIndexPosition[     58564,       1456]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -42,152 +42,6 @@ Yu\\\\source\\\\repos\\\\PeacefulExpedition\\\\test2.txt\>\"", "]"}], ",",
   3.717609050856857*^9}},ExpressionUUID->"5f166ab4-8336-412f-bff4-\
 47265d6e8ae3"],
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"expected1", "=", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-     "1", ",", "2", ",", "3", ",", "4", ",", "1", ",", "2", ",", "1", ",", 
-      "5", ",", "5", ",", "4", ",", "5", ",", "2", ",", "2", ",", "4", ",", 
-      "4", ",", "4", ",", "4", ",", "3", ",", "2", ",", "5", ",", "5", ",", 
-      "4", ",", "3", ",", "3", ",", "3", ",", "3", ",", "3"}], "}"}], "/.", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"1", "\[Rule]", "\"\<essential\>\""}], ",", 
-      RowBox[{"2", "\[Rule]", "\"\<extracurricular\>\""}], ",", 
-      RowBox[{"3", "\[Rule]", "\"\<leisure\>\""}], ",", 
-      RowBox[{"4", "\[Rule]", "\"\<school\>\""}], ",", 
-      RowBox[{"5", "\[Rule]", "\"\<sport\>\""}]}], "}"}]}]}], ";"}]], "Input",
- CellChangeTimes->{{3.7176097229403324`*^9, 3.717609852363062*^9}, 
-   3.7176099071851716`*^9, {3.7176099560979767`*^9, 3.7176099834213495`*^9}, 
-   3.717610184368077*^9, {3.7176105072070656`*^9, 3.717610507344587*^9}, {
-   3.717610560452137*^9, 
-   3.7176105606051683`*^9}},ExpressionUUID->"fa02ee63-b705-42a4-8724-\
-2ac218ec5029"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"test1", ",", "expected1"}], "}"}], "//", "Transpose"}], "//", 
-  "TableForm"}]], "Input",
- CellChangeTimes->{{3.7176101867478848`*^9, 
-  3.7176101995989017`*^9}},ExpressionUUID->"14ace59d-a1bb-49f5-8f77-\
-2a6013d70ac0"],
-
-Cell[BoxData[
- TagBox[GridBox[{
-    {"\<\"eat apple\"\>", "\<\"essential\"\>"},
-    {"\<\"play piano\"\>", "\<\"extracurricular\"\>"},
-    {"\<\"play video games\"\>", "\<\"leisure\"\>"},
-    {"\<\"finish math homework\"\>", "\<\"school\"\>"},
-    {"\<\"drink wine\"\>", "\<\"essential\"\>"},
-    {"\<\"play violin\"\>", "\<\"extracurricular\"\>"},
-    {"\<\"drink coffee\"\>", "\<\"essential\"\>"},
-    {"\<\"play badminton\"\>", "\<\"sport\"\>"},
-    {"\<\"play tennis\"\>", "\<\"sport\"\>"},
-    {"\<\"write essay\"\>", "\<\"school\"\>"},
-    {"\<\"have cheerleading practice\"\>", "\<\"sport\"\>"},
-    {"\<\"attend club meeting\"\>", "\<\"extracurricular\"\>"},
-    {"\<\"write symphony\"\>", "\<\"extracurricular\"\>"},
-    {"\<\"write proof for P = NP\"\>", "\<\"school\"\>"},
-    {"\<\"prove the Riemann hypothesis\"\>", "\<\"school\"\>"},
-    {"\<\"do psychology homework\"\>", "\<\"school\"\>"},
-    {"\<\"prepare notes for tomorrow\"\>", "\<\"school\"\>"},
-    {"\<\"meditate\"\>", "\<\"leisure\"\>"},
-    {"\<\"write announcement\"\>", "\<\"extracurricular\"\>"},
-    {"\<\"go horseback riding\"\>", "\<\"sport\"\>"},
-    {"\<\"I'm going to go play ball tomororw\"\>", "\<\"sport\"\>"},
-    {"\<\"I'm going to finish my history work tonight\"\>", "\<\"school\"\>"},
-    {"\<\"I'm going to go gokarting\"\>", "\<\"leisure\"\>"},
-    {"\<\"I'm playing paintball later\"\>", "\<\"leisure\"\>"},
-    {"\<\"I'm taking a roadtrip at lunch\"\>", "\<\"leisure\"\>"},
-    {"\<\"I'm going for a city ride tonight\"\>", "\<\"leisure\"\>"},
-    {"\<\"I'm spinning my fidget spinner later\"\>", "\<\"leisure\"\>"}
-   },
-   GridBoxAlignment->{
-    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-     "RowsIndexed" -> {}},
-   GridBoxSpacings->{"Columns" -> {
-       Offset[0.27999999999999997`], {
-        Offset[2.0999999999999996`]}, 
-       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-       Offset[0.2], {
-        Offset[0.4]}, 
-       Offset[0.2]}, "RowsIndexed" -> {}}],
-  Function[BoxForm`e$, 
-   TableForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{{3.717610193821594*^9, 3.717610199844798*^9}, 
-   3.7176102412545033`*^9, 3.7176104072664356`*^9, 3.717610510251877*^9, 
-   3.717610565403471*^9, 
-   3.717612090725971*^9},ExpressionUUID->"90dbe29f-88ed-46a3-9a61-\
-bc7b653d4721"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"AssociationThread", "[", 
-  RowBox[{"test1", ",", "expected1"}], "]"}]], "Input",
- CellChangeTimes->{{3.7176098658503804`*^9, 
-  3.7176099007473373`*^9}},ExpressionUUID->"b32a26ad-b2ba-4455-849a-\
-503bd1295d34"],
-
-Cell[BoxData[
- RowBox[{"\[LeftAssociation]", 
-  RowBox[{
-   RowBox[{"\<\"eat apple\"\>", "\[Rule]", "\<\"essential\"\>"}], ",", 
-   RowBox[{"\<\"play piano\"\>", "\[Rule]", "\<\"extracurricular\"\>"}], ",", 
-   RowBox[{"\<\"play video games\"\>", "\[Rule]", "\<\"leisure\"\>"}], ",", 
-   RowBox[{"\<\"finish math homework\"\>", "\[Rule]", "\<\"school\"\>"}], ",", 
-   RowBox[{"\<\"drink wine\"\>", "\[Rule]", "\<\"essential\"\>"}], ",", 
-   RowBox[{"\<\"play violin\"\>", "\[Rule]", "\<\"extracurricular\"\>"}], ",", 
-   RowBox[{"\<\"drink coffee\"\>", "\[Rule]", "\<\"essential\"\>"}], ",", 
-   RowBox[{"\<\"play badminton\"\>", "\[Rule]", "\<\"sport\"\>"}], ",", 
-   RowBox[{"\<\"play tennis\"\>", "\[Rule]", "\<\"sport\"\>"}], ",", 
-   RowBox[{"\<\"write essay\"\>", "\[Rule]", "\<\"school\"\>"}], ",", 
-   RowBox[{"\<\"have cheerleading practice\"\>", "\[Rule]", "\<\"sport\"\>"}],
-    ",", 
-   RowBox[{"\<\"attend club meeting\"\>", 
-    "\[Rule]", "\<\"extracurricular\"\>"}], ",", 
-   RowBox[{"\<\"write symphony\"\>", "\[Rule]", "\<\"extracurricular\"\>"}], 
-   ",", 
-   RowBox[{"\<\"write proof for P = NP\"\>", "\[Rule]", "\<\"school\"\>"}], 
-   ",", 
-   RowBox[{"\<\"prove the Riemann hypothesis\"\>", 
-    "\[Rule]", "\<\"school\"\>"}], ",", 
-   RowBox[{"\<\"do psychology homework\"\>", "\[Rule]", "\<\"school\"\>"}], 
-   ",", 
-   RowBox[{"\<\"prepare notes for tomorrow\"\>", 
-    "\[Rule]", "\<\"school\"\>"}], ",", 
-   RowBox[{"\<\"meditate\"\>", "\[Rule]", "\<\"leisure\"\>"}], ",", 
-   RowBox[{"\<\"write announcement\"\>", 
-    "\[Rule]", "\<\"extracurricular\"\>"}], ",", 
-   RowBox[{"\<\"go horseback riding\"\>", "\[Rule]", "\<\"sport\"\>"}], ",", 
-   RowBox[{"\<\"I'm going to go play ball tomororw\"\>", 
-    "\[Rule]", "\<\"sport\"\>"}], ",", 
-   RowBox[{"\<\"I'm going to finish my history work tonight\"\>", 
-    "\[Rule]", "\<\"school\"\>"}], ",", 
-   RowBox[{"\<\"I'm going to go gokarting\"\>", 
-    "\[Rule]", "\<\"leisure\"\>"}], ",", 
-   RowBox[{"\<\"I'm playing paintball later\"\>", 
-    "\[Rule]", "\<\"leisure\"\>"}], ",", 
-   RowBox[{"\<\"I'm taking a roadtrip at lunch\"\>", 
-    "\[Rule]", "\<\"leisure\"\>"}], ",", 
-   RowBox[{"\<\"I'm going for a city ride tonight\"\>", 
-    "\[Rule]", "\<\"leisure\"\>"}], ",", 
-   RowBox[{"\<\"I'm spinning my fidget spinner later\"\>", 
-    "\[Rule]", "\<\"leisure\"\>"}]}], "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{{3.7176098736361074`*^9, 3.717609909445361*^9}, 
-   3.717609986623832*^9, 3.717610122580693*^9, 3.7176102412732477`*^9, 
-   3.7176104072884493`*^9, 3.717610510274396*^9, 3.7176105654219837`*^9, 
-   3.7176120907470093`*^9},ExpressionUUID->"82706825-2c6b-4b2f-8b7c-\
-695597932b94"]
-}, Open  ]],
-
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -195,12 +49,21 @@ Cell[BoxData[
   RowBox[{"ClassifierMeasurements", "[", 
    RowBox[{"c", ",", 
     RowBox[{
-     RowBox[{"AssociationThread", "[", 
-      RowBox[{"test1", ",", "expected1"}], "]"}], "//", "Normal"}]}], 
+     RowBox[{
+      RowBox[{
+       RowBox[{"AssociationThread", "[", 
+        RowBox[{
+         RowBox[{"#", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"#", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "&"}], "@", 
+      RowBox[{"Transpose", "[", 
+       RowBox[{"Partition", "[", 
+        RowBox[{"test1", ",", "2"}], "]"}], "]"}]}], "//", "Normal"}]}], 
    "]"}]}]], "Input",
  CellChangeTimes->{{3.717608917589429*^9, 3.7176089583714094`*^9}, 
-   3.7176099439993024`*^9, {3.717610009534584*^9, 
-   3.7176100230131664`*^9}},ExpressionUUID->"506aa3ad-209e-4925-8d78-\
+   3.7176099439993024`*^9, {3.717610009534584*^9, 3.7176100230131664`*^9}, 
+   3.717614345939036*^9},ExpressionUUID->"506aa3ad-209e-4925-8d78-\
 deb2071e3615"],
 
 Cell[BoxData[
@@ -211,7 +74,7 @@ Cell[BoxData[
        "NonInterpretableSummary"], 
       StyleBox["[", "NonInterpretableSummary"], 
       DynamicModuleBox[{
-       Typeset`open$$ = True, Typeset`embedState$$ = "Ready"}, 
+       Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
        TemplateBox[{
          PaneSelectorBox[{False -> GridBox[{{
                PaneBox[
@@ -254,7 +117,7 @@ Cell[BoxData[
                     TagBox[
                     "\"Number of test examples: \"", "SummaryItemAnnotation"],
                      "\[InvisibleSpace]", 
-                    TagBox["27", "SummaryItem"]}]}}, 
+                    TagBox["59", "SummaryItem"]}]}}, 
                 GridBoxAlignment -> {
                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
                 False, GridBoxItemSize -> {
@@ -308,7 +171,7 @@ Cell[BoxData[
                     TagBox[
                     "\"Number of test examples: \"", "SummaryItemAnnotation"],
                      "\[InvisibleSpace]", 
-                    TagBox["27", "SummaryItem"]}]}, {
+                    TagBox["59", "SummaryItem"]}]}, {
                   RowBox[{
                     TagBox[
                     "\"Number of classes: \"", "SummaryItemAnnotation"], 
@@ -320,8 +183,8 @@ Cell[BoxData[
                     TagBox[
                     
                     RowBox[{
-                    "0.5185185185185184897`2.6661022550876003", 
-                    "\[PlusMinus]", "0.0979907892986886658`2."}], 
+                    "0.3220338983050847204`2.6580012677994604", 
+                    "\[PlusMinus]", "0.0613537041356433666`2."}], 
                     "SummaryItem"]}]}}, 
                 GridBoxAlignment -> {
                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
@@ -357,9 +220,15 @@ Cell[BoxData[
   3.717608959272254*^9, 3.717609734643648*^9, 3.7176099448488626`*^9, {
    3.717609989227557*^9, 3.717610010934579*^9}, 3.717610122635722*^9, 
    3.717610241316779*^9, 3.7176104073399878`*^9, 3.717610510341421*^9, 
-   3.7176105654765224`*^9, 
-   3.7176120907870173`*^9},ExpressionUUID->"e8b7b371-b812-4be7-9bec-\
-a6158a9a8fae"]
+   3.7176105654765224`*^9, 3.7176120907870173`*^9, 3.7176135862009506`*^9, 
+   3.7176141084073124`*^9, 3.7176142210516195`*^9, {3.71761434681567*^9, 
+   3.7176143815158105`*^9}, 3.7176151942337475`*^9, 3.717615345756487*^9, 
+   3.7176154957304325`*^9, 3.7176155663583717`*^9, 3.717615667977416*^9, 
+   3.717615743543927*^9, 3.7176158151003246`*^9, 3.7176158659128933`*^9, {
+   3.717615903802292*^9, 3.717615921916828*^9}, 3.7176160285580854`*^9, 
+   3.717616095777778*^9, 
+   3.7176167518688526`*^9},ExpressionUUID->"16c65235-5173-4909-8db0-\
+ed9b77ff20cf"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -372,10 +241,11 @@ Cell[BoxData[
 
 Cell[BoxData[
  GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGBghWIQGwI+2FNKu+q3Tlsz+a29XsWUeXaLXtlvqFxTZuv+
-CC7/sEpknfvDW/YMKADTnOY9TetDl76xt7LIXT/36AP7M5/LjwomlOK0F5d6
-Qu4h1py+l5zeNglv7ONcbhuWTn9q3xoc2CQveA6n+dSyl9Twx+VOXOK0jncA
-s2C+8g==
+1:eJxTTMoPSmVmYGBghWIQ+29ZgWtQw1v7TUKP22UjX9knyQX5sHU+tFecdNBJ
+/8Ebe6ltz4/+O/bc/vkUcS7vhdftcalnAIMPOOmHVSLr3B/egvJx2ytxt3tp
+ueA7+yvdopum1r6x1z79nXOJ9HP79sNBqVsN39gn9MtE/j39xP5XpZvv9AvH
+cdqXwl1/JnTia/sM3WvZJ68/tC8QaX75ya7G3vmu/pzQ2Lf2x6bU3LnK98B+
+U0fB2urTBTjNJ9VeXO4nVT2p4YxLPS7/UiuccZkDADmw9N4=
    "], {{0, 0}, {5, 5}}, {0, 1}],
   Epilog->{{
      TagBox[
@@ -384,30 +254,29 @@ s2C+8g==
         GraphicsBox[{
           Opacity[1.], 
           InsetBox[
-           FormBox["2", TraditionalForm], {0.5, 0.5}], 
+           FormBox["6", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
           RectangleBox[{0, 0}, {1, 1}]}], {0.5, 4.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "2", "\" examples of \"", "\"essential\"", 
+            "6", "\" examples of \"", "\"essential\"", 
              "\" correctly classified\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Precision = \"", "1.`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Precision = \"", "0.375`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Recall = \"", "0.5`"}, "RowDefault"]}, {
            
-           TemplateBox[{"\"Recall = \"", "0.6666666666666666`"}, 
-            "RowDefault"]}, {
-           TemplateBox[{"\"FScore = \"", "0.8`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
+           TemplateBox[{"\"FScore = \"", "0.42857142857142855`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{2, " examples of ", "essential", " correctly classified"}], 
-         Row[{"Precision = ", 1.}], 
-         Row[{"Recall = ", 0.6666666666666666}], 
-         Row[{"FScore = ", 0.8}]}], "Tooltip"]& ], 
+         Row[{6, " examples of ", "essential", " correctly classified"}], 
+         Row[{"Precision = ", 0.375}], 
+         Row[{"Recall = ", 0.5}], 
+         Row[{"FScore = ", 0.42857142857142855`}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
        InsetBox[
@@ -442,17 +311,17 @@ s2C+8g==
         GraphicsBox[{
           Opacity[1.], 
           InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
+           FormBox["6", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
           RectangleBox[{0, 0}, {1, 1}]}], {0.5, 2.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "0", "\" example of \"", "\"leisure\"", "\" misclassified as \"", 
-             "\"essential\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
+            "6", "\" examples of \"", "\"leisure\"", "\" misclassified as \"",
+              "\"essential\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.375`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Row fraction = \"", "0.4`"}, "RowDefault"]}}, 
          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
          "Column", 
          GridBoxItemSize -> {
@@ -460,268 +329,9 @@ s2C+8g==
       Annotation[#, 
        Column[{
          Row[{
-          0, " example of ", "leisure", " misclassified as ", "essential"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {0.5, 1.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "0", "\" example of \"", "\"school\"", "\" misclassified as \"", 
-             "\"essential\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{
-          0, " example of ", "school", " misclassified as ", "essential"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {0.5, 0.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "0", "\" example of \"", "\"sport\"", "\" misclassified as \"", 
-             "\"essential\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{0, " example of ", "sport", " misclassified as ", "essential"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ]}, {
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 4.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "0", "\" example of \"", "\"essential\"", 
-             "\" misclassified as \"", "\"extracurricular\""}, 
-            "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{
-          0, " example of ", "essential", " misclassified as ", 
-           "extracurricular"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["3", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 3.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "3", "\" examples of \"", "\"extracurricular\"", 
-             "\" correctly classified\""}, "RowDefault"]}, {
-           
-           TemplateBox[{"\"Precision = \"", "0.3333333333333333`"}, 
-            "RowDefault"]}, {
-           TemplateBox[{"\"Recall = \"", "0.6`"}, "RowDefault"]}, {
-           
-           TemplateBox[{"\"FScore = \"", "0.42857142857142855`"}, 
-            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-         DefaultBaseStyle -> "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{
-          3, " examples of ", "extracurricular", " correctly classified"}], 
-         Row[{"Precision = ", 0.3333333333333333}], 
-         Row[{"Recall = ", 0.6}], 
-         Row[{"FScore = ", 0.42857142857142855`}]}], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["3", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 2.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "3", "\" examples of \"", "\"leisure\"", "\" misclassified as \"",
-              "\"extracurricular\""}, "RowDefault"]}, {
-           
-           TemplateBox[{"\"Column fraction = \"", "0.3333333333333333`"}, 
-            "RowDefault"]}, {
-           
-           TemplateBox[{"\"Row fraction = \"", "0.42857142857142855`"}, 
-            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-         DefaultBaseStyle -> "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{
-          3, " examples of ", "leisure", " misclassified as ", 
-           "extracurricular"}], 
-         Row[{"Column fraction = ", 0.3333333333333333}], 
-         Row[{"Row fraction = ", 0.42857142857142855`}]}], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["3", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 1.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "3", "\" examples of \"", "\"school\"", "\" misclassified as \"", 
-             "\"extracurricular\""}, "RowDefault"]}, {
-           
-           TemplateBox[{"\"Column fraction = \"", "0.3333333333333333`"}, 
-            "RowDefault"]}, {
-           
-           TemplateBox[{"\"Row fraction = \"", "0.42857142857142855`"}, 
-            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-         DefaultBaseStyle -> "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{
-          3, " examples of ", "school", " misclassified as ", 
-           "extracurricular"}], 
-         Row[{"Column fraction = ", 0.3333333333333333}], 
-         Row[{"Row fraction = ", 0.42857142857142855`}]}], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 0.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "0", "\" example of \"", "\"sport\"", "\" misclassified as \"", 
-             "\"extracurricular\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{
-          0, " example of ", "sport", " misclassified as ", 
-           "extracurricular"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ]}, {
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {2.5, 4.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "0", "\" example of \"", "\"essential\"", 
-             "\" misclassified as \"", "\"leisure\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{
-          0, " example of ", "essential", " misclassified as ", "leisure"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {2.5, 3.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           
-           TemplateBox[{
-            "0", "\" example of \"", "\"extracurricular\"", 
-             "\" misclassified as \"", "\"leisure\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{
-          0, " example of ", "extracurricular", " misclassified as ", 
-           "leisure"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
+          6, " examples of ", "leisure", " misclassified as ", "essential"}], 
+         Row[{"Column fraction = ", 0.375}], 
+         Row[{"Row fraction = ", 0.4}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
        InsetBox[
@@ -730,81 +340,338 @@ s2C+8g==
           InsetBox[
            FormBox["2", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {2.5, 2.5}, Automatic, {1., 1.}], 
+          RectangleBox[{0, 0}, {1, 1}]}], {0.5, 1.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "2", "\" examples of \"", "\"leisure\"", 
-             "\" correctly classified\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Precision = \"", "1.`"}, "RowDefault"]}, {
+            "2", "\" examples of \"", "\"sport\"", "\" misclassified as \"", 
+             "\"essential\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.125`"}, "RowDefault"]}, {
            
-           TemplateBox[{"\"Recall = \"", "0.2857142857142857`"}, 
-            "RowDefault"]}, {
-           
-           TemplateBox[{"\"FScore = \"", "0.4444444444444445`"}, 
+           TemplateBox[{"\"Row fraction = \"", "0.16666666666666666`"}, 
             "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
          DefaultBaseStyle -> "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{2, " examples of ", "leisure", " correctly classified"}], 
-         Row[{"Precision = ", 1.}], 
-         Row[{"Recall = ", 0.2857142857142857}], 
-         Row[{"FScore = ", 0.4444444444444445}]}], "Tooltip"]& ], 
+         Row[{
+          2, " examples of ", "sport", " misclassified as ", "essential"}], 
+         Row[{"Column fraction = ", 0.125}], 
+         Row[{"Row fraction = ", 0.16666666666666666`}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
        InsetBox[
         GraphicsBox[{
           Opacity[1.], 
           InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
+           FormBox["2", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {0.5, 0.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "2", "\" examples of \"", "\"work\"", "\" misclassified as \"", 
+             "\"essential\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.125`"}, "RowDefault"]}, {
+           
+           TemplateBox[{"\"Row fraction = \"", "0.13333333333333333`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{2, " examples of ", "work", " misclassified as ", "essential"}], 
+         Row[{"Column fraction = ", 0.125}], 
+         Row[{"Row fraction = ", 0.13333333333333333`}]}], "Tooltip"]& ]}, {
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["1", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 4.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "1", "\" example of \"", "\"essential\"", 
+             "\" misclassified as \"", "\"extracurricular\""}, 
+            "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.1`"}, "RowDefault"]}, {
+           
+           TemplateBox[{"\"Row fraction = \"", "0.08333333333333333`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{
+          1, " example of ", "essential", " misclassified as ", 
+           "extracurricular"}], 
+         Row[{"Column fraction = ", 0.1}], 
+         Row[{"Row fraction = ", 0.08333333333333333}]}], "Tooltip"]& ], 
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["1", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 3.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "1", "\" example of \"", "\"extracurricular\"", 
+             "\" correctly classified\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Precision = \"", "0.1`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Recall = \"", "0.2`"}, "RowDefault"]}, {
+           
+           TemplateBox[{"\"FScore = \"", "0.13333333333333336`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{1, " example of ", "extracurricular", " correctly classified"}], 
+         Row[{"Precision = ", 0.1}], 
+         Row[{"Recall = ", 0.2}], 
+         Row[{"FScore = ", 0.13333333333333336`}]}], "Tooltip"]& ], 
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["4", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 2.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "4", "\" examples of \"", "\"leisure\"", "\" misclassified as \"",
+              "\"extracurricular\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.4`"}, "RowDefault"]}, {
+           
+           TemplateBox[{"\"Row fraction = \"", "0.26666666666666666`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{
+          4, " examples of ", "leisure", " misclassified as ", 
+           "extracurricular"}], 
+         Row[{"Column fraction = ", 0.4}], 
+         Row[{"Row fraction = ", 0.26666666666666666`}]}], "Tooltip"]& ], 
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["1", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 1.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "1", "\" example of \"", "\"sport\"", "\" misclassified as \"", 
+             "\"extracurricular\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.1`"}, "RowDefault"]}, {
+           
+           TemplateBox[{"\"Row fraction = \"", "0.08333333333333333`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{
+          1, " example of ", "sport", " misclassified as ", 
+           "extracurricular"}], 
+         Row[{"Column fraction = ", 0.1}], 
+         Row[{"Row fraction = ", 0.08333333333333333}]}], "Tooltip"]& ], 
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["3", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {1.5, 0.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "3", "\" examples of \"", "\"work\"", "\" misclassified as \"", 
+             "\"extracurricular\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.3`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Row fraction = \"", "0.2`"}, "RowDefault"]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{
+          3, " examples of ", "work", " misclassified as ", 
+           "extracurricular"}], 
+         Row[{"Column fraction = ", 0.3}], 
+         Row[{"Row fraction = ", 0.2}]}], "Tooltip"]& ]}, {
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["4", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {2.5, 4.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "4", "\" examples of \"", "\"essential\"", 
+             "\" misclassified as \"", "\"leisure\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.25`"}, "RowDefault"]}, {
+           
+           TemplateBox[{"\"Row fraction = \"", "0.3333333333333333`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{
+          4, " examples of ", "essential", " misclassified as ", "leisure"}], 
+         Row[{"Column fraction = ", 0.25}], 
+         Row[{"Row fraction = ", 0.3333333333333333}]}], "Tooltip"]& ], 
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["2", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {2.5, 3.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "2", "\" examples of \"", "\"extracurricular\"", 
+             "\" misclassified as \"", "\"leisure\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.125`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Row fraction = \"", "0.4`"}, "RowDefault"]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{
+          2, " examples of ", "extracurricular", " misclassified as ", 
+           "leisure"}], 
+         Row[{"Column fraction = ", 0.125}], 
+         Row[{"Row fraction = ", 0.4}]}], "Tooltip"]& ], 
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["4", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {2.5, 2.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "4", "\" examples of \"", "\"leisure\"", 
+             "\" correctly classified\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Precision = \"", "0.25`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Recall = \"", "0.26666666666666666`"}, 
+            "RowDefault"]}, {
+           
+           TemplateBox[{"\"FScore = \"", "0.2580645161290323`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{4, " examples of ", "leisure", " correctly classified"}], 
+         Row[{"Precision = ", 0.25}], 
+         Row[{"Recall = ", 0.26666666666666666`}], 
+         Row[{"FScore = ", 0.2580645161290323}]}], "Tooltip"]& ], 
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["4", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
           RectangleBox[{0, 0}, {1, 1}]}], {2.5, 1.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "0", "\" example of \"", "\"school\"", "\" misclassified as \"", 
+            "4", "\" examples of \"", "\"sport\"", "\" misclassified as \"", 
              "\"leisure\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
+           TemplateBox[{"\"Column fraction = \"", "0.25`"}, "RowDefault"]}, {
+           
+           TemplateBox[{"\"Row fraction = \"", "0.3333333333333333`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{0, " example of ", "school", " misclassified as ", "leisure"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
+         Row[{4, " examples of ", "sport", " misclassified as ", "leisure"}], 
+         Row[{"Column fraction = ", 0.25}], 
+         Row[{"Row fraction = ", 0.3333333333333333}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
        InsetBox[
         GraphicsBox[{
           Opacity[1.], 
           InsetBox[
-           FormBox["0", TraditionalForm], {0.5, 0.5}], 
+           FormBox["2", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
           RectangleBox[{0, 0}, {1, 1}]}], {2.5, 0.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "0", "\" example of \"", "\"sport\"", "\" misclassified as \"", 
+            "2", "\" examples of \"", "\"work\"", "\" misclassified as \"", 
              "\"leisure\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
-         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-         "Column", 
+           TemplateBox[{"\"Column fraction = \"", "0.125`"}, "RowDefault"]}, {
+           
+           TemplateBox[{"\"Row fraction = \"", "0.13333333333333333`"}, 
+            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+         DefaultBaseStyle -> "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{0, " example of ", "sport", " misclassified as ", "leisure"}], 
-         Row[{"Column fraction = ", 0.}], 
-         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ]}, {
+         Row[{2, " examples of ", "work", " misclassified as ", "leisure"}], 
+         Row[{"Column fraction = ", 0.125}], 
+         Row[{"Row fraction = ", 0.13333333333333333`}]}], "Tooltip"]& ]}, {
      TagBox[
       TooltipBox[
        InsetBox[
@@ -819,7 +686,7 @@ s2C+8g==
            
            TemplateBox[{
             "0", "\" example of \"", "\"essential\"", 
-             "\" misclassified as \"", "\"school\""}, "RowDefault"]}, {
+             "\" misclassified as \"", "\"sport\""}, "RowDefault"]}, {
            TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
            TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
@@ -828,8 +695,7 @@ s2C+8g==
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{
-          0, " example of ", "essential", " misclassified as ", "school"}], 
+         Row[{0, " example of ", "essential", " misclassified as ", "sport"}], 
          Row[{"Column fraction = ", 0.}], 
          Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
      TagBox[
@@ -846,7 +712,7 @@ s2C+8g==
            
            TemplateBox[{
             "0", "\" example of \"", "\"extracurricular\"", 
-             "\" misclassified as \"", "\"school\""}, "RowDefault"]}, {
+             "\" misclassified as \"", "\"sport\""}, "RowDefault"]}, {
            TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
            TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
@@ -857,7 +723,7 @@ s2C+8g==
        Column[{
          Row[{
           0, " example of ", "extracurricular", " misclassified as ", 
-           "school"}], 
+           "sport"}], 
          Row[{"Column fraction = ", 0.}], 
          Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
      TagBox[
@@ -866,82 +732,80 @@ s2C+8g==
         GraphicsBox[{
           Opacity[1.], 
           InsetBox[
-           FormBox["1", TraditionalForm], {0.5, 0.5}], 
+           FormBox["0", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
           RectangleBox[{0, 0}, {1, 1}]}], {3.5, 2.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "1", "\" example of \"", "\"leisure\"", "\" misclassified as \"", 
-             "\"school\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.2`"}, "RowDefault"]}, {
-           
-           TemplateBox[{"\"Row fraction = \"", "0.14285714285714285`"}, 
-            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-         DefaultBaseStyle -> "Column", 
-         GridBoxItemSize -> {
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
-      Annotation[#, 
-       Column[{
-         Row[{1, " example of ", "leisure", " misclassified as ", "school"}], 
-         Row[{"Column fraction = ", 0.2}], 
-         Row[{"Row fraction = ", 0.14285714285714285`}]}], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       InsetBox[
-        GraphicsBox[{
-          Opacity[1.], 
-          InsetBox[
-           FormBox["3", TraditionalForm], {0.5, 0.5}], 
-          Opacity[0.], 
-          RectangleBox[{0, 0}, {1, 1}]}], {3.5, 1.5}, Automatic, {1., 1.}], 
-       TagBox[
-        GridBox[{{
-           TemplateBox[{
-            "3", "\" examples of \"", "\"school\"", 
-             "\" correctly classified\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Precision = \"", "0.6`"}, "RowDefault"]}, {
-           
-           TemplateBox[{"\"Recall = \"", "0.42857142857142855`"}, 
-            "RowDefault"]}, {
-           TemplateBox[{"\"FScore = \"", "0.5`"}, "RowDefault"]}}, 
+            "0", "\" example of \"", "\"leisure\"", "\" misclassified as \"", 
+             "\"sport\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
          "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{3, " examples of ", "school", " correctly classified"}], 
-         Row[{"Precision = ", 0.6}], 
-         Row[{"Recall = ", 0.42857142857142855`}], 
-         Row[{"FScore = ", 0.5}]}], "Tooltip"]& ], 
+         Row[{0, " example of ", "leisure", " misclassified as ", "sport"}], 
+         Row[{"Column fraction = ", 0.}], 
+         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
        InsetBox[
         GraphicsBox[{
           Opacity[1.], 
           InsetBox[
-           FormBox["1", TraditionalForm], {0.5, 0.5}], 
+           FormBox["0", TraditionalForm], {0.5, 0.5}], 
+          Opacity[0.], 
+          RectangleBox[{0, 0}, {1, 1}]}], {3.5, 1.5}, Automatic, {1., 1.}], 
+       TagBox[
+        GridBox[{{
+           
+           TemplateBox[{
+            "0", "\" example of \"", "\"sport\"", 
+             "\" correctly classified\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Precision = \"", "0.`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Recall = \"", "0.`"}, "RowDefault"]}, {
+           TemplateBox[{"\"FScore = \"", "0.`"}, "RowDefault"]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
+      Annotation[#, 
+       Column[{
+         Row[{0, " example of ", "sport", " correctly classified"}], 
+         Row[{"Precision = ", 0.}], 
+         Row[{"Recall = ", 0.}], 
+         Row[{"FScore = ", 0.}]}], "Tooltip"]& ], 
+     TagBox[
+      TooltipBox[
+       InsetBox[
+        GraphicsBox[{
+          Opacity[1.], 
+          InsetBox[
+           FormBox["0", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
           RectangleBox[{0, 0}, {1, 1}]}], {3.5, 0.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "1", "\" example of \"", "\"sport\"", "\" misclassified as \"", 
-             "\"school\""}, "RowDefault"]}, {
-           TemplateBox[{"\"Column fraction = \"", "0.2`"}, "RowDefault"]}, {
-           TemplateBox[{"\"Row fraction = \"", "0.2`"}, "RowDefault"]}}, 
+            "0", "\" example of \"", "\"work\"", "\" misclassified as \"", 
+             "\"sport\""}, "RowDefault"]}, {
+           TemplateBox[{"\"Column fraction = \"", "0.`"}, "RowDefault"]}, {
+           TemplateBox[{"\"Row fraction = \"", "0.`"}, "RowDefault"]}}, 
          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
          "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{1, " example of ", "sport", " misclassified as ", "school"}], 
-         Row[{"Column fraction = ", 0.2}], 
-         Row[{"Row fraction = ", 0.2}]}], "Tooltip"]& ]}, {
+         Row[{0, " example of ", "work", " misclassified as ", "sport"}], 
+         Row[{"Column fraction = ", 0.}], 
+         Row[{"Row fraction = ", 0.}]}], "Tooltip"]& ]}, {
      TagBox[
       TooltipBox[
        InsetBox[
@@ -956,21 +820,21 @@ s2C+8g==
            
            TemplateBox[{
             "1", "\" example of \"", "\"essential\"", 
-             "\" misclassified as \"", "\"sport\""}, "RowDefault"]}, {
+             "\" misclassified as \"", "\"work\""}, "RowDefault"]}, {
            
-           TemplateBox[{"\"Column fraction = \"", "0.1111111111111111`"}, 
+           TemplateBox[{"\"Column fraction = \"", "0.058823529411764705`"}, 
             "RowDefault"]}, {
            
-           TemplateBox[{"\"Row fraction = \"", "0.3333333333333333`"}, 
+           TemplateBox[{"\"Row fraction = \"", "0.08333333333333333`"}, 
             "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
          DefaultBaseStyle -> "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{1, " example of ", "essential", " misclassified as ", "sport"}], 
-         Row[{"Column fraction = ", 0.1111111111111111}], 
-         Row[{"Row fraction = ", 0.3333333333333333}]}], "Tooltip"]& ], 
+         Row[{1, " example of ", "essential", " misclassified as ", "work"}], 
+         Row[{"Column fraction = ", 0.058823529411764705`}], 
+         Row[{"Row fraction = ", 0.08333333333333333}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
        InsetBox[
@@ -985,9 +849,9 @@ s2C+8g==
            
            TemplateBox[{
             "2", "\" examples of \"", "\"extracurricular\"", 
-             "\" misclassified as \"", "\"sport\""}, "RowDefault"]}, {
+             "\" misclassified as \"", "\"work\""}, "RowDefault"]}, {
            
-           TemplateBox[{"\"Column fraction = \"", "0.2222222222222222`"}, 
+           TemplateBox[{"\"Column fraction = \"", "0.11764705882352941`"}, 
             "RowDefault"]}, {
            TemplateBox[{"\"Row fraction = \"", "0.4`"}, "RowDefault"]}}, 
          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
@@ -998,8 +862,8 @@ s2C+8g==
        Column[{
          Row[{
           2, " examples of ", "extracurricular", " misclassified as ", 
-           "sport"}], 
-         Row[{"Column fraction = ", 0.2222222222222222}], 
+           "work"}], 
+         Row[{"Column fraction = ", 0.11764705882352941`}], 
          Row[{"Row fraction = ", 0.4}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
@@ -1015,81 +879,82 @@ s2C+8g==
            
            TemplateBox[{
             "1", "\" example of \"", "\"leisure\"", "\" misclassified as \"", 
-             "\"sport\""}, "RowDefault"]}, {
+             "\"work\""}, "RowDefault"]}, {
            
-           TemplateBox[{"\"Column fraction = \"", "0.1111111111111111`"}, 
+           TemplateBox[{"\"Column fraction = \"", "0.058823529411764705`"}, 
             "RowDefault"]}, {
            
-           TemplateBox[{"\"Row fraction = \"", "0.14285714285714285`"}, 
+           TemplateBox[{"\"Row fraction = \"", "0.06666666666666667`"}, 
             "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
          DefaultBaseStyle -> "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{1, " example of ", "leisure", " misclassified as ", "sport"}], 
-         Row[{"Column fraction = ", 0.1111111111111111}], 
-         Row[{"Row fraction = ", 0.14285714285714285`}]}], "Tooltip"]& ], 
+         Row[{1, " example of ", "leisure", " misclassified as ", "work"}], 
+         Row[{"Column fraction = ", 0.058823529411764705`}], 
+         Row[{"Row fraction = ", 0.06666666666666667}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
        InsetBox[
         GraphicsBox[{
           Opacity[1.], 
           InsetBox[
-           FormBox["1", TraditionalForm], {0.5, 0.5}], 
+           FormBox["5", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
           RectangleBox[{0, 0}, {1, 1}]}], {4.5, 1.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "1", "\" example of \"", "\"school\"", "\" misclassified as \"", 
-             "\"sport\""}, "RowDefault"]}, {
+            "5", "\" examples of \"", "\"sport\"", "\" misclassified as \"", 
+             "\"work\""}, "RowDefault"]}, {
            
-           TemplateBox[{"\"Column fraction = \"", "0.1111111111111111`"}, 
+           TemplateBox[{"\"Column fraction = \"", "0.29411764705882354`"}, 
             "RowDefault"]}, {
            
-           TemplateBox[{"\"Row fraction = \"", "0.14285714285714285`"}, 
+           TemplateBox[{"\"Row fraction = \"", "0.4166666666666667`"}, 
             "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
          DefaultBaseStyle -> "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{1, " example of ", "school", " misclassified as ", "sport"}], 
-         Row[{"Column fraction = ", 0.1111111111111111}], 
-         Row[{"Row fraction = ", 0.14285714285714285`}]}], "Tooltip"]& ], 
+         Row[{5, " examples of ", "sport", " misclassified as ", "work"}], 
+         Row[{"Column fraction = ", 0.29411764705882354`}], 
+         Row[{"Row fraction = ", 0.4166666666666667}]}], "Tooltip"]& ], 
      TagBox[
       TooltipBox[
        InsetBox[
         GraphicsBox[{
           Opacity[1.], 
           InsetBox[
-           FormBox["4", TraditionalForm], {0.5, 0.5}], 
+           FormBox["8", TraditionalForm], {0.5, 0.5}], 
           Opacity[0.], 
           RectangleBox[{0, 0}, {1, 1}]}], {4.5, 0.5}, Automatic, {1., 1.}], 
        TagBox[
         GridBox[{{
            
            TemplateBox[{
-            "4", "\" examples of \"", "\"sport\"", 
+            "8", "\" examples of \"", "\"work\"", 
              "\" correctly classified\""}, "RowDefault"]}, {
            
-           TemplateBox[{"\"Precision = \"", "0.4444444444444444`"}, 
+           TemplateBox[{"\"Precision = \"", "0.47058823529411764`"}, 
             "RowDefault"]}, {
-           TemplateBox[{"\"Recall = \"", "0.8`"}, "RowDefault"]}, {
            
-           TemplateBox[{"\"FScore = \"", "0.5714285714285715`"}, 
-            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-         DefaultBaseStyle -> "Column", 
+           TemplateBox[{"\"Recall = \"", "0.5333333333333333`"}, 
+            "RowDefault"]}, {
+           TemplateBox[{"\"FScore = \"", "0.5`"}, "RowDefault"]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
       Annotation[#, 
        Column[{
-         Row[{4, " examples of ", "sport", " correctly classified"}], 
-         Row[{"Precision = ", 0.4444444444444444}], 
-         Row[{"Recall = ", 0.8}], 
-         Row[{"FScore = ", 0.5714285714285715}]}], "Tooltip"]& ]}, 
+         Row[{8, " examples of ", "work", " correctly classified"}], 
+         Row[{"Precision = ", 0.47058823529411764`}], 
+         Row[{"Recall = ", 0.5333333333333333}], 
+         Row[{"FScore = ", 0.5}]}], "Tooltip"]& ]}, 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1100,18 +965,17 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "3", "\" example\"", "\"s\"", "\" of class \"", "\"essential\""}, 
+           "12", "\" example\"", "\"s\"", "\" of class \"", "\"essential\""}, 
            "RowDefault"]}, {
-          
-          TemplateBox[{"\"Recall = \"", "0.6666666666666666`"}, 
-           "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-        DefaultBaseStyle -> "Column", 
+          TemplateBox[{"\"Recall = \"", "0.5`"}, "RowDefault"]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{3, " example", "s", " of class ", "essential"}], 
-        Row[{"Recall = ", 0.6666666666666666}]}], "Tooltip"]& ], 
+        Row[{12, " example", "s", " of class ", "essential"}], 
+        Row[{"Recall = ", 0.5}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1124,7 +988,7 @@ s2C+8g==
           TemplateBox[{
            "5", "\" example\"", "\"s\"", "\" of class \"", 
             "\"extracurricular\""}, "RowDefault"]}, {
-          TemplateBox[{"\"Recall = \"", "0.6`"}, "RowDefault"]}}, 
+          TemplateBox[{"\"Recall = \"", "0.2`"}, "RowDefault"]}}, 
         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
         "Column", 
         GridBoxItemSize -> {
@@ -1132,7 +996,7 @@ s2C+8g==
      Annotation[#, 
       Column[{
         Row[{5, " example", "s", " of class ", "extracurricular"}], 
-        Row[{"Recall = ", 0.6}]}], "Tooltip"]& ], 
+        Row[{"Recall = ", 0.2}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1143,18 +1007,18 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "7", "\" example\"", "\"s\"", "\" of class \"", "\"leisure\""}, 
+           "15", "\" example\"", "\"s\"", "\" of class \"", "\"leisure\""}, 
            "RowDefault"]}, {
           
-          TemplateBox[{"\"Recall = \"", "0.2857142857142857`"}, 
+          TemplateBox[{"\"Recall = \"", "0.26666666666666666`"}, 
            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
         DefaultBaseStyle -> "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{7, " example", "s", " of class ", "leisure"}], 
-        Row[{"Recall = ", 0.2857142857142857}]}], "Tooltip"]& ], 
+        Row[{15, " example", "s", " of class ", "leisure"}], 
+        Row[{"Recall = ", 0.26666666666666666`}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1165,18 +1029,17 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "7", "\" example\"", "\"s\"", "\" of class \"", "\"school\""}, 
+           "12", "\" example\"", "\"s\"", "\" of class \"", "\"sport\""}, 
            "RowDefault"]}, {
-          
-          TemplateBox[{"\"Recall = \"", "0.42857142857142855`"}, 
-           "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-        DefaultBaseStyle -> "Column", 
+          TemplateBox[{"\"Recall = \"", "0.`"}, "RowDefault"]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{7, " example", "s", " of class ", "school"}], 
-        Row[{"Recall = ", 0.42857142857142855`}]}], "Tooltip"]& ], 
+        Row[{12, " example", "s", " of class ", "sport"}], 
+        Row[{"Recall = ", 0.}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1187,17 +1050,18 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "5", "\" example\"", "\"s\"", "\" of class \"", "\"sport\""}, 
+           "15", "\" example\"", "\"s\"", "\" of class \"", "\"work\""}, 
            "RowDefault"]}, {
-          TemplateBox[{"\"Recall = \"", "0.8`"}, "RowDefault"]}}, 
-        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-        "Column", 
+          
+          TemplateBox[{"\"Recall = \"", "0.5333333333333333`"}, 
+           "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+        DefaultBaseStyle -> "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{5, " example", "s", " of class ", "sport"}], 
-        Row[{"Recall = ", 0.8}]}], "Tooltip"]& ], 
+        Row[{15, " example", "s", " of class ", "work"}], 
+        Row[{"Recall = ", 0.5333333333333333}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1208,17 +1072,17 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "2", "\" example\"", "\"s\"", "\" classified as \"", 
+           "16", "\" example\"", "\"s\"", "\" classified as \"", 
             "\"essential\""}, "RowDefault"]}, {
-          TemplateBox[{"\"Precision = \"", "1.`"}, "RowDefault"]}}, 
+          TemplateBox[{"\"Precision = \"", "0.375`"}, "RowDefault"]}}, 
         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
         "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{2, " example", "s", " classified as ", "essential"}], 
-        Row[{"Precision = ", 1.}]}], "Tooltip"]& ], 
+        Row[{16, " example", "s", " classified as ", "essential"}], 
+        Row[{"Precision = ", 0.375}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1229,18 +1093,17 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "9", "\" example\"", "\"s\"", "\" classified as \"", 
+           "10", "\" example\"", "\"s\"", "\" classified as \"", 
             "\"extracurricular\""}, "RowDefault"]}, {
-          
-          TemplateBox[{"\"Precision = \"", "0.3333333333333333`"}, 
-           "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-        DefaultBaseStyle -> "Column", 
+          TemplateBox[{"\"Precision = \"", "0.1`"}, "RowDefault"]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{9, " example", "s", " classified as ", "extracurricular"}], 
-        Row[{"Precision = ", 0.3333333333333333}]}], "Tooltip"]& ], 
+        Row[{10, " example", "s", " classified as ", "extracurricular"}], 
+        Row[{"Precision = ", 0.1}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1251,17 +1114,17 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "2", "\" example\"", "\"s\"", "\" classified as \"", 
+           "16", "\" example\"", "\"s\"", "\" classified as \"", 
             "\"leisure\""}, "RowDefault"]}, {
-          TemplateBox[{"\"Precision = \"", "1.`"}, "RowDefault"]}}, 
+          TemplateBox[{"\"Precision = \"", "0.25`"}, "RowDefault"]}}, 
         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
         "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{2, " example", "s", " classified as ", "leisure"}], 
-        Row[{"Precision = ", 1.}]}], "Tooltip"]& ], 
+        Row[{16, " example", "s", " classified as ", "leisure"}], 
+        Row[{"Precision = ", 0.25}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1272,17 +1135,17 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "5", "\" example\"", "\"s\"", "\" classified as \"", "\"school\""},
-            "RowDefault"]}, {
-          TemplateBox[{"\"Precision = \"", "0.6`"}, "RowDefault"]}}, 
+           "0", "\" example\"", "\"\"", "\" classified as \"", "\"sport\""}, 
+           "RowDefault"]}, {
+          TemplateBox[{"\"Precision = \"", "0.`"}, "RowDefault"]}}, 
         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
         "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{5, " example", "s", " classified as ", "school"}], 
-        Row[{"Precision = ", 0.6}]}], "Tooltip"]& ], 
+        Row[{0, " example", "", " classified as ", "sport"}], 
+        Row[{"Precision = ", 0.}]}], "Tooltip"]& ], 
     TagBox[
      TooltipBox[
       InsetBox[
@@ -1293,18 +1156,18 @@ s2C+8g==
        GridBox[{{
           
           TemplateBox[{
-           "9", "\" example\"", "\"s\"", "\" classified as \"", "\"sport\""}, 
+           "17", "\" example\"", "\"s\"", "\" classified as \"", "\"work\""}, 
            "RowDefault"]}, {
           
-          TemplateBox[{"\"Precision = \"", "0.4444444444444444`"}, 
+          TemplateBox[{"\"Precision = \"", "0.47058823529411764`"}, 
            "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
         DefaultBaseStyle -> "Column", 
         GridBoxItemSize -> {
          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]], 
      Annotation[#, 
       Column[{
-        Row[{9, " example", "s", " classified as ", "sport"}], 
-        Row[{"Precision = ", 0.4444444444444444}]}], "Tooltip"]& ]},
+        Row[{17, " example", "s", " classified as ", "work"}], 
+        Row[{"Precision = ", 0.47058823529411764`}]}], "Tooltip"]& ]},
   Frame->True,
   FrameLabel->{
     FormBox["\"predicted class\"", TraditionalForm], 
@@ -1320,29 +1183,28 @@ s2C+8g==
         RotationBox["\"leisure\"", BoxRotation -> 0.], TraditionalForm]}, {
       1.5, 
        FormBox[
-        RotationBox["\"school\"", BoxRotation -> 0.], TraditionalForm]}, {0.5, 
+        RotationBox["\"sport\"", BoxRotation -> 0.], TraditionalForm]}, {0.5, 
        FormBox[
-        RotationBox["\"sport\"", BoxRotation -> 0.], TraditionalForm]}}, {{
-      4.5, 
-       FormBox["3", TraditionalForm]}, {3.5, 
+        RotationBox["\"work\"", BoxRotation -> 0.], TraditionalForm]}}, {{4.5, 
+       FormBox["12", TraditionalForm]}, {3.5, 
        FormBox["5", TraditionalForm]}, {2.5, 
-       FormBox["7", TraditionalForm]}, {1.5, 
-       FormBox["7", TraditionalForm]}, {0.5, 
-       FormBox["5", TraditionalForm]}}}, {{{0.5, 
+       FormBox["15", TraditionalForm]}, {1.5, 
+       FormBox["12", TraditionalForm]}, {0.5, 
+       FormBox["15", TraditionalForm]}}}, {{{0.5, 
        FormBox[
-        RotationBox["2", BoxRotation -> 1.5707963267948966`], 
+        RotationBox["16", BoxRotation -> 1.5707963267948966`], 
         TraditionalForm]}, {1.5, 
        FormBox[
-        RotationBox["9", BoxRotation -> 1.5707963267948966`], 
+        RotationBox["10", BoxRotation -> 1.5707963267948966`], 
         TraditionalForm]}, {2.5, 
        FormBox[
-        RotationBox["2", BoxRotation -> 1.5707963267948966`], 
+        RotationBox["16", BoxRotation -> 1.5707963267948966`], 
         TraditionalForm]}, {3.5, 
        FormBox[
-        RotationBox["5", BoxRotation -> 1.5707963267948966`], 
+        RotationBox["0", BoxRotation -> 1.5707963267948966`], 
         TraditionalForm]}, {4.5, 
        FormBox[
-        RotationBox["9", BoxRotation -> 1.5707963267948966`], 
+        RotationBox["17", BoxRotation -> 1.5707963267948966`], 
         TraditionalForm]}}, {{0.5, 
        FormBox[
         RotationBox["\"essential\"", BoxRotation -> 1.5707963267948966`], 
@@ -1355,10 +1217,10 @@ s2C+8g==
         RotationBox["\"leisure\"", BoxRotation -> 1.5707963267948966`], 
         TraditionalForm]}, {3.5, 
        FormBox[
-        RotationBox["\"school\"", BoxRotation -> 1.5707963267948966`], 
+        RotationBox["\"sport\"", BoxRotation -> 1.5707963267948966`], 
         TraditionalForm]}, {4.5, 
        FormBox[
-        RotationBox["\"sport\"", BoxRotation -> 1.5707963267948966`], 
+        RotationBox["\"work\"", BoxRotation -> 1.5707963267948966`], 
         TraditionalForm]}}}},
   FrameTicksStyle->12,
   GridLinesStyle->Directive[
@@ -1369,11 +1231,17 @@ s2C+8g==
     "DefaultPlotStyle" -> Automatic, "DomainPadding" -> Scaled[0.02], 
     "RangePadding" -> Scaled[0.05]},
   PlotRangePadding->None]], "Output",
- CellChangeTimes->{3.717610057166261*^9, 3.7176101228138494`*^9, 
-  3.7176102414954057`*^9, 3.7176104075261183`*^9, 3.7176105105160456`*^9, 
-  3.7176105656546493`*^9, 
-  3.717612090970145*^9},ExpressionUUID->"7fa713de-8ec9-4a35-836a-\
-6b60ab4a9acc"]
+ CellChangeTimes->{
+  3.717610057166261*^9, 3.7176101228138494`*^9, 3.7176102414954057`*^9, 
+   3.7176104075261183`*^9, 3.7176105105160456`*^9, 3.7176105656546493`*^9, 
+   3.717612090970145*^9, 3.7176135863950367`*^9, 3.7176141085804367`*^9, 
+   3.7176142212402534`*^9, {3.7176143522720375`*^9, 3.7176143816999416`*^9}, 
+   3.71761519443439*^9, 3.717615345947623*^9, 3.7176154959205685`*^9, 
+   3.7176155665410023`*^9, 3.717615668164048*^9, 3.7176157437335634`*^9, 
+   3.7176158152889585`*^9, 3.7176158660990257`*^9, {3.7176159040029345`*^9, 
+   3.717615922118971*^9}, 3.7176160287522244`*^9, 3.7176160959894295`*^9, 
+   3.7176167520674925`*^9},ExpressionUUID->"185876e2-df14-4b1c-ae82-\
+0b9f25716dba"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1382,43 +1250,114 @@ Cell[BoxData[
  RowBox[{
   RowBox[{
    RowBox[{"{", 
-    RowBox[{"test2", ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Transpose", "[", 
+       RowBox[{"Partition", "[", 
+        RowBox[{"test1", ",", "2"}], "]"}], "]"}], "[", 
+      RowBox[{"[", "1", "]"}], "]"}], ",", 
      RowBox[{
       RowBox[{
-       RowBox[{"c", "[", "#", "]"}], "&"}], "/@", "test2"}]}], "}"}], "//", 
-   "Transpose"}], "//", "TableForm"}]], "Input",
- CellChangeTimes->{{3.717610753461049*^9, 
-  3.717610772724512*^9}},ExpressionUUID->"36952f10-aa1c-4821-ab4a-\
-4753ad5da7b4"],
+       RowBox[{"c", "[", "#", "]"}], "&"}], "/@", 
+      RowBox[{
+       RowBox[{"Transpose", "[", 
+        RowBox[{"Partition", "[", 
+         RowBox[{"test1", ",", "2"}], "]"}], "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"Transpose", "[", 
+       RowBox[{"Partition", "[", 
+        RowBox[{"test1", ",", "2"}], "]"}], "]"}], "[", 
+      RowBox[{"[", "2", "]"}], "]"}]}], "}"}], "//", "Transpose"}], "//", 
+  "TableForm"}]], "Input",
+ CellChangeTimes->{{3.717614593799596*^9, 
+  3.71761465537021*^9}},ExpressionUUID->"1af8b897-244c-47c8-b402-\
+2486bd26ca75"],
 
 Cell[BoxData[
  TagBox[GridBox[{
-    {"\<\"covfefe\"\>", "\<\"leisure\"\>"},
-    {"\<\"ieatass\"\>", "\<\"leisure\"\>"},
-    {"\<\"canyoudecodethislol\"\>", "\<\"leisure\"\>"},
-    {"\<\"paino\"\>", "\<\"leisure\"\>"},
-    {"\<\"play the voilaon \"\>", "\<\"extracurricular\"\>"},
-    {"\<\"listen to the clelo\"\>", "\<\"extracurricular\"\>"},
-    {"\<\"finish meth homework\"\>", "\<\"sport\"\>"},
-    {"\<\"finish meth\"\>", "\<\"sport\"\>"},
-    {"\<\"finish \"\>", "\<\"extracurricular\"\>"},
-    {"\<\"finnish\"\>", "\<\"leisure\"\>"},
-    {"\<\"abcdefjkl;\"\>", "\<\"essential\"\>"},
-    {"\<\"mynameisjeff\"\>", "\<\"leisure\"\>"},
-    {"\<\"fuckyou\"\>", "\<\"leisure\"\>"},
-    {"\<\"bitchass\"\>", "\<\"leisure\"\>"},
-    {"\<\"isthisgoodtestingdata\"\>", "\<\"leisure\"\>"},
-    {"\<\"whyareyoureadingthis\"\>", "\<\"leisure\"\>"},
-    {"\<\"stopreadingthis\"\>", "\<\"leisure\"\>"},
-    {"\<\"this is for the machine, Adam, stop\"\>", "\<\"extracurricular\"\>"},
-    {"\<\"mynameisJeff once again\"\>", "\<\"sport\"\>"},
-    {"\<\"I eata sss\"\>", "\<\"school\"\>"},
-    {"\<\"pingpang\"\>", "\<\"leisure\"\>"},
-    {"\<\"horsebackridoignw \"\>", "\<\"extracurricular\"\>"},
-    {"\<\"english S.A.\"\>", "\<\"school\"\>"},
-    {"\<\"S.A.\"\>", "\<\"leisure\"\>"},
-    {"\<\"I'm going to watch SPONGeBab\"\>", "\<\"school\"\>"},
-    {"\<\"I'm going to watch a documentairee\"\>", "\<\"extracurricular\"\>"}
+    {"\<\"eat apple\"\>", "\<\"leisure\"\>", "\<\"essential\"\>"},
+    {"\<\"play piano\"\>", "\<\"leisure\"\>", "\<\"extracurricular\"\>"},
+    {"\<\"play video games\"\>", "\<\"leisure\"\>", "\<\"leisure\"\>"},
+    {"\<\"finish math homework\"\>", "\<\"work\"\>", "\<\"work\"\>"},
+    {"\<\"drink wine\"\>", "\<\"essential\"\>", "\<\"essential\"\>"},
+    {"\<\"play violin\"\>", "\<\"leisure\"\>", "\<\"extracurricular\"\>"},
+    {"\<\"drink coffee\"\>", "\<\"essential\"\>", "\<\"essential\"\>"},
+    {"\<\"play badminton\"\>", "\<\"leisure\"\>", "\<\"sport\"\>"},
+    {"\<\"play tennis\"\>", "\<\"leisure\"\>", "\<\"sport\"\>"},
+    {"\<\"write essay\"\>", "\<\"work\"\>", "\<\"work\"\>"},
+    {"\<\"have cheerleading practice\"\>", "\<\"essential\"\>", \
+"\<\"sport\"\>"},
+    {"\<\"attend club meeting\"\>", "\<\"extracurricular\"\>", \
+"\<\"extracurricular\"\>"},
+    {"\<\"write symphony\"\>", "\<\"work\"\>", "\<\"extracurricular\"\>"},
+    {"\<\"write proof for P = NP\"\>", "\<\"leisure\"\>", "\<\"work\"\>"},
+    {"\<\"prove the Riemann hypothesis\"\>", "\<\"work\"\>", "\<\"work\"\>"},
+    {"\<\"do psychology homework\"\>", "\<\"work\"\>", "\<\"work\"\>"},
+    {"\<\"prepare notes for tomorrow\"\>", "\<\"work\"\>", "\<\"work\"\>"},
+    {"\<\"meditate\"\>", "\<\"extracurricular\"\>", "\<\"leisure\"\>"},
+    {"\<\"write announcement\"\>", "\<\"essential\"\>", "\<\"work\"\>"},
+    {"\<\"go horseback riding\"\>", "\<\"work\"\>", "\<\"extracurricular\"\>"},
+    {"\<\"I'm going to go play ball tomororow \"\>", "\<\"leisure\"\>", \
+"\<\"sport\"\>"},
+    {"\<\"I'm going to finish my history work tonight\"\>", "\<\"work\"\>", "\
+\<\"work\"\>"},
+    {"\<\"I'm going to go gokarting\"\>", "\<\"work\"\>", "\<\"leisure\"\>"},
+    {"\<\"I'm playing paintball later\"\>", "\<\"leisure\"\>", "\<\"leisure\"\
+\>"},
+    {"\<\"I'm taking a roadtrip at lunch\"\>", "\<\"essential\"\>", \
+"\<\"leisure\"\>"},
+    {"\<\"I'm going for a city ride tonight\"\>", "\<\"essential\"\>", \
+"\<\"leisure\"\>"},
+    {"\<\"I'm spinning my fidget spinner later\"\>", "\<\"essential\"\>", "\<\
+\"leisure\"\>"},
+    {"\<\"I'm playing my phone games later\"\>", "\<\"leisure\"\>", \
+"\<\"leisure\"\>"},
+    {"\<\"I'm eating ass\"\>", "\<\"essential\"\>", "\<\"leisure\"\>"},
+    {"\<\"I'm going to a Hackathon\"\>", "\<\"essential\"\>", \
+"\<\"leisure\"\>"},
+    {"\<\"I'm reading Spivak calculus\"\>", "\<\"leisure\"\>", "\<\"work\"\>"},
+    {"\<\"I'm reading Harry Potter later\"\>", "\<\"essential\"\>", "\<\"work\
+\"\>"},
+    {"\<\"I'm going to the gym to bodybuild\"\>", "\<\"extracurricular\"\>", \
+"\<\"sport\"\>"},
+    {"\<\"I'm going to buy pizza\"\>", "\<\"leisure\"\>", "\<\"essential\"\>"},
+    {"\<\"I'm going to the arcade\"\>", "\<\"essential\"\>", \
+"\<\"leisure\"\>"},
+    {"\<\"I'll be swimming\"\>", "\<\"work\"\>", "\<\"sport\"\>"},
+    {"\<\"I'll be hoola-hooping\"\>", "\<\"work\"\>", "\<\"sport\"\>"},
+    {"\<\"Eat a salad\"\>", "\<\"leisure\"\>", "\<\"essential\"\>"},
+    {"\<\"Eat banana\"\>", "\<\"essential\"\>", "\<\"essential\"\>"},
+    {"\<\"I'll be consuming slices of pizza\"\>", "\<\"leisure\"\>", \
+"\<\"essential\"\>"},
+    {"\<\"I'll be going to the atrium to get sushi\"\>", "\<\"extracurricular\
+\"\>", "\<\"essential\"\>"},
+    {"\<\"drink water\"\>", "\<\"essential\"\>", "\<\"essential\"\>"},
+    {"\<\"drink champagne\"\>", "\<\"essential\"\>", "\<\"essential\"\>"},
+    {"\<\"eat ramen\"\>", "\<\"essential\"\>", "\<\"essential\"\>"},
+    {"\<\"I'll be fencing later\"\>", "\<\"essential\"\>", "\<\"sport\"\>"},
+    {"\<\"I'll be swordfighting tonight\"\>", "\<\"work\"\>", "\<\"sport\"\>"},
+    {"\<\"I'll be watching a hockey game\"\>", "\<\"leisure\"\>", \
+"\<\"leisure\"\>"},
+    {"\<\"I'll be playing in a hockey game\"\>", "\<\"leisure\"\>", \
+"\<\"sport\"\>"},
+    {"\<\"I'll be reading the AoPS Volume 2\"\>", "\<\"extracurricular\"\>", \
+"\<\"work\"\>"},
+    {"\<\"I'll be cooking food\"\>", "\<\"work\"\>", "\<\"essential\"\>"},
+    {"\<\"I'll be hoolahooping\"\>", "\<\"work\"\>", "\<\"sport\"\>"},
+    {"\<\"Sailing\"\>", "\<\"work\"\>", "\<\"sport\"\>"},
+    {"\<\"write emails\"\>", "\<\"work\"\>", "\<\"work\"\>"},
+    {"\<\"write psychology paper\"\>", "\<\"work\"\>", "\<\"work\"\>"},
+    {"\<\"Watch lectures on MIT OCW\"\>", "\<\"extracurricular\"\>", \
+"\<\"work\"\>"},
+    {"\<\"I'll be doing my interview at Google \"\>", \
+"\<\"extracurricular\"\>", "\<\"work\"\>"},
+    {"\<\"I'll be watching TV\"\>", "\<\"extracurricular\"\>", "\<\"leisure\"\
+\>"},
+    {"\<\"I'll be watching a movie\"\>", "\<\"extracurricular\"\>", \
+"\<\"leisure\"\>"},
+    {"\<\"I'll be listening to music\"\>", "\<\"extracurricular\"\>", \
+"\<\"leisure\"\>"}
    },
    GridBoxAlignment->{
     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -1432,131 +1371,76 @@ Cell[BoxData[
        Offset[0.2]}, "RowsIndexed" -> {}}],
   Function[BoxForm`e$, 
    TableForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{{3.7176107591405325`*^9, 3.7176107734525604`*^9}, 
-   3.7176120911322603`*^9},ExpressionUUID->"1c2aad42-cb41-4d38-bca1-\
-bb5e5bf016f0"]
+ CellChangeTimes->{{3.717614621972031*^9, 3.7176146558470736`*^9}, 
+   3.7176151947941465`*^9, 3.7176153462918673`*^9, 3.717615496271818*^9, 
+   3.7176155669307785`*^9, 3.7176156685122967`*^9, 3.717615744060796*^9, 
+   3.71761581564221*^9, 3.717615866451277*^9, {3.7176159043671937`*^9, 
+   3.7176159225457745`*^9}, 3.7176160290904655`*^9, 3.7176160963907247`*^9, 
+   3.7176167524112377`*^9},ExpressionUUID->"0c053894-fc3f-48f0-9d51-\
+5ca29163f2ec"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"Plot", "[", 
-  RowBox[{
-   RowBox[{"69", 
-    RowBox[{"LogisticSigmoid", "[", 
-     RowBox[{
-      RowBox[{"(", 
-       RowBox[{"x", "-", "30"}], ")"}], "/", "6.9"}], "]"}]}], ",", 
-   RowBox[{"{", 
-    RowBox[{"x", ",", "0", ",", "60"}], "}"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.7176121591774807`*^9, 
-  3.717612244740363*^9}},ExpressionUUID->"6867365a-c3ec-4c05-b718-\
-9fdb61512443"],
-
-Cell[BoxData[
- GraphicsBox[{{{}, {}, 
-    TagBox[
-     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
-      1.], LineBox[CompressedData["
-1:eJwVzns01HkABXDH1KJtypJMXtMDaz1Sijz7XYaZZvjyU1H2JHnmbB6bGknl
-lSJKuyiPHlsSu4no2NajEC09TrWKZtJGUjrZiZExXln72z/uuefzzz13RUjs
-5nBVFRUVwuT/VvY+uGecXbtxzDIAmjYyqusi56CrNJfi6c6v1PWQUdB5GsKR
-llAnBCXtFttlVDx9TcKS3qTW7c9fkZgko74Z1s2dkrRS6VWVgdWPZFTfbe9Y
-heQZNflSxTEr8hPFNx56PSp5S9U3KodWXx+mpiQbzsglnyk9//Tt+VVyqo1X
-XtpZwkLYeoHDkKqCMuirHwyxZOOlZf/RwNoJaklU0DU1njY+iKuWcCZnqNy1
-/EZvPw4av+W+9a5TwcvCNS2jmoYINzsVtes2C9mlyU9Vl60A+7LEn1uoBt38
-gRN5F1Yhc0GHQZH2QmRsFW58pjRBNC/uaP1hTexzuBz0IM0MLnNKaXSBNtxH
-phNjBsxxb9mesuGJpUh19g3Ws7eCU4Io5dl9PThWFdUmNVtj3tc/9lvlcBE1
-OZpyn70Wf6fHxWPrSkxZaPZa+dlANaUgQe2QCZwrrl86e3YduDLb6puzZhjV
-Eu3yb12Pq599Yp3LLfHu5C7/ODU7dLs4PHfMWAPhyAHhe7sN+PCGHIi4bwNZ
-qPq+2mR7zEZNj12IsQXfWFc1o9UBZ1PKG87Z20PrsWlO9YgjkgaEbX8pHWGQ
-eYO2s3OG2anTje/YG1Fo4aCpvdsF4qcWQcoU4KGeq+3Yzxvx3lxf7Kd0haNB
-60/WLyiwskK2CDN5WMQq2R+cBlwXGHR0K91hlMp1DjB1hcLI/zFLzIeGyY5b
-mztcMRgk2KMuFWC1y7IbBwLdYJidpXWHLURcr1abSIWHQ6dJTzVPhJGxk37C
-Qh7S+tx2R3h6QmDdXiy0csfs4mPibFsvNI05zUw8cUeP7JjfXQ5BjKVNT2e4
-B+oVkXeyughchsO6AjT4mPJpq9ue4Q0PYw5hl/DBaj7yWsLxgVlKVkLrBgEe
-FScMWp/xgXm4Q7NJjwA1ga+6u+bRCG+KTK/duwmmB00fpa6j0XypK2xUR4j+
-oi+xTTtpKH6dm7D+Q4i9h/e016XRCDWp0CgmIvyQuzBs0y80Rs3z7G7KRfBy
-G7ySU0+jrnSmfzzTEwvY0fleT2h8774KTkZe6K2p+Legj4Z+dEb96hYvxO14
-E71vhIbOgqgaso1g0L0vVDZDo5R3JFEeQODkdu849wsNmyM5vLwdBMempEc3
-M/aWV3dLgwm2tM8urGN8/MX4VGgUgYOz6c7UWRqTJcluiakERhyeNnuORo9T
-3vOyCoKObXnJGqq+iBSXnhdWEXDlGfr2jJVVv4fLqgk6zWT5EYy1Vkon1t4i
-WK6MWN7G2FPd0OBOC8Hdmp7ziSxf3O4qC3veTVB54TvXgXm+EC2qs4qXEgQb
-XWxePN8XUsEDJecV8+eKuqEzY0XDP5k73xBc0+aK8xlbXV5T+XGIIC/p43ne
-V8xej2v8yU8EIallOrGMRUu2UNZygsdFS2OKGUdkiDv3jxM8DI1ukjNWtBwv
-1p0k+LMo7Za+mi/SpgtCG6YJPIbLc/iMNdf/Zhk4SyA/pODvZXwxumF8bo7g
-KknuO8f4P/IIKmk=
-       "]]},
-     Annotation[#, "Charting`Private`Tag$129164#1"]& ]}, {}, {}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{0, 0},
-  DisplayFunction->Identity,
-  Frame->{{False, False}, {False, False}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, 
-     Charting`ScaledFrameTicks[{Identity, Identity}]}, {Automatic, 
-     Charting`ScaledFrameTicks[{Identity, Identity}]}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  ImagePadding->All,
-  Method->{
-   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
-    AbsolutePointSize[6], "ScalingFunctions" -> None, 
-    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Identity[#]& )[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Identity[#]& )[
-         Part[#, 2]]}& )}},
-  PlotRange->{{0, 60}, {0., 68.11888873512233}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.05], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{{3.717612165844139*^9, 
-  3.717612245201599*^9}},ExpressionUUID->"a2021d50-8652-46ff-8923-\
-be41ff4afff3"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Export", "[", 
-  RowBox[{
-  "\"\<C:\\\\Users\\\\Adam \
-Yu\\\\source\\\\repos\\\\PeacefulExpedition\\\\sigmoid.csv\>\"", ",", 
+ RowBox[{"(*", 
+  RowBox[{"Plot", "[", 
    RowBox[{
-    RowBox[{"Table", "[", 
-     RowBox[{
-      RowBox[{"69", 
-       RowBox[{"LogisticSigmoid", "[", 
+    RowBox[{"Piecewise", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
         RowBox[{
-         RowBox[{"(", 
-          RowBox[{"x", "-", "30"}], ")"}], "/", "6.9"}], "]"}]}], ",", 
-      RowBox[{"{", 
-       RowBox[{"x", ",", "0", ",", "60"}], "}"}]}], "]"}], "//", "Round"}]}], 
-  "]"}]], "Input",
- CellChangeTimes->{{3.7176118282956505`*^9, 3.717611980261493*^9}, 
-   3.717612259653646*^9, 
-   3.7176123254263296`*^9},ExpressionUUID->"0c916786-6ab6-46e2-8a25-\
-ad0afc74e1a1"],
+         RowBox[{"69", 
+          RowBox[{"LogisticSigmoid", "[", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"x", "-", "30"}], ")"}], "/", "6.9"}], "]"}]}], ",", 
+         RowBox[{"x", "\[LessEqual]", "60"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"x", "/", "6.9"}], "+", "59.5"}], ",", 
+         RowBox[{"x", ">", "60"}]}], "}"}]}], "}"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", 
+      RowBox[{"60", "*", "24"}]}], "}"}]}], "]"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7176121591774807`*^9, 3.717612244740363*^9}, {
+  3.7176132333646235`*^9, 
+  3.717613431357586*^9}},ExpressionUUID->"899415c8-5714-44de-8d01-\
+64e48b22c93a"],
 
-Cell[BoxData["\<\"C:\\\\Users\\\\Adam \
-Yu\\\\source\\\\repos\\\\PeacefulExpedition\\\\sigmoid.csv\"\>"], "Output",
- CellChangeTimes->{{3.7176118594852233`*^9, 3.7176119850754957`*^9}, 
-   3.7176120912068186`*^9, 3.717612263979142*^9, 
-   3.7176123257175417`*^9},ExpressionUUID->"09cbe90c-302f-4118-981c-\
-42e586600633"]
-}, Open  ]]
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Export", "[", 
+   RowBox[{
+   "\"\<C:\\\\Users\\\\Adam \
+Yu\\\\source\\\\repos\\\\PeacefulExpedition\\\\sigmoid.csv\>\"", ",", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Piecewise", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"69", 
+             RowBox[{"LogisticSigmoid", "[", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"x", "-", "30"}], ")"}], "/", "6.9"}], "]"}]}], ",", 
+            RowBox[{"x", "\[LessEqual]", "60"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"x", "/", "6.9"}], "+", "59.5"}], ",", 
+            RowBox[{"x", ">", "60"}]}], "}"}]}], "}"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", 
+         RowBox[{"60", "*", "24"}]}], "}"}]}], "]"}], "//", "Round"}]}], 
+   "]"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7176118282956505`*^9, 3.717611980261493*^9}, 
+   3.717612259653646*^9, 3.7176123254263296`*^9, 
+   3.7176134596050987`*^9},ExpressionUUID->"35074893-5940-4e8f-b5bc-\
+e16f8baa7ffc"]
 },
 WindowSize->{681, 716},
 WindowMargins->{{Automatic, -7}, {Automatic, 0}},
@@ -1575,35 +1459,20 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 799, 22, 162, "Input",ExpressionUUID->"5f166ab4-8336-412f-bff4-47265d6e8ae3"],
-Cell[1360, 44, 1084, 22, 86, "Input",ExpressionUUID->"fa02ee63-b705-42a4-8724-2ac218ec5029"],
 Cell[CellGroupData[{
-Cell[2469, 70, 284, 8, 28, "Input",ExpressionUUID->"14ace59d-a1bb-49f5-8f77-2a6013d70ac0"],
-Cell[2756, 80, 2333, 46, 487, "Output",ExpressionUUID->"90dbe29f-88ed-46a3-9a61-bc7b653d4721"]
+Cell[1382, 46, 763, 20, 67, "Input",ExpressionUUID->"506aa3ad-209e-4925-8d78-deb2071e3615"],
+Cell[2148, 68, 8170, 162, 71, "Output",ExpressionUUID->"16c65235-5173-4909-8db0-ed9b77ff20cf"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5126, 131, 235, 5, 28, "Input",ExpressionUUID->"b32a26ad-b2ba-4455-849a-503bd1295d34"],
-Cell[5364, 138, 2688, 49, 280, "Output",ExpressionUUID->"82706825-2c6b-4b2f-8b7c-695597932b94"]
+Cell[10355, 235, 217, 4, 28, "Input",ExpressionUUID->"3a7ffe76-75b7-45ab-9794-38ce4c1abde9"],
+Cell[10575, 241, 39038, 1002, 320, "Output",ExpressionUUID->"185876e2-df14-4b1c-ae82-0b9f25716dba"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8089, 192, 455, 11, 48, "Input",ExpressionUUID->"506aa3ad-209e-4925-8d78-deb2071e3615"],
-Cell[8547, 205, 7724, 156, 103, "Output",ExpressionUUID->"e8b7b371-b812-4be7-9bec-a6158a9a8fae"]
+Cell[49650, 1248, 880, 26, 67, "Input",ExpressionUUID->"1af8b897-244c-47c8-b402-2486bd26ca75"],
+Cell[50533, 1276, 5642, 103, 1088, "Output",ExpressionUUID->"0c053894-fc3f-48f0-9d51-5ca29163f2ec"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[16308, 366, 217, 4, 28, "Input",ExpressionUUID->"3a7ffe76-75b7-45ab-9794-38ce4c1abde9"],
-Cell[16528, 372, 38518, 1003, 327, "Output",ExpressionUUID->"7fa713de-8ec9-4a35-836a-6b60ab4a9acc"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[55083, 1380, 359, 11, 28, "Input",ExpressionUUID->"36952f10-aa1c-4821-ab4a-4753ad5da7b4"],
-Cell[55445, 1393, 2044, 43, 473, "Output",ExpressionUUID->"1c2aad42-cb41-4d38-bca1-bb5e5bf016f0"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[57526, 1441, 416, 12, 28, "Input",ExpressionUUID->"6867365a-c3ec-4c05-b718-9fdb61512443"],
-Cell[57945, 1455, 3180, 71, 241, "Output",ExpressionUUID->"a2021d50-8652-46ff-8923-be41ff4afff3"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[61162, 1531, 672, 19, 48, "Input",ExpressionUUID->"0c916786-6ab6-46e2-8a25-ad0afc74e1a1"],
-Cell[61837, 1552, 320, 5, 89, "Output",ExpressionUUID->"09cbe90c-302f-4118-981c-42e586600633"]
-}, Open  ]]
+Cell[56190, 1382, 897, 26, 48, "Input",ExpressionUUID->"899415c8-5714-44de-8d01-64e48b22c93a"],
+Cell[57090, 1410, 1167, 32, 67, "Input",ExpressionUUID->"35074893-5940-4e8f-b5bc-e16f8baa7ffc"]
 }
 ]
 *)

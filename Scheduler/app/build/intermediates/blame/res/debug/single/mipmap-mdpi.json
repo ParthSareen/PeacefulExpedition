@@ -4,6 +4,26 @@
         "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\deadline.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\deadline.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\priority.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\priority.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\task_add.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\task_add.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\segmented.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\segmented.png"
+    },
+    {
+        "merged": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
         "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -12,7 +32,7 @@
         "source": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\duration.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-mdpi\\duration.png"
     }
 ]

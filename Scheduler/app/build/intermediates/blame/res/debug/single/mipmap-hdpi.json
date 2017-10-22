@@ -4,6 +4,14 @@
         "source": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\task_add.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\task_add.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\deadline.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\deadline.png"
+    },
+    {
         "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
         "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
@@ -12,7 +20,19 @@
         "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\duration.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\duration.png"
+    },
+    {
         "merged": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\priority.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\priority.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\segmented.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-hdpi\\segmented.png"
     }
 ]

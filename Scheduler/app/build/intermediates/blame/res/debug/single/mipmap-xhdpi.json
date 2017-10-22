@@ -1,15 +1,35 @@
 [
     {
-        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher_round.png",
         "source": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\task_add.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\task_add.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\priority.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\priority.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\segmented.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\segmented.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\duration.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\duration.png"
+    },
+    {
         "merged": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
         "source": "C:\\Users\\andrewwang\\Documents\\THacks\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\deadline.png",
+        "source": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\src\\main\\res\\mipmap-xhdpi\\deadline.png"
     },
     {
         "merged": "C:\\Users\\cyamo\\Documents\\GitHub\\PeacefulExpedition\\Scheduler\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher_round.png",

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Scheduler</string>
+    <string name="submitTaskText">Add Task</string>
+    <string name="newTaskSittingText">Segmentable</string>
+    <string name="newTaskSittingTooltip">A task is considered \'segmentable\' if you are allowed ot switch tasks in between.</string>
+    <string-array name="priorityList">
+        <item>Priority 1</item>
+        <item>Priority 2</item>
+        <item>Priority 3</item>
+        <item>Priority 4</item>
+        <item>Priority 5</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

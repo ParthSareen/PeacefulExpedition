@@ -27,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name="thacks2.scheduler.OverviewActivity" />
+        <activity android:name="thacks2.scheduler.NewTaskActivity" />
     </application>
 
 </manifest>

@@ -7,14 +7,17 @@
     tools:context="thacks2.scheduler.OverviewActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/taskAddButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#0000"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@mipmap/task_add" />
 
     <LinearLayout
         android:id="@+id/overviewLinear"
@@ -23,7 +26,8 @@
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp">
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent">
 
         <GridLayout
             android:id="@+id/task1Grid"

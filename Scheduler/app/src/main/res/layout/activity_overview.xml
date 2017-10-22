@@ -29,6 +29,20 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent">
 
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
         <GridLayout
             android:id="@+id/task1Grid"
             android:layout_width="match_parent"
@@ -64,4 +78,18 @@
         </GridLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/PlanButton"
+        android:layout_width="224dp"
+        android:layout_height="61dp"
+        android:text="Plan my day"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="491dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plan my day" />
 </android.support.constraint.ConstraintLayout>

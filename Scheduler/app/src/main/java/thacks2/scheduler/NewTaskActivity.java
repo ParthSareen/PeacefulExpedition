@@ -1,6 +1,7 @@
 package thacks2.scheduler;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,10 +25,13 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.Writer;
 
+import java.util.ArrayList;
+
 public class NewTaskActivity extends AppCompatActivity {
 
     private static final String TAG = "NewTaskActivity";
     public static boolean segStatus = false;
+    public static ArrayList<Task> tasks = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,7 +87,7 @@ public class NewTaskActivity extends AppCompatActivity {
 
                         // set task deadline
                         String startDateString = ((EditText)findViewById(R.id.newTaskNameInput)).getText().toString();
-                        DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+                        DateFormat df = new SimpleDateFormat("mm/dd/yyyy");
                         Date startDate = new Date();
                         try {
                             startDate = df.parse(startDateString);
@@ -94,18 +98,28 @@ public class NewTaskActivity extends AppCompatActivity {
                         }
                         newTask.setDeadline(startDate);
 
+                        // store to RAM
+                        tasks.add(newTask);
+
                         // file IO
                         String FILE_NAME = "tasks.txt";
                         try {
                             // FileOutputStream fileos = openFileOutput(FILE_NAME, Context.MODE_APPEND);
                             Writer output = new BufferedWriter(new FileWriter(FILE_NAME, true));
-                            output.append("[name: " + newTask.name + ", duration: " + newTask.duration +
-                                "priority: " + newTask.priority + " segmentable: " newTask.segmentable);
+                            output.append("[name: " + newTask.getName() + ", duration: " + newTask.getDuration() +
+                                "priority: " + newTask.getPriority() + " segmentable: " + newTask.getSegmentable());
 
-                        } catch (FileNotFoundException e) {
+                        } catch (java.io.IOException e) {
                             File file = new File(FILE_NAME);
-                            FileOutputStream fileos = openFileOutput(FILE_NAME, Context.MODE_APPEND);
-                        }n
+                            try {
+                                FileOutputStream fileos = openFileOutput(FILE_NAME, Context.MODE_APPEND);
+                            } catch (FileNotFoundException e1) {
+                                e1.printStackTrace();
+                            }
+                        }
+
+                        Intent intent = new Intent(NewTaskActivity.this, OverviewActivity.class);
+                        startActivity(intent);
                     }
                 }
         );

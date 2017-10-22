@@ -1,8 +1,9 @@
 package thacks2.scheduler;
 
 import java.util.Date;
+import java.util.Comparator;
 
-class Task {
+class Task implements Comparable<Task> {
     private int priority;
     private int duration; // in minutes
     private boolean segmentable;
@@ -19,13 +20,21 @@ class Task {
         this.deadline.setTime(this.deadline.getTime() + 30 * 60 * 1000); // set default to half hour ahead
     }
 
-    Task(int priority, int duration, boolean segmentable, String name, Date deadline) { // set default values
-        this.priority = priority;
-        this.duration = duration;
-        this.segmentable = segmentable;
-        this.name = name;
-        this.deadline = deadline;
+    Task(Task task) {
+        this.priority = task.getPriority();
+        this.duration = task.getDuration();
+        this.segmentable = task.getSegmentable();
+        this.name = task.getName();
+        this.deadline = task.getDeadline();
     }
+
+    //Task(int priority, int duration, boolean segmentable, String name, Date deadline) { // set default values
+    //    this.priority = priority;
+    //    this.duration = duration;
+    //    this.segmentable = segmentable;
+    //    this.name = name;
+    //    this.deadline = deadline;
+    //}
 
     // accessor methods
     public int getPriority() {
@@ -68,4 +77,17 @@ class Task {
     public void setDeadline(Date deadline) {
         this.deadline = deadline;
     }
+
+    public int compareTo(Task t) { return -(this.getPriority()- t.getPriority()); }
+
+    public static Comparator<Task> TaskComparator
+            = new Comparator<Task>() {
+
+        public int compare(Task task1, Task task2) {
+
+            return task1.compareTo(task2);
+
+        }
+
+    };
 }

@@ -17,3 +17,5 @@ In the case where two or more tasks have equal urgencies, the classifier may be 
 ## Next Steps
 
 Due to the proprietary nature of Wolfram Mathematica, hefty charges were imposed on cloud API deployment in which HTTP requests would be otherwise be able to access the classifier indefinitely. Thus, the classifier was not integrated into the app as originally planned. The complete elimination of the need for proprietary software is required. The optimal solution is to shift the classifier onto the R programming language and its **nnet** (neural net) library.
+
+Though originally proposed, tracking progress and incentive programs were not implemented. The point curve was carefully conceived to discourage overworking for long periods of time and promote diversitization and short intervals of work. In tandem, these aspects may boost user experience and engagement.

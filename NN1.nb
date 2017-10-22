@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     74931,       1555]
-NotebookOptionsPosition[     73764,       1528]
-NotebookOutlinePosition[     74111,       1543]
-CellTagsIndexPosition[     74068,       1540]
+NotebookDataLength[    109052,       1999]
+NotebookOptionsPosition[    107779,       1971]
+NotebookOutlinePosition[    108125,       1986]
+CellTagsIndexPosition[    108082,       1983]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,26 +24,325 @@ Cell[BoxData[
   3.7176212060134387`*^9}},ExpressionUUID->"16b7220e-a1be-4d25-ae58-\
 4df1f75fc9d4"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{
-  RowBox[{"training", "=", 
-   RowBox[{"Transpose", "[", 
-    RowBox[{"Partition", "[", 
-     RowBox[{
-      RowBox[{"StringTrim", "[", 
-       RowBox[{"DeleteStopwords", "[", 
-        RowBox[{"StringSplit", "[", 
+ RowBox[{"training", "=", 
+  RowBox[{"Transpose", "[", 
+   RowBox[{"Partition", "[", 
+    RowBox[{
+     RowBox[{"StringTrim", "[", 
+      RowBox[{"DeleteStopwords", "[", 
+       RowBox[{"StringSplit", "[", 
+        RowBox[{
          RowBox[{
-          RowBox[{
-          "Import", "[", 
-           "\"\<C:\\\\Users\\\\Adam \
+         "Import", "[", 
+          "\"\<C:\\\\Users\\\\Adam \
 Yu\\\\source\\\\repos\\\\PeacefulExpedition\\\\trainingdata.txt\>\"", "]"}], 
-          ",", "\"\<\\n\>\""}], "]"}], "]"}], "]"}], ",", "2"}], "]"}], 
-    "]"}]}], ";"}]], "Input",
+         ",", "\"\<\\n\>\""}], "]"}], "]"}], "]"}], ",", "2"}], "]"}], 
+   "]"}]}]], "Input",
  CellChangeTimes->{{3.717620409031887*^9, 3.717620449034192*^9}, 
-   3.7176211790732846`*^9, {3.7176275761910753`*^9, 
-   3.7176275867270613`*^9}},ExpressionUUID->"aaf4c49f-7e09-4c16-b1fc-\
+   3.7176211790732846`*^9, {3.7176275761910753`*^9, 3.7176275867270613`*^9}, 
+   3.7176356493448687`*^9},ExpressionUUID->"aaf4c49f-7e09-4c16-b1fc-\
 ab74eed0c828"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"drink water\"\>", ",", "\<\"math\"\>", 
+     ",", "\<\"play piano\"\>", ",", "\<\"play video games\"\>", 
+     ",", "\<\"play badminton\"\>", ",", "\<\"eat dinner\"\>", 
+     ",", "\<\"solve physics problem\"\>", ",", "\<\"join key club\"\>", 
+     ",", "\<\"watch television\"\>", ",", "\<\"train  boating\"\>", 
+     ",", "\<\"shower\"\>", ",", "\<\"write english essay\"\>", 
+     ",", "\<\"sketch  vase\"\>", ",", "\<\"nap\"\>", 
+     ",", "\<\"compete  ultimate frisbee\"\>", ",", "\<\"buy vegetables\"\>", 
+     ",", "\<\"clean toilet\"\>", ",", "\<\"spend time wood working\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"swimming\"\>", ",", "\<\"cook dinner\"\>", 
+     ",", "\<\"collaborate  group project\"\>", ",", "\<\"knit\"\>", 
+     ",", "\<\"watch netflix\"\>", ",", "\<\"eat apple\"\>", 
+     ",", "\<\"play piano\"\>", ",", "\<\"play video games\"\>", 
+     ",", "\<\"finish math homework\"\>", ",", "\<\"drink wine\"\>", 
+     ",", "\<\"play violin\"\>", ",", "\<\"drink coffee\"\>", 
+     ",", "\<\"play badminton\"\>", ",", "\<\"play tennis\"\>", 
+     ",", "\<\"write essay\"\>", ",", "\<\"cheerleading practice\"\>", 
+     ",", "\<\"attend club meeting\"\>", ",", "\<\"write symphony\"\>", 
+     ",", "\<\"write proof  P = NP\"\>", 
+     ",", "\<\"prove  Riemann hypothesis\"\>", 
+     ",", "\<\"psychology homework\"\>", 
+     ",", "\<\"prepare notes  tomorrow\"\>", ",", "\<\"meditate\"\>", 
+     ",", "\<\"write announcement\"\>", ",", "\<\"horseback riding\"\>", 
+     ",", "\<\"going   play ball tomororow\"\>", 
+     ",", "\<\"going  finish  history work tonight\"\>", 
+     ",", "\<\"going   gokarting\"\>", ",", "\<\"playing paintball later\"\>",
+      ",", "\<\"taking  roadtrip  lunch\"\>", 
+     ",", "\<\"going   city ride tonight\"\>", 
+     ",", "\<\"spinning  fidget spinner later\"\>", 
+     ",", "\<\"playing  phone games later\"\>", ",", "\<\"eating ass\"\>", 
+     ",", "\<\"going   Hackathon\"\>", ",", "\<\"reading Spivak calculus\"\>",
+      ",", "\<\"reading Harry Potter later\"\>", 
+     ",", "\<\"going   gym  bodybuild\"\>", ",", "\<\"going  buy pizza\"\>", 
+     ",", "\<\"going   arcade\"\>", ",", "\<\"swimming\"\>", 
+     ",", "\<\"hoola-hooping\"\>", ",", "\<\"Eat  salad\"\>", 
+     ",", "\<\"Eat banana\"\>", ",", "\<\"consuming slices  pizza\"\>", 
+     ",", "\<\"going   atrium   sushi\"\>", ",", "\<\"drink water\"\>", 
+     ",", "\<\"drink champagne\"\>", ",", "\<\"eat ramen\"\>", 
+     ",", "\<\"fencing later\"\>", ",", "\<\"swordfighting tonight\"\>", 
+     ",", "\<\"watching  hockey game\"\>", 
+     ",", "\<\"playing   hockey game\"\>", 
+     ",", "\<\"reading  AoPS Volume 2\"\>", ",", "\<\"cooking food\"\>", 
+     ",", "\<\"hoolahooping\"\>", ",", "\<\"Sailing\"\>", 
+     ",", "\<\"write emails\"\>", ",", "\<\"write psychology paper\"\>", 
+     ",", "\<\"Watch lectures  MIT OCW\"\>", ",", "\<\"interview  Google\"\>",
+      ",", "\<\"watching TV\"\>", ",", "\<\"watching  movie\"\>", 
+     ",", "\<\"listening  music\"\>", ",", "\<\"make jewelry\"\>", 
+     ",", "\<\"paint  painting\"\>", ",", "\<\"photos\"\>", 
+     ",", "\<\"going  cadets\"\>", ",", "\<\"finishing   problem set\"\>", 
+     ",", "\<\"playing baseball\"\>", 
+     ",", "\<\"going  wrestling practice\"\>", 
+     ",", "\<\"going  martial arts practice\"\>", ",", "\<\"getting food\"\>",
+      ",", "\<\"archery\"\>", ",", "\<\"playing ultimate frisbee\"\>", 
+     ",", "\<\"cross country\"\>", ",", "\<\"draw  vase.\"\>", 
+     ",", "\<\"draw fruit.\"\>", ",", "\<\"library\"\>", 
+     ",", "\<\"drinking  energy drink\"\>", 
+     ",", "\<\"creating  website   project\"\>", 
+     ",", "\<\"reviewing  economics notes\"\>", 
+     ",", "\<\"driving   country\"\>", ",", "\<\"trick-or-treating\"\>", 
+     ",", "\<\"drinking soylent\"\>", ",", "\<\"jog\"\>", ",", "\<\"jog\"\>", 
+     ",", "\<\"bake  pie\"\>", ",", "\<\"build  app\"\>", 
+     ",", "\<\"study linear algebra\"\>", ",", "\<\"read  textbook\"\>", 
+     ",", "\<\"commute  train\"\>", ",", "\<\"watch youtube videos\"\>", 
+     ",", "\<\"play waterpolo\"\>", ",", "\<\"play water polo\"\>", 
+     ",", "\<\"make  jam sandwhich\"\>", ",", "\<\"practice darts\"\>", 
+     ",", "\<\"writing  math contest\"\>", 
+     ",", "\<\"competing   badminton tournament\"\>", 
+     ",", "\<\"playing crochet\"\>", ",", "\<\"play  card game\"\>", 
+     ",", "\<\"play  cards\"\>", ",", "\<\"giving  piano recital\"\>", 
+     ",", "\<\"writing notes   test\"\>", ",", "\<\"review  notes   test\"\>",
+      ",", "\<\"memorize  English script\"\>", 
+     ",", "\<\"memorize  script\"\>", ",", "\<\"play  legos later\"\>", 
+     ",", "\<\"play  flute\"\>", ",", "\<\"play ping pong\"\>", 
+     ",", "\<\"play tennis\"\>", ",", "\<\"play   brother\"\>", 
+     ",", "\<\"sleep\"\>", ",", "\<\"learn Java development\"\>", 
+     ",", "\<\"learn Java development  class\"\>", ",", "\<\"write memos\"\>",
+      ",", "\<\"prepare  presentation\"\>", ",", "\<\"write  letters\"\>", 
+     ",", "\<\"finish  app implementation\"\>", ",", "\<\"lift weights\"\>", 
+     ",", "\<\"read  computability theory\"\>", 
+     ",", "\<\"listen  rap music\"\>", ",", "\<\"listen  classical music\"\>",
+      ",", "\<\"play  megablocks\"\>", ",", "\<\"yoga\"\>", 
+     ",", "\<\"play golf\"\>", ",", "\<\"play squash\"\>", 
+     ",", "\<\"eat squash\"\>", ",", "\<\"play\"\>", 
+     ",", "\<\"creatively write\"\>", ",", "\<\"write  lab report\"\>", 
+     ",", "\<\"calligrayphy\"\>", ",", "\<\"ice skating\"\>", 
+     ",", "\<\"play fantasy sports\"\>", ",", "\<\"woodworking\"\>", 
+     ",", "\<\"play   yoyo\"\>", ",", "\<\"play   yo-yo\"\>", 
+     ",", "\<\"surfing\"\>", ",", "\<\"play quidditch\"\>", 
+     ",", "\<\"mountain climbing\"\>", ",", "\<\"dance lesson\"\>", 
+     ",", "\<\"dance\"\>", ",", "\<\"volunteer   hospital\"\>", 
+     ",", "\<\"work   assignment\"\>", ",", "\<\"hydrating\"\>", 
+     ",", "\<\"graph  sigmoid function\"\>", 
+     ",", "\<\"browse instagram  evening\"\>", 
+     ",", "\<\"lot  photography\"\>", ",", "\<\"personal finance\"\>", 
+     ",", "\<\"gardening\"\>", ",", "\<\"art lesson\"\>", 
+     ",", "\<\"hackathon\"\>", ",", "\<\"drink hard coffee\"\>", 
+     ",", "\<\"clean  room\"\>", ",", "\<\"design  app\"\>", 
+     ",", "\<\"work   typing speed\"\>", ",", "\<\"play chess\"\>", 
+     ",", "\<\"chess club\"\>", ",", "\<\"practice   exam\"\>", 
+     ",", "\<\"fix  car\"\>", ",", "\<\"fly  China\"\>", 
+     ",", "\<\"write  list  1300+ swear words\"\>", 
+     ",", "\<\"design  lab experiment\"\>", 
+     ",", "\<\"conduct  job interviews\"\>", ",", "\<\"clothes shopping\"\>", 
+     ",", "\<\"prepare  afidavit\"\>", 
+     ",", "\<\"attend  debate club meeting\"\>", 
+     ",", "\<\"eat  club sandwich\"\>", ",", "\<\"prepare   science fair\"\>",
+      ",", "\<\"write  article   school newspaper\"\>", 
+     ",", "\<\"practice  piano scales\"\>", 
+     ",", "\<\"prepare financial statements\"\>", 
+     ",", "\<\"play hungry hungry hippos\"\>", ",", "\<\"play risk\"\>", 
+     ",", "\<\"paly poker\"\>", ",", "\<\"drink bubble tea\"\>", 
+     ",", "\<\"ziplining\"\>", ",", "\<\"write  math contest\"\>", 
+     ",", "\<\"write  labreport\"\>", ",", "\<\"conduct  depositions\"\>", 
+     ",", "\<\"write  concerto\"\>", 
+     ",", "\<\"finish  programming project\"\>", ",", "\<\"read  emails\"\>", 
+     ",", "\<\"windsailing\"\>", ",", "\<\"surfing\"\>", 
+     ",", "\<\"boating\"\>", ",", "\<\"restaurant  eat\"\>", 
+     ",", "\<\"tutor  peers\"\>", ",", "\<\"play cricket\"\>", 
+     ",", "\<\"hiking\"\>", ",", "\<\"play lacrosse\"\>", ",", "\<\"box\"\>", 
+     ",", "\<\"play rugby later tonight\"\>", ",", "\<\"scuba diving\"\>", 
+     ",", "\<\"volunteer   homeless shelter\"\>", 
+     ",", "\<\"study   library\"\>", ",", "\<\"conduct  lab experiment\"\>", 
+     ",", "\<\"write poems\"\>", ",", "\<\"swimming competition\"\>", 
+     ",", "\<\"eat  doritos\"\>", ",", "\<\"write test data\"\>", 
+     ",", "\<\"medicine\"\>", ",", "\<\"calculus homework\"\>", 
+     ",", "\<\"physics problem st\"\>", ",", "\<\"read lecture notes\"\>", 
+     ",", "\<\"volleyball practice\"\>", ",", "\<\"badminton training\"\>", 
+     ",", "\<\"eat falafel\"\>", ",", "\<\"drink beer\"\>", 
+     ",", "\<\"grocery shopping\"\>", ",", "\<\"watch advertisements\"\>", 
+     ",", "\<\"write  book\"\>", ",", "\<\"chemistry homework\"\>", 
+     ",", "\<\"prepare  siideshow\"\>", ",", "\<\"smell flowers\"\>", 
+     ",", "\<\"arrange flowers\"\>", ",", "\<\"recreational drugs\"\>", 
+     ",", "\<\"going  play football\"\>", ",", "\<\"going  play soccer\"\>", 
+     ",", "\<\"bowling\"\>", ",", "\<\"play handball\"\>", 
+     ",", "\<\"playing softball\"\>", 
+     ",", "\<\"attending track  field practice\"\>", 
+     ",", "\<\"play billiards\"\>", ",", "\<\"play pool\"\>", 
+     ",", "\<\"paint  room\"\>", ",", "\<\"nap club\"\>", 
+     ",", "\<\"attend tea club\"\>", ",", "\<\"listen  techno music\"\>", 
+     ",", "\<\"perform  topological sort   directed acyclic graph\"\>", 
+     ",", "\<\"build  startup\"\>", ",", "\<\"exercise club\"\>", 
+     ",", "\<\"data visualization\"\>", ",", "\<\"drink  soylent\"\>", 
+     ",", "\<\"drink  diet coke\"\>", ",", "\<\"eat  chips\"\>", 
+     ",", "\<\"invest   hundred dollars\"\>", 
+     ",", "\<\"watch  android studio tutorials\"\>", 
+     ",", "\<\"push  gihub\"\>", ",", "\<\"play league  legends\"\>", 
+     ",", "\<\"play DOTA2\"\>", ",", "\<\"play Clash  Clans!\"\>", 
+     ",", "\<\"gonna play\"\>", ",", "\<\"watch AlphaGo's games\"\>", 
+     ",", "\<\"train  biceps\"\>", ",", "\<\"train  triceps\"\>", 
+     ",", "\<\"watch video tutorials\"\>", ",", "\<\"train  quadriceps\"\>", 
+     ",", "\<\"train  abdominals\"\>", ",", "\<\"design  user interface\"\>", 
+     ",", "\<\"play texas hold'em\"\>", ",", "\<\"install Linux\"\>", 
+     ",", "\<\"look   word   dictionary\"\>", 
+     ",", "\<\"use  dictionary    nth fibonacci number\"\>", 
+     ",", "\<\"write  database   rabbit girls\"\>", 
+     ",", "\<\"practice programming  DMOJ\"\>", 
+     ",", "\<\"practice programming  USACO\"\>", 
+     ",", "\<\"write training data   ML algo\"\>", 
+     ",", "\<\"read   Markhov chains\"\>", ",", "\<\"situps\"\>", 
+     ",", "\<\"push  code   cloud\"\>", ",", "\<\"eat  pizza crust\"\>", 
+     ",", "\<\"drink  sprite\"\>", ",", "\<\"charge  laptop\"\>", 
+     ",", "\<\"listen  Post Malone's music\"\>", 
+     ",", "\<\"listen  21 Savage's music\"\>", 
+     ",", "\<\"listen  Beethoven's music\"\>", 
+     ",", "\<\"listen  Chopin's music\"\>", 
+     ",", "\<\"listen  Scriabin's music\"\>", 
+     ",", "\<\"listen  Schoenberg's music\"\>", 
+     ",", "\<\"watch Martin Luther King's speech\"\>", 
+     ",", "\<\"drink  energy drink\"\>", ",", "\<\"cut  hair\"\>", 
+     ",", "\<\"brush  teeth\"\>", ",", "\<\"comb  hair\"\>", 
+     ",", "\<\"buy  new computer\"\>", ",", "\<\"robotics club meeting\"\>", 
+     ",", "\<\"write  Python library\"\>", ",", "\<\"smash  volleyball\"\>", 
+     ",", "\<\"biology homework\"\>", ",", "\<\"chemistry homework\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"essential\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"work\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>",
+      ",", "\<\"work\"\>", ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"essential\"\>", ",", "\<\"sport\"\>",
+      ",", "\<\"sport\"\>", ",", "\<\"leisure\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"essential\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"essential\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"leisure\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>",
+      ",", "\<\"work\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"sport\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>",
+      ",", "\<\"essential\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"essential\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>",
+      ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"essential\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>",
+      ",", "\<\"work\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"work\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"extracurricular\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"work\"\>", ",", "\<\"extracurricular\"\>",
+      ",", "\<\"work\"\>", ",", "\<\"essential\"\>", ",", "\<\"essential\"\>",
+      ",", "\<\"essential\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"sport\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"work\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"sport\"\>", ",", "\<\"work\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"work\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", 
+     ",", "\<\"leisure\"\>", ",", "\<\"leisure\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"essential\"\>", 
+     ",", "\<\"essential\"\>", ",", "\<\"extracurricular\"\>", 
+     ",", "\<\"work\"\>", ",", "\<\"sport\"\>", ",", "\<\"work\"\>", 
+     ",", "\<\"work\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7176356830839434`*^9, 3.717635741479458*^9, 
+  3.7176358518421335`*^9, 3.717636181859895*^9, 
+  3.717636258262725*^9},ExpressionUUID->"49f53cc3-2bb8-424c-a78d-\
+8c5bfdfb9357"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -62,10 +361,11 @@ Cell[BoxData[{
    "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"ClassifierInformation", "[", "c", "]"}]}], "Input",
  CellChangeTimes->{{3.717620454867362*^9, 3.7176204795411963`*^9}, {
-  3.71762115970436*^9, 3.717621162853919*^9}, {3.7176211970745583`*^9, 
-  3.717621199863466*^9}, {3.7176282399504924`*^9, 3.717628272619713*^9}, {
-  3.7176283042012553`*^9, 
-  3.717628338563347*^9}},ExpressionUUID->"f6c93fd9-abe4-408c-813f-\
+   3.71762115970436*^9, 3.717621162853919*^9}, {3.7176211970745583`*^9, 
+   3.717621199863466*^9}, {3.7176282399504924`*^9, 3.717628272619713*^9}, {
+   3.7176283042012553`*^9, 3.717628338563347*^9}, 3.717634418205202*^9, 
+   3.7176346515004964`*^9, {3.7176356596256037`*^9, 
+   3.717635661035119*^9}},ExpressionUUID->"f6c93fd9-abe4-408c-813f-\
 88b9fd75fc6b"],
 
 Cell[BoxData[
@@ -232,7 +532,7 @@ Cell[BoxData[
                     TagBox[
                     "\"Number of training examples: \"", 
                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["245", "SummaryItem"]}]}}, 
+                    TagBox["291", "SummaryItem"]}]}}, 
                 GridBoxAlignment -> {
                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
                 False, GridBoxItemSize -> {
@@ -268,9 +568,12 @@ Cell[BoxData[
    3.71762118840996*^9, 3.717621210655511*^9}, 3.717621687153822*^9, 
    3.7176271511693745`*^9, 3.7176275901482363`*^9, 3.7176276640774117`*^9, {
    3.7176282453202505`*^9, 3.7176282760794516`*^9}, {3.7176283105090303`*^9, 
-   3.717628365242456*^9}, 3.7176284394769316`*^9, 
-   3.7176325622338457`*^9},ExpressionUUID->"19a4a624-5311-4260-a88b-\
-fead8a26ab77"],
+   3.717628365242456*^9}, 3.7176284394769316`*^9, 3.7176325622338457`*^9, {
+   3.7176343942589855`*^9, 3.717634426811082*^9}, {3.717634635570165*^9, 
+   3.7176346537188787`*^9}, 3.7176350312631955`*^9, 3.717635684325463*^9, 
+   3.7176357427106543`*^9, 3.7176358530099707`*^9, 3.717636183106284*^9, 
+   3.7176362594445667`*^9},ExpressionUUID->"06066284-1683-4bb5-8501-\
+3685cf57ecff"],
 
 Cell[BoxData[
  TagBox[
@@ -335,13 +638,13 @@ Cell[BoxData[
                     TypeSystem`PackageScope`AtomShape[153.], 
                     TypeSystem`PackageScope`AtomShape[34]]], 2, {}], 
                     "InitialData" -> 
-                    TypeSystem`PackageScope`CacheHandle[2058082294], "Type" -> 
+                    TypeSystem`PackageScope`CacheHandle[1536868084], "Type" -> 
                     TypeSystem`Assoc[
                     TypeSystem`Atom[
                     TypeSystem`Enumeration["MinimumTokenCount", "Order"]], 
                     TypeSystem`Atom[Integer], 2], "HandleQ" -> True, 
                     "RowTarget" -> 20, "Data" -> 
-                    TypeSystem`PackageScope`CacheHandle[2058082294]], 
+                    TypeSystem`PackageScope`CacheHandle[1536868084]], 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$ = 1, 
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
@@ -363,10 +666,10 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 2097762015][{
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 703641895][{
                     Key["Order"]}]], 
                     TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                    2097762015][
+                    703641895][
                     GeneralUtilities`Slice[
                     Key["Order"]]], "Mouse"], 
                     ImageSize -> {{153., Full}, Automatic}], Background -> 
@@ -375,7 +678,7 @@ Cell[BoxData[
                     Annotation[
                     RawBoxes["1"], 
                     TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                    2097762015][
+                    703641895][
                     GeneralUtilities`Slice[
                     Key["Order"]]], "Mouse"], 
                     ImageSize -> {{34, Full}, Automatic}, 
@@ -394,10 +697,10 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 2097762015][{
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 703641895][{
                     Key["MinimumTokenCount"]}]], 
                     TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                    2097762015][
+                    703641895][
                     GeneralUtilities`Slice[
                     Key["MinimumTokenCount"]]], "Mouse"], 
                     ImageSize -> {{153., Full}, Automatic}], Background -> 
@@ -406,7 +709,7 @@ Cell[BoxData[
                     Annotation[
                     RawBoxes["0"], 
                     TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                    2097762015][
+                    703641895][
                     GeneralUtilities`Slice[
                     Key["MinimumTokenCount"]]], "Mouse"], 
                     ImageSize -> {{34, Full}, Automatic}, 
@@ -459,7 +762,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
-                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 2097762015][
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 703641895][
                     TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
                     Not[
                     FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
@@ -495,7 +798,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$path$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
-                    2097762015]]]], 
+                    703641895]]]], 
                     TrackedSymbols :> {
                     TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
                     TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Framed[
@@ -503,9 +806,9 @@ Cell[BoxData[
                     Replace[
                     MouseAnnotation[Null], {
                     TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                    2097762015][Null] -> "", 
+                    703641895][Null] -> "", 
                     TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-                    2097762015][
+                    703641895][
                     Pattern[TypeSystem`NestedGrid`PackagePrivate`path, 
                     Blank[]]] :> (
                     TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
@@ -559,7 +862,7 @@ Cell[BoxData[
                   TypeSystem`Atom[
                    TypeSystem`Enumeration["MinimumTokenCount", "Order"]], 
                   TypeSystem`Atom[Integer], 2], 
-                 Association["ID" -> 227465883058418]], "Tooltip"]& ]},
+                 Association["ID" -> 198513508519779]], "Tooltip"]& ]},
              {
               
               TemplateBox[{
@@ -571,26 +874,26 @@ Cell[BoxData[
                 
                 TemplateBox[{
                  TemplateBox[{
-                   "69.3877551020407992155`3.", "\"%\"", "percent", 
+                   "67.2413793103448256261`3.", "\"%\"", "percent", 
                     "\"Percent\""}, "QuantityPostfix", SyntaxForm -> Mod],
                   StyleBox[
                    TemplateBox[{"\" \[PlusMinus] \"", 
                     TemplateBox[{
-                    "6.6522473522476142094`2.", "\"%\"", "percent", 
+                    "6.2164677163172381569`2.", "\"%\"", "percent", 
                     "\"Percent\""}, "QuantityPostfix", SyntaxForm -> Mod]}, 
                     "RowDefault"], {10, 
                     Opacity[0.5]}, StripOnInput -> False]},
                  "RowDefault"],
                 
                 TemplateBox[{
-                 "\"95% confidence interval: [\"", "0.5608326039754557568`3.",
-                   "\", \"", "0.8269224980653603341`3.", "\"]\""}, 
+                 "\"95% confidence interval: [\"", "0.5480844387771035553`3.",
+                   "\", \"", "0.7967431474297930194`3.", "\"]\""}, 
                  "RowDefault"],
                 TooltipStyle->{}],
                Annotation[#, 
                 
-                Row[{"95% confidence interval: [", 0.5608326039754557568`3., 
-                  ", ", 0.8269224980653603341`3., "]"}], "Tooltip"]& ]},
+                Row[{"95% confidence interval: [", 0.5480844387771035553`3., 
+                  ", ", 0.7967431474297930194`3., "]"}], "Tooltip"]& ]},
              {
               TemplateBox[{TemplateBox[{5}, "Spacer1"],StyleBox[
                  TagBox[
@@ -602,23 +905,23 @@ Cell[BoxData[
                "RowDefault"], 
               TagBox[
                TooltipBox[
-                TemplateBox[{"0.7940568923769699694`3.",StyleBox[
+                TemplateBox[{"0.8502792196386800283`3.",StyleBox[
                    
                    TemplateBox[{
-                    "\" \[PlusMinus] \"", "0.1779892346314494167`2."}, 
+                    "\" \[PlusMinus] \"", "0.1602286916250992566`2."}, 
                     "RowDefault"], {10, 
                     Opacity[0.5]}, StripOnInput -> False]},
                  "RowDefault"],
                 
                 TemplateBox[{
-                 "\"95% confidence interval: [\"", "0.438078423114071136`3.", 
-                  "\", \"", "1.1500353616398688583`3.", "\"]\""}, 
+                 "\"95% confidence interval: [\"", "0.5298218363884814597`3.",
+                   "\", \"", "1.1707366028888785969`3.", "\"]\""}, 
                  "RowDefault"],
                 TooltipStyle->{}],
                Annotation[#, 
                 
-                Row[{"95% confidence interval: [", 0.438078423114071136`3., 
-                  ", ", 1.1500353616398688583`3., "]"}], "Tooltip"]& ]},
+                Row[{"95% confidence interval: [", 0.5298218363884814597`3., 
+                  ", ", 1.1707366028888785969`3., "]"}], "Tooltip"]& ]},
              {
               
               TemplateBox[{
@@ -627,7 +930,7 @@ Cell[BoxData[
                "RowDefault"], 
               
               TemplateBox[{
-               "200.`",
+               "134.`",
                 RowBox[{
                  "\"\[Micro]s\"", "\[InvisibleSpace]", "\"/\"", 
                   "\[InvisibleSpace]", "\"example\""}],
@@ -640,7 +943,7 @@ Cell[BoxData[
                TemplateBox[{5}, "Spacer1"],StyleBox["\"Classifier memory\"", 
                  GrayLevel[0.4], StripOnInput -> False]},
                "RowDefault"], 
-              TemplateBox[{"178.`","\"kB\"","kilobytes","\"Kilobytes\""},
+              TemplateBox[{"185.`","\"kB\"","kilobytes","\"Kilobytes\""},
                "Quantity"]},
              {
               
@@ -649,7 +952,7 @@ Cell[BoxData[
                 "\"Training examples used\"", 
                  GrayLevel[0.4], StripOnInput -> False]},
                "RowDefault"], 
-              TemplateBox[{"245","\"examples\"","examples","\"Examples\""},
+              TemplateBox[{"291","\"examples\"","examples","\"Examples\""},
                "Quantity"]},
              {
               
@@ -657,12 +960,12 @@ Cell[BoxData[
                TemplateBox[{5}, "Spacer1"],StyleBox["\"Training time\"", 
                  GrayLevel[0.4], StripOnInput -> False]},
                "RowDefault"], 
-              TemplateBox[{"2.92`","\"s\"","seconds","\"Seconds\""},
+              TemplateBox[{"1.02`","\"s\"","seconds","\"Seconds\""},
                "Quantity"]},
              {
               
               DynamicModuleBox[{
-               MachineLearning`file5Automation`PackagePrivate`pos$$ = 3}, 
+               MachineLearning`file5Automation`PackagePrivate`pos$$ = 1}, 
                DynamicBox[ToBoxes[
                  Show[
                   Part[{
@@ -673,15 +976,15 @@ Cell[BoxData[
                     RGBColor[0.368417, 0.506779, 0.709798], 
                     AbsoluteThickness[1.6]], 
                     
-                    Line[{{2.302585092994046, 0.5460305254722705}, {
-                    3.6888794541139363`, 0.36838174235615545`}, {
-                    5.278114659230517, -0.027256999650470824`}}]}, {
+                    Line[{{2.302585092994046, 0.5547601669284297}, {
+                    3.912023005428146, 0.4208865179525225}, {
+                    5.4510384535657, -0.1621904897474504}}]}, {
                     Hue[0.9060679774997897, 0.6, 0.6], 
                     Directive[
                     Opacity[0]], 
                     
-                    Line[{{2.302585092994046, 0.3637089686783159}, {
-                    2.302585092994046, 0.15506455714348377`}}]}}, {{
+                    Line[{{2.302585092994046, 0.3724386101344751}, {
+                    2.302585092994046, 0.020131067046504095`}}]}}, {{
                     Directive[
                     PointSize[0.012833333333333334`], 
                     RGBColor[0.368417, 0.506779, 0.709798], 
@@ -690,17 +993,17 @@ Cell[BoxData[
                     GeometricTransformation[
                     Inset[
                     Style["\[FilledCircle]", FontSize -> 8.96], {0., 0.}], {{{
-                    2.302585092994046, 0.5460305254722705}}, {{
-                    3.6888794541139363`, 0.36838174235615545`}}, {{
-                    5.278114659230517, -0.027256999650470824`}}}]}, {
+                    2.302585092994046, 0.5547601669284297}}, {{
+                    3.912023005428146, 0.4208865179525225}}, {{
+                    5.4510384535657, -0.1621904897474504}}}]}, {
                     Directive[
                     Opacity[0]], 
                     GeometricTransformation[
                     Inset[
                     Style["\[FilledSquare]", FontSize -> 8.96], {0., 0.}], {{{
-                    2.302585092994046, 0.3637089686783159}}, {{
+                    2.302585092994046, 0.3724386101344751}}, {{
                     2.302585092994046, 
-                    0.15506455714348377`}}}]}, {}}}, {}, {}, {}, {}}}, {{{}, \
+                    0.020131067046504095`}}}]}, {}}}, {}, {}, {}, {}}}, {{{}, \
 {{{}, {}, {
                     Hue[0.67, 0.6, 0.6], 
                     Directive[
@@ -708,25 +1011,24 @@ Cell[BoxData[
                     AbsoluteThickness[1.6], 
                     RGBColor[0.368417, 0.506779, 0.709798]], 
                     
-                    Line[{{2.302585092994046, 0.5250106435565708}, {
-                    2.302585092994046, 0.5666176527971404}}]}, {
+                    Line[{{2.302585092994046, 0.53291632402857}, {
+                    2.302585092994046, 0.5761370386304301}}]}, {
                     Hue[0.9060679774997897, 0.6, 0.6], 
                     Directive[
                     PointSize[0.012833333333333334`], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0.368417, 0.506779, 0.709798]], 
                     
-                    Line[{{3.6888794541139363`, 0.2858770962195152}, {
-                    3.6888794541139363`, 0.44459513402485473`}}]}, {
+                    Line[{{3.912023005428146, 0.3305018954762673}, {
+                    3.912023005428146, 0.5037746495147623}}]}, {
                     Hue[0.1421359549995791, 0.6, 0.6], 
                     Directive[
                     PointSize[0.012833333333333334`], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0.368417, 0.506779, 0.709798]], 
-                    
-                    Line[{{5.278114659230517, -0.18676271363733965`}, {
-                    5.278114659230517, 
-                    0.11027193329494284`}}]}}}, {}, {}, {}, {}}}}, {
+                    Line[{{5.4510384535657, -0.37099045506675515`}, {
+                    5.4510384535657, 
+                    0.010453086889555131`}}]}}}, {}, {}, {}, {}}}}, {
                     DisplayFunction -> Identity, 
                     GridLines -> {
                     Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
@@ -736,14 +1038,14 @@ Cell[BoxData[
                     Scaled[0.02], 0}, {
                     Scaled[0.02], 
                     Scaled[0.05]}}, 
-                    AxesOrigin -> {2.18734759833843, -0.06886657808679884}, 
-                    PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {-0.05910630660173423, 0.5460305254722705}}, 
+                    AxesOrigin -> {2.181148669809394, -0.21422723095779655`}, 
+                    PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {-0.2020210817849993, 0.5547601669284297}}, 
                     PlotRangeClipping -> True, 
                     ImagePadding -> {{30, 10}, {35, 0}}, DisplayFunction -> 
                     Identity, AspectRatio -> GoldenRatio^(-1), 
                     Axes -> {True, True}, AxesLabel -> {None, None}, 
-                    AxesOrigin -> {2.18734759833843, -0.06886657808679884}, 
+                    AxesOrigin -> {2.181148669809394, -0.21422723095779655`}, 
                     DisplayFunction :> Identity, 
                     Frame -> {{True, True}, {True, True}}, 
                     FrameLabel -> {{None, None}, {
@@ -765,8 +1067,8 @@ Cell[BoxData[
                     (Exp[#]& )[
                     Part[#, 1]], 
                     (Exp[#]& )[
-                    Part[#, 2]]}& )}}, PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {-0.05910630660173423, 0.5460305254722705}}, 
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {-0.2020210817849993, 0.5547601669284297}}, 
                     PlotRangeClipping -> True, PlotRangePadding -> {{
                     Scaled[0.02], 0}, {
                     Scaled[0.02], 
@@ -780,15 +1082,15 @@ Cell[BoxData[
                     RGBColor[0.368417, 0.506779, 0.709798], 
                     AbsoluteThickness[1.6]], 
                     
-                    Line[{{2.302585092994046, 0.33553036638881395`}, {
-                    3.6888794541139363`, 0.4877895836962201}, {
-                    5.278114659230517, 0.6187283577691002}}]}, {
+                    Line[{{2.302585092994046, 0.24374477649827497`}, {
+                    3.912023005428146, 0.505009009009009}, {5.4510384535657, 
+                    0.6724137931034483}}]}, {
                     Hue[0.9060679774997897, 0.6, 0.6], 
                     Directive[
                     Opacity[0]], 
                     
-                    Line[{{2.302585092994046, 0.5156069648075835}, {
-                    2.302585092994046, 0.40263643966657675`}}]}}, {{
+                    Line[{{2.302585092994046, 0.560344827586207}, {
+                    2.302585092994046, 0.29249373179793}}]}}, {{
                     Directive[
                     PointSize[0.012833333333333334`], 
                     RGBColor[0.368417, 0.506779, 0.709798], 
@@ -797,17 +1099,17 @@ Cell[BoxData[
                     GeometricTransformation[
                     Inset[
                     Style["\[FilledCircle]", FontSize -> 8.96], {0., 0.}], {{{
-                    2.302585092994046, 0.33553036638881395`}}, {{
-                    3.6888794541139363`, 0.4877895836962201}}, {{
-                    5.278114659230517, 0.6187283577691002}}}]}, {
+                    2.302585092994046, 0.24374477649827497`}}, {{
+                    3.912023005428146, 0.505009009009009}}, {{5.4510384535657,
+                     0.6724137931034483}}}]}, {
                     Directive[
                     Opacity[0]], 
                     GeometricTransformation[
                     Inset[
                     Style["\[FilledSquare]", FontSize -> 8.96], {0., 0.}], {{{
-                    2.302585092994046, 0.5156069648075835}}, {{
+                    2.302585092994046, 0.560344827586207}}, {{
                     2.302585092994046, 
-                    0.40263643966657675`}}}]}, {}}}, {}, {}, {}, {}}}, {
+                    0.29249373179793}}}]}, {}}}, {}, {}, {}, {}}}, {
                     DisplayFunction -> Identity, 
                     GridLines -> {
                     Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
@@ -817,14 +1119,14 @@ Cell[BoxData[
                     PlotRangePadding -> {{
                     Scaled[0.02], 0}, {
                     Scaled[0.05], 0}}, 
-                    AxesOrigin -> {2.18734759833843, 0.30405548900723145`}, 
-                    PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {0.33553036638881395`, 1}}, PlotRangeClipping -> 
+                    AxesOrigin -> {2.181148669809394, 0.20792216064819324`}, 
+                    PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {0.24374477649827497`, 1}}, PlotRangeClipping -> 
                     True, ImagePadding -> {{30, 10}, {35, 0}}, 
                     DisplayFunction -> Identity, AspectRatio -> 
                     GoldenRatio^(-1), Axes -> {True, True}, 
                     AxesLabel -> {None, None}, 
-                    AxesOrigin -> {2.18734759833843, 0.30405548900723145`}, 
+                    AxesOrigin -> {2.181148669809394, 0.20792216064819324`}, 
                     DisplayFunction :> Identity, 
                     Frame -> {{True, True}, {True, True}}, 
                     FrameLabel -> {{None, None}, {
@@ -846,8 +1148,8 @@ Cell[BoxData[
                     (Exp[#]& )[
                     Part[#, 1]], 
                     (Identity[#]& )[
-                    Part[#, 2]]}& )}}, PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {0.33553036638881395`, 1}}, PlotRangeClipping -> 
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {0.24374477649827497`, 1}}, PlotRangeClipping -> 
                     True, PlotRangePadding -> {{
                     Scaled[0.02], 0}, {
                     Scaled[0.05], 0}}, Ticks -> {
@@ -860,9 +1162,9 @@ Cell[BoxData[
                     RGBColor[0.368417, 0.506779, 0.709798], 
                     AbsoluteThickness[1.6]], 
                     
-                    Line[{{2.302585092994046, 0.5460305254722705}, {
-                    3.6888794541139363`, 0.36838174235615545`}, {
-                    5.278114659230517, -0.027256999650470824`}}]}, 
+                    Line[{{2.302585092994046, 0.5547601669284297}, {
+                    3.912023005428146, 0.4208865179525225}, {
+                    5.4510384535657, -0.1621904897474504}}]}, 
                     "Markov"]}}, {}, {}, {}, {}}}}, {
                     DisplayFunction -> Identity, 
                     GridLines -> {
@@ -873,14 +1175,14 @@ Cell[BoxData[
                     Scaled[0.02], 0}, {
                     Scaled[0.02], 
                     Scaled[0.05]}}, 
-                    AxesOrigin -> {2.18734759833843, -0.06886657808679884}, 
-                    PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {-0.05910630660173423, 0.5460305254722705}}, 
+                    AxesOrigin -> {2.181148669809394, -0.21422723095779655`}, 
+                    PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {-0.2020210817849993, 0.5547601669284297}}, 
                     PlotRangeClipping -> True, 
                     ImagePadding -> {{30, 10}, {35, 0}}, DisplayFunction -> 
                     Identity, AspectRatio -> GoldenRatio^(-1), 
                     Axes -> {True, True}, AxesLabel -> {None, None}, 
-                    AxesOrigin -> {2.18734759833843, -0.06886657808679884}, 
+                    AxesOrigin -> {2.181148669809394, -0.21422723095779655`}, 
                     DisplayFunction :> Identity, 
                     Frame -> {{True, True}, {True, True}}, 
                     FrameLabel -> {{None, None}, {
@@ -902,8 +1204,8 @@ Cell[BoxData[
                     (Exp[#]& )[
                     Part[#, 1]], 
                     (Exp[#]& )[
-                    Part[#, 2]]}& )}}, PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {-0.05910630660173423, 0.5460305254722705}}, 
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {-0.2020210817849993, 0.5547601669284297}}, 
                     PlotRangeClipping -> True, PlotRangePadding -> {{
                     Scaled[0.02], 0}, {
                     Scaled[0.02], 
@@ -945,15 +1247,15 @@ buttonGraphics[
                     RGBColor[0.368417, 0.506779, 0.709798], 
                     AbsoluteThickness[1.6]], 
                     
-                    Line[{{2.302585092994046, 0.5460305254722705}, {
-                    3.6888794541139363`, 0.36838174235615545`}, {
-                    5.278114659230517, -0.027256999650470824`}}]}, {
+                    Line[{{2.302585092994046, 0.5547601669284297}, {
+                    3.912023005428146, 0.4208865179525225}, {
+                    5.4510384535657, -0.1621904897474504}}]}, {
                     Hue[0.9060679774997897, 0.6, 0.6], 
                     Directive[
                     Opacity[0]], 
                     
-                    Line[{{2.302585092994046, 0.3637089686783159}, {
-                    2.302585092994046, 0.15506455714348377`}}]}}, {{
+                    Line[{{2.302585092994046, 0.3724386101344751}, {
+                    2.302585092994046, 0.020131067046504095`}}]}}, {{
                     Directive[
                     PointSize[0.012833333333333334`], 
                     RGBColor[0.368417, 0.506779, 0.709798], 
@@ -962,17 +1264,17 @@ buttonGraphics[
                     GeometricTransformation[
                     Inset[
                     Style["\[FilledCircle]", FontSize -> 8.96], {0., 0.}], {{{
-                    2.302585092994046, 0.5460305254722705}}, {{
-                    3.6888794541139363`, 0.36838174235615545`}}, {{
-                    5.278114659230517, -0.027256999650470824`}}}]}, {
+                    2.302585092994046, 0.5547601669284297}}, {{
+                    3.912023005428146, 0.4208865179525225}}, {{
+                    5.4510384535657, -0.1621904897474504}}}]}, {
                     Directive[
                     Opacity[0]], 
                     GeometricTransformation[
                     Inset[
                     Style["\[FilledSquare]", FontSize -> 8.96], {0., 0.}], {{{
-                    2.302585092994046, 0.3637089686783159}}, {{
+                    2.302585092994046, 0.3724386101344751}}, {{
                     2.302585092994046, 
-                    0.15506455714348377`}}}]}, {}}}, {}, {}, {}, {}}}, {{{}, \
+                    0.020131067046504095`}}}]}, {}}}, {}, {}, {}, {}}}, {{{}, \
 {{{}, {}, {
                     Hue[0.67, 0.6, 0.6], 
                     Directive[
@@ -980,25 +1282,25 @@ buttonGraphics[
                     AbsoluteThickness[1.6], 
                     RGBColor[0.368417, 0.506779, 0.709798]], 
                     
-                    Line[{{2.302585092994046, 0.5250106435565708}, {
-                    2.302585092994046, 0.5666176527971404}}]}, {
+                    Line[{{2.302585092994046, 0.53291632402857}, {
+                    2.302585092994046, 0.5761370386304301}}]}, {
                     Hue[0.9060679774997897, 0.6, 0.6], 
                     Directive[
                     PointSize[0.012833333333333334`], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0.368417, 0.506779, 0.709798]], 
                     
-                    Line[{{3.6888794541139363`, 0.2858770962195152}, {
-                    3.6888794541139363`, 0.44459513402485473`}}]}, {
+                    Line[{{3.912023005428146, 0.3305018954762673}, {
+                    3.912023005428146, 0.5037746495147623}}]}, {
                     Hue[0.1421359549995791, 0.6, 0.6], 
                     Directive[
                     PointSize[0.012833333333333334`], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0.368417, 0.506779, 0.709798]], 
                     
-                    Line[{{5.278114659230517, -0.18676271363733965`}, {
-                    5.278114659230517, 
-                    0.11027193329494284`}}]}}}, {}, {}, {}, {}}}}, {
+                    Line[{{5.4510384535657, -0.37099045506675515`}, {
+                    5.4510384535657, 
+                    0.010453086889555131`}}]}}}, {}, {}, {}, {}}}}, {
                     DisplayFunction -> Identity, 
                     GridLines -> {
                     Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
@@ -1008,14 +1310,14 @@ buttonGraphics[
                     Scaled[0.02], 0}, {
                     Scaled[0.02], 
                     Scaled[0.05]}}, 
-                    AxesOrigin -> {2.18734759833843, -0.06886657808679884}, 
-                    PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {-0.05910630660173423, 0.5460305254722705}}, 
+                    AxesOrigin -> {2.181148669809394, -0.21422723095779655`}, 
+                    PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {-0.2020210817849993, 0.5547601669284297}}, 
                     PlotRangeClipping -> True, 
                     ImagePadding -> {{30, 10}, {35, 0}}, DisplayFunction -> 
                     Identity, AspectRatio -> GoldenRatio^(-1), 
                     Axes -> {True, True}, AxesLabel -> {None, None}, 
-                    AxesOrigin -> {2.18734759833843, -0.06886657808679884}, 
+                    AxesOrigin -> {2.181148669809394, -0.21422723095779655`}, 
                     DisplayFunction :> Identity, 
                     Frame -> {{True, True}, {True, True}}, 
                     FrameLabel -> {{None, None}, {
@@ -1037,8 +1339,8 @@ buttonGraphics[
                     (Exp[#]& )[
                     Part[#, 1]], 
                     (Exp[#]& )[
-                    Part[#, 2]]}& )}}, PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {-0.05910630660173423, 0.5460305254722705}}, 
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {-0.2020210817849993, 0.5547601669284297}}, 
                     PlotRangeClipping -> True, PlotRangePadding -> {{
                     Scaled[0.02], 0}, {
                     Scaled[0.02], 
@@ -1052,15 +1354,15 @@ buttonGraphics[
                     RGBColor[0.368417, 0.506779, 0.709798], 
                     AbsoluteThickness[1.6]], 
                     
-                    Line[{{2.302585092994046, 0.33553036638881395`}, {
-                    3.6888794541139363`, 0.4877895836962201}, {
-                    5.278114659230517, 0.6187283577691002}}]}, {
+                    Line[{{2.302585092994046, 0.24374477649827497`}, {
+                    3.912023005428146, 0.505009009009009}, {5.4510384535657, 
+                    0.6724137931034483}}]}, {
                     Hue[0.9060679774997897, 0.6, 0.6], 
                     Directive[
                     Opacity[0]], 
                     
-                    Line[{{2.302585092994046, 0.5156069648075835}, {
-                    2.302585092994046, 0.40263643966657675`}}]}}, {{
+                    Line[{{2.302585092994046, 0.560344827586207}, {
+                    2.302585092994046, 0.29249373179793}}]}}, {{
                     Directive[
                     PointSize[0.012833333333333334`], 
                     RGBColor[0.368417, 0.506779, 0.709798], 
@@ -1069,17 +1371,17 @@ buttonGraphics[
                     GeometricTransformation[
                     Inset[
                     Style["\[FilledCircle]", FontSize -> 8.96], {0., 0.}], {{{
-                    2.302585092994046, 0.33553036638881395`}}, {{
-                    3.6888794541139363`, 0.4877895836962201}}, {{
-                    5.278114659230517, 0.6187283577691002}}}]}, {
+                    2.302585092994046, 0.24374477649827497`}}, {{
+                    3.912023005428146, 0.505009009009009}}, {{5.4510384535657,
+                     0.6724137931034483}}}]}, {
                     Directive[
                     Opacity[0]], 
                     GeometricTransformation[
                     Inset[
                     Style["\[FilledSquare]", FontSize -> 8.96], {0., 0.}], {{{
-                    2.302585092994046, 0.5156069648075835}}, {{
+                    2.302585092994046, 0.560344827586207}}, {{
                     2.302585092994046, 
-                    0.40263643966657675`}}}]}, {}}}, {}, {}, {}, {}}}, {
+                    0.29249373179793}}}]}, {}}}, {}, {}, {}, {}}}, {
                     DisplayFunction -> Identity, 
                     GridLines -> {
                     Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
@@ -1089,14 +1391,14 @@ buttonGraphics[
                     PlotRangePadding -> {{
                     Scaled[0.02], 0}, {
                     Scaled[0.05], 0}}, 
-                    AxesOrigin -> {2.18734759833843, 0.30405548900723145`}, 
-                    PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {0.33553036638881395`, 1}}, PlotRangeClipping -> 
+                    AxesOrigin -> {2.181148669809394, 0.20792216064819324`}, 
+                    PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {0.24374477649827497`, 1}}, PlotRangeClipping -> 
                     True, ImagePadding -> {{30, 10}, {35, 0}}, 
                     DisplayFunction -> Identity, AspectRatio -> 
                     GoldenRatio^(-1), Axes -> {True, True}, 
                     AxesLabel -> {None, None}, 
-                    AxesOrigin -> {2.18734759833843, 0.30405548900723145`}, 
+                    AxesOrigin -> {2.181148669809394, 0.20792216064819324`}, 
                     DisplayFunction :> Identity, 
                     Frame -> {{True, True}, {True, True}}, 
                     FrameLabel -> {{None, None}, {
@@ -1109,8 +1411,8 @@ buttonGraphics[
                      6}]& }, GridLinesStyle -> Directive[
                     GrayLevel[0.5, 0.4]], ImageMargins -> 0, 
                     ImagePadding -> {{30, 10}, {35, 0}}, ImageSize -> 330, 
-                    Method -> {
-                    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    Method -> {"CoordinatesToolOptions" -> {
+                    "DisplayFunction" -> ({
                     (Exp[#]& )[
                     Part[#, 1]], 
                     (Identity[#]& )[
@@ -1118,8 +1420,8 @@ buttonGraphics[
                     (Exp[#]& )[
                     Part[#, 1]], 
                     (Identity[#]& )[
-                    Part[#, 2]]}& )}}, PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {0.33553036638881395`, 1}}, PlotRangeClipping -> 
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {0.24374477649827497`, 1}}, PlotRangeClipping -> 
                     True, PlotRangePadding -> {{
                     Scaled[0.02], 0}, {
                     Scaled[0.05], 0}}, Ticks -> {
@@ -1132,9 +1434,9 @@ buttonGraphics[
                     RGBColor[0.368417, 0.506779, 0.709798], 
                     AbsoluteThickness[1.6]], 
                     
-                    Line[{{2.302585092994046, 0.5460305254722705}, {
-                    3.6888794541139363`, 0.36838174235615545`}, {
-                    5.278114659230517, -0.027256999650470824`}}]}, 
+                    Line[{{2.302585092994046, 0.5547601669284297}, {
+                    3.912023005428146, 0.4208865179525225}, {
+                    5.4510384535657, -0.1621904897474504}}]}, 
                     "Markov"]}}, {}, {}, {}, {}}}}, {
                     DisplayFunction -> Identity, 
                     GridLines -> {
@@ -1145,14 +1447,14 @@ buttonGraphics[
                     Scaled[0.02], 0}, {
                     Scaled[0.02], 
                     Scaled[0.05]}}, 
-                    AxesOrigin -> {2.18734759833843, -0.06886657808679884}, 
-                    PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {-0.05910630660173423, 0.5460305254722705}}, 
+                    AxesOrigin -> {2.181148669809394, -0.21422723095779655`}, 
+                    PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {-0.2020210817849993, 0.5547601669284297}}, 
                     PlotRangeClipping -> True, 
                     ImagePadding -> {{30, 10}, {35, 0}}, DisplayFunction -> 
                     Identity, AspectRatio -> GoldenRatio^(-1), 
                     Axes -> {True, True}, AxesLabel -> {None, None}, 
-                    AxesOrigin -> {2.18734759833843, -0.06886657808679884}, 
+                    AxesOrigin -> {2.181148669809394, -0.21422723095779655`}, 
                     DisplayFunction :> Identity, 
                     Frame -> {{True, True}, {True, True}}, 
                     FrameLabel -> {{None, None}, {
@@ -1174,8 +1476,8 @@ buttonGraphics[
                     (Exp[#]& )[
                     Part[#, 1]], 
                     (Exp[#]& )[
-                    Part[#, 2]]}& )}}, PlotRange -> {{2.237306049778726, 
-                    Log[245]}, {-0.05910630660173423, 0.5460305254722705}}, 
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2337945180108325`, 
+                    Log[291]}, {-0.2020210817849993, 0.5547601669284297}}, 
                     PlotRangeClipping -> True, PlotRangePadding -> {{
                     Scaled[0.02], 0}, {
                     Scaled[0.02], 
@@ -1250,284 +1552,425 @@ buttonGraphics[
    3.71762118840996*^9, 3.717621210655511*^9}, 3.717621687153822*^9, 
    3.7176271511693745`*^9, 3.7176275901482363`*^9, 3.7176276640774117`*^9, {
    3.7176282453202505`*^9, 3.7176282760794516`*^9}, {3.7176283105090303`*^9, 
-   3.717628365242456*^9}, 3.7176284394769316`*^9, 
-   3.7176325645692863`*^9},ExpressionUUID->"148f4b06-cd6f-49d8-99c4-\
-8a9f9518f6ce"]
+   3.717628365242456*^9}, 3.7176284394769316`*^9, 3.7176325622338457`*^9, {
+   3.7176343942589855`*^9, 3.717634426811082*^9}, {3.717634635570165*^9, 
+   3.7176346537188787`*^9}, 3.7176350312631955`*^9, 3.717635684325463*^9, 
+   3.7176357427106543`*^9, 3.7176358530099707`*^9, 3.717636183106284*^9, 
+   3.7176362595906715`*^9},ExpressionUUID->"4922c8ce-e2a2-44ec-a8dd-\
+f4dac0a58fe1"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"api", "=", 
-  RowBox[{"APIFunction", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"\"\<query\>\"", "\[Rule]", "\"\<String\>\""}], "}"}], ",", 
+ RowBox[{
+  RowBox[{"api", "=", 
+   RowBox[{"APIFunction", "[", 
     RowBox[{
-     RowBox[{"c", "[", "#query", "]"}], "&"}]}], "]"}]}]], "Input",
+     RowBox[{"{", 
+      RowBox[{"\"\<query\>\"", "\[Rule]", 
+       RowBox[{"\"\<String\>\"", "\[Rule]", "\"\<default argument\>\""}]}], 
+      "}"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Classify", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Normal", "[", 
+            RowBox[{"AssociationThread", "[", 
+             RowBox[{
+              RowBox[{"#", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], ",", 
+              RowBox[{"#", "[", 
+               RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "]"}], "&"}], "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+             "\"\<drink water\>\"", ",", "\"\<math\>\"", ",", 
+              "\"\<play piano\>\"", ",", "\"\<play video games\>\"", ",", 
+              "\"\<play badminton\>\"", ",", "\"\<eat dinner\>\"", ",", 
+              "\"\<solve physics problem\>\"", ",", "\"\<join key club\>\"", 
+              ",", "\"\<watch television\>\"", ",", "\"\<train  boating\>\"", 
+              ",", "\"\<shower\>\"", ",", "\"\<write english essay\>\"", ",", 
+              "\"\<sketch  vase\>\"", ",", "\"\<nap\>\"", ",", 
+              "\"\<compete  ultimate frisbee\>\"", ",", 
+              "\"\<buy vegetables\>\"", ",", "\"\<clean toilet\>\"", ",", 
+              "\"\<spend time wood working\>\"", ",", "\"\<\>\"", ",", 
+              "\"\<swimming\>\"", ",", "\"\<cook dinner\>\"", ",", 
+              "\"\<collaborate  group project\>\"", ",", "\"\<knit\>\"", ",", 
+              "\"\<watch netflix\>\"", ",", "\"\<eat apple\>\"", ",", 
+              "\"\<play piano\>\"", ",", "\"\<play video games\>\"", ",", 
+              "\"\<finish math homework\>\"", ",", "\"\<drink wine\>\"", ",", 
+              "\"\<play violin\>\"", ",", "\"\<drink coffee\>\"", ",", 
+              "\"\<play badminton\>\"", ",", "\"\<play tennis\>\"", ",", 
+              "\"\<write essay\>\"", ",", "\"\<cheerleading practice\>\"", 
+              ",", "\"\<attend club meeting\>\"", ",", 
+              "\"\<write symphony\>\"", ",", "\"\<write proof  P = NP\>\"", 
+              ",", "\"\<prove  Riemann hypothesis\>\"", ",", 
+              "\"\<psychology homework\>\"", ",", 
+              "\"\<prepare notes  tomorrow\>\"", ",", "\"\<meditate\>\"", 
+              ",", "\"\<write announcement\>\"", ",", 
+              "\"\<horseback riding\>\"", ",", 
+              "\"\<going   play ball tomororow\>\"", ",", 
+              "\"\<going  finish  history work tonight\>\"", ",", 
+              "\"\<going   gokarting\>\"", ",", 
+              "\"\<playing paintball later\>\"", ",", 
+              "\"\<taking  roadtrip  lunch\>\"", ",", 
+              "\"\<going   city ride tonight\>\"", ",", 
+              "\"\<spinning  fidget spinner later\>\"", ",", 
+              "\"\<playing  phone games later\>\"", ",", "\"\<eating ass\>\"",
+               ",", "\"\<going   Hackathon\>\"", ",", 
+              "\"\<reading Spivak calculus\>\"", ",", 
+              "\"\<reading Harry Potter later\>\"", ",", 
+              "\"\<going   gym  bodybuild\>\"", ",", 
+              "\"\<going  buy pizza\>\"", ",", "\"\<going   arcade\>\"", ",", 
+              "\"\<swimming\>\"", ",", "\"\<hoola-hooping\>\"", ",", 
+              "\"\<Eat  salad\>\"", ",", "\"\<Eat banana\>\"", ",", 
+              "\"\<consuming slices  pizza\>\"", ",", 
+              "\"\<going   atrium   sushi\>\"", ",", "\"\<drink water\>\"", 
+              ",", "\"\<drink champagne\>\"", ",", "\"\<eat ramen\>\"", ",", 
+              "\"\<fencing later\>\"", ",", "\"\<swordfighting tonight\>\"", 
+              ",", "\"\<watching  hockey game\>\"", ",", 
+              "\"\<playing   hockey game\>\"", ",", 
+              "\"\<reading  AoPS Volume 2\>\"", ",", "\"\<cooking food\>\"", 
+              ",", "\"\<hoolahooping\>\"", ",", "\"\<Sailing\>\"", ",", 
+              "\"\<write emails\>\"", ",", "\"\<write psychology paper\>\"", 
+              ",", "\"\<Watch lectures  MIT OCW\>\"", ",", 
+              "\"\<interview  Google\>\"", ",", "\"\<watching TV\>\"", ",", 
+              "\"\<watching  movie\>\"", ",", "\"\<listening  music\>\"", 
+              ",", "\"\<make jewelry\>\"", ",", "\"\<paint  painting\>\"", 
+              ",", "\"\<photos\>\"", ",", "\"\<going  cadets\>\"", ",", 
+              "\"\<finishing   problem set\>\"", ",", 
+              "\"\<playing baseball\>\"", ",", 
+              "\"\<going  wrestling practice\>\"", ",", 
+              "\"\<going  martial arts practice\>\"", ",", 
+              "\"\<getting food\>\"", ",", "\"\<archery\>\"", ",", 
+              "\"\<playing ultimate frisbee\>\"", ",", 
+              "\"\<cross country\>\"", ",", "\"\<draw  vase.\>\"", ",", 
+              "\"\<draw fruit.\>\"", ",", "\"\<library\>\"", ",", 
+              "\"\<drinking  energy drink\>\"", ",", 
+              "\"\<creating  website   project\>\"", ",", 
+              "\"\<reviewing  economics notes\>\"", ",", 
+              "\"\<driving   country\>\"", ",", "\"\<trick-or-treating\>\"", 
+              ",", "\"\<drinking soylent\>\"", ",", "\"\<jog\>\"", ",", 
+              "\"\<jog\>\"", ",", "\"\<bake  pie\>\"", ",", 
+              "\"\<build  app\>\"", ",", "\"\<study linear algebra\>\"", ",", 
+              "\"\<read  textbook\>\"", ",", "\"\<commute  train\>\"", ",", 
+              "\"\<watch youtube videos\>\"", ",", "\"\<play waterpolo\>\"", 
+              ",", "\"\<play water polo\>\"", ",", 
+              "\"\<make  jam sandwhich\>\"", ",", "\"\<practice darts\>\"", 
+              ",", "\"\<writing  math contest\>\"", ",", 
+              "\"\<competing   badminton tournament\>\"", ",", 
+              "\"\<playing crochet\>\"", ",", "\"\<play  card game\>\"", ",", 
+              "\"\<play  cards\>\"", ",", "\"\<giving  piano recital\>\"", 
+              ",", "\"\<writing notes   test\>\"", ",", 
+              "\"\<review  notes   test\>\"", ",", 
+              "\"\<memorize  English script\>\"", ",", 
+              "\"\<memorize  script\>\"", ",", "\"\<play  legos later\>\"", 
+              ",", "\"\<play  flute\>\"", ",", "\"\<play ping pong\>\"", ",", 
+              "\"\<play tennis\>\"", ",", "\"\<play   brother\>\"", ",", 
+              "\"\<sleep\>\"", ",", "\"\<learn Java development\>\"", ",", 
+              "\"\<learn Java development  class\>\"", ",", 
+              "\"\<write memos\>\"", ",", "\"\<prepare  presentation\>\"", 
+              ",", "\"\<write  letters\>\"", ",", 
+              "\"\<finish  app implementation\>\"", ",", 
+              "\"\<lift weights\>\"", ",", 
+              "\"\<read  computability theory\>\"", ",", 
+              "\"\<listen  rap music\>\"", ",", 
+              "\"\<listen  classical music\>\"", ",", 
+              "\"\<play  megablocks\>\"", ",", "\"\<yoga\>\"", ",", 
+              "\"\<play golf\>\"", ",", "\"\<play squash\>\"", ",", 
+              "\"\<eat squash\>\"", ",", "\"\<play\>\"", ",", 
+              "\"\<creatively write\>\"", ",", "\"\<write  lab report\>\"", 
+              ",", "\"\<calligrayphy\>\"", ",", "\"\<ice skating\>\"", ",", 
+              "\"\<play fantasy sports\>\"", ",", "\"\<woodworking\>\"", ",", 
+              "\"\<play   yoyo\>\"", ",", "\"\<play   yo-yo\>\"", ",", 
+              "\"\<surfing\>\"", ",", "\"\<play quidditch\>\"", ",", 
+              "\"\<mountain climbing\>\"", ",", "\"\<dance lesson\>\"", ",", 
+              "\"\<dance\>\"", ",", "\"\<volunteer   hospital\>\"", ",", 
+              "\"\<work   assignment\>\"", ",", "\"\<hydrating\>\"", ",", 
+              "\"\<graph  sigmoid function\>\"", ",", 
+              "\"\<browse instagram  evening\>\"", ",", 
+              "\"\<lot  photography\>\"", ",", "\"\<personal finance\>\"", 
+              ",", "\"\<gardening\>\"", ",", "\"\<art lesson\>\"", ",", 
+              "\"\<hackathon\>\"", ",", "\"\<drink hard coffee\>\"", ",", 
+              "\"\<clean  room\>\"", ",", "\"\<design  app\>\"", ",", 
+              "\"\<work   typing speed\>\"", ",", "\"\<play chess\>\"", ",", 
+              "\"\<chess club\>\"", ",", "\"\<practice   exam\>\"", ",", 
+              "\"\<fix  car\>\"", ",", "\"\<fly  China\>\"", ",", 
+              "\"\<write  list  1300+ swear words\>\"", ",", 
+              "\"\<design  lab experiment\>\"", ",", 
+              "\"\<conduct  job interviews\>\"", ",", 
+              "\"\<clothes shopping\>\"", ",", "\"\<prepare  afidavit\>\"", 
+              ",", "\"\<attend  debate club meeting\>\"", ",", 
+              "\"\<eat  club sandwich\>\"", ",", 
+              "\"\<prepare   science fair\>\"", ",", 
+              "\"\<write  article   school newspaper\>\"", ",", 
+              "\"\<practice  piano scales\>\"", ",", 
+              "\"\<prepare financial statements\>\"", ",", 
+              "\"\<play hungry hungry hippos\>\"", ",", "\"\<play risk\>\"", 
+              ",", "\"\<paly poker\>\"", ",", "\"\<drink bubble tea\>\"", 
+              ",", "\"\<ziplining\>\"", ",", "\"\<write  math contest\>\"", 
+              ",", "\"\<write  labreport\>\"", ",", 
+              "\"\<conduct  depositions\>\"", ",", "\"\<write  concerto\>\"", 
+              ",", "\"\<finish  programming project\>\"", ",", 
+              "\"\<read  emails\>\"", ",", "\"\<windsailing\>\"", ",", 
+              "\"\<surfing\>\"", ",", "\"\<boating\>\"", ",", 
+              "\"\<restaurant  eat\>\"", ",", "\"\<tutor  peers\>\"", ",", 
+              "\"\<play cricket\>\"", ",", "\"\<hiking\>\"", ",", 
+              "\"\<play lacrosse\>\"", ",", "\"\<box\>\"", ",", 
+              "\"\<play rugby later tonight\>\"", ",", "\"\<scuba diving\>\"",
+               ",", "\"\<volunteer   homeless shelter\>\"", ",", 
+              "\"\<study   library\>\"", ",", 
+              "\"\<conduct  lab experiment\>\"", ",", "\"\<write poems\>\"", 
+              ",", "\"\<swimming competition\>\"", ",", 
+              "\"\<eat  doritos\>\"", ",", "\"\<write test data\>\"", ",", 
+              "\"\<medicine\>\"", ",", "\"\<calculus homework\>\"", ",", 
+              "\"\<physics problem st\>\"", ",", "\"\<read lecture notes\>\"",
+               ",", "\"\<volleyball practice\>\"", ",", 
+              "\"\<badminton training\>\"", ",", "\"\<eat falafel\>\"", ",", 
+              "\"\<drink beer\>\"", ",", "\"\<grocery shopping\>\"", ",", 
+              "\"\<watch advertisements\>\"", ",", "\"\<write  book\>\"", 
+              ",", "\"\<chemistry homework\>\"", ",", 
+              "\"\<prepare  siideshow\>\"", ",", "\"\<smell flowers\>\"", 
+              ",", "\"\<arrange flowers\>\"", ",", 
+              "\"\<recreational drugs\>\"", ",", 
+              "\"\<going  play football\>\"", ",", 
+              "\"\<going  play soccer\>\"", ",", "\"\<bowling\>\"", ",", 
+              "\"\<play handball\>\"", ",", "\"\<playing softball\>\"", ",", 
+              "\"\<attending track  field practice\>\"", ",", 
+              "\"\<play billiards\>\"", ",", "\"\<play pool\>\"", ",", 
+              "\"\<paint  room\>\"", ",", "\"\<nap club\>\"", ",", 
+              "\"\<attend tea club\>\"", ",", "\"\<listen  techno music\>\"", 
+              ",", "\"\<perform  topological sort   directed acyclic \
+graph\>\"", ",", "\"\<build  startup\>\"", ",", "\"\<exercise club\>\"", ",", 
+              "\"\<data visualization\>\"", ",", "\"\<drink  soylent\>\"", 
+              ",", "\"\<drink  diet coke\>\"", ",", "\"\<eat  chips\>\"", 
+              ",", "\"\<invest   hundred dollars\>\"", ",", 
+              "\"\<watch  android studio tutorials\>\"", ",", 
+              "\"\<push  gihub\>\"", ",", "\"\<play league  legends\>\"", 
+              ",", "\"\<play DOTA2\>\"", ",", "\"\<play Clash  Clans!\>\"", 
+              ",", "\"\<gonna play\>\"", ",", "\"\<watch AlphaGo's games\>\"",
+               ",", "\"\<train  biceps\>\"", ",", "\"\<train  triceps\>\"", 
+              ",", "\"\<watch video tutorials\>\"", ",", 
+              "\"\<train  quadriceps\>\"", ",", "\"\<train  abdominals\>\"", 
+              ",", "\"\<design  user interface\>\"", ",", 
+              "\"\<play texas hold'em\>\"", ",", "\"\<install Linux\>\"", 
+              ",", "\"\<look   word   dictionary\>\"", ",", 
+              "\"\<use  dictionary    nth fibonacci number\>\"", ",", 
+              "\"\<write  database   rabbit girls\>\"", ",", 
+              "\"\<practice programming  DMOJ\>\"", ",", 
+              "\"\<practice programming  USACO\>\"", ",", 
+              "\"\<write training data   ML algo\>\"", ",", 
+              "\"\<read   Markhov chains\>\"", ",", "\"\<situps\>\"", ",", 
+              "\"\<push  code   cloud\>\"", ",", "\"\<eat  pizza crust\>\"", 
+              ",", "\"\<drink  sprite\>\"", ",", "\"\<charge  laptop\>\"", 
+              ",", "\"\<listen  Post Malone's music\>\"", ",", 
+              "\"\<listen  21 Savage's music\>\"", ",", 
+              "\"\<listen  Beethoven's music\>\"", ",", 
+              "\"\<listen  Chopin's music\>\"", ",", 
+              "\"\<listen  Scriabin's music\>\"", ",", 
+              "\"\<listen  Schoenberg's music\>\"", ",", 
+              "\"\<watch Martin Luther King's speech\>\"", ",", 
+              "\"\<drink  energy drink\>\"", ",", "\"\<cut  hair\>\"", ",", 
+              "\"\<brush  teeth\>\"", ",", "\"\<comb  hair\>\"", ",", 
+              "\"\<buy  new computer\>\"", ",", 
+              "\"\<robotics club meeting\>\"", ",", 
+              "\"\<write  Python library\>\"", ",", 
+              "\"\<smash  volleyball\>\"", ",", "\"\<biology homework\>\"", 
+              ",", "\"\<chemistry homework\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+             "\"\<essential\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<essential\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<extracurricular\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<essential\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<extracurricular\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<essential\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<extracurricular\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<essential\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<extracurricular\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"",
+               ",", "\"\<work\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<leisure\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<extracurricular\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<leisure\>\"", ",", "\"\<leisure\>\"", 
+              ",", "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<work\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<essential\>\"",
+               ",", "\"\<essential\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<leisure\>\"", 
+              ",", "\"\<sport\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"",
+               ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<work\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", 
+              ",", "\"\<sport\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", 
+              ",", "\"\<extracurricular\>\"", ",", "\"\<extracurricular\>\"", 
+              ",", "\"\<work\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<essential\>\"", 
+              ",", "\"\<leisure\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<essential\>\"",
+               ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<essential\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<essential\>\"",
+               ",", "\"\<sport\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<leisure\>\"", 
+              ",", "\"\<leisure\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<leisure\>\"", ",", "\"\<leisure\>\"", 
+              ",", "\"\<leisure\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<essential\>\"",
+               ",", "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<leisure\>\"", ",", "\"\<sport\>\"", 
+              ",", "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", "\"\<sport\>\"",
+               ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<leisure\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<essential\>\"", 
+              ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<essential\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", 
+              ",", "\"\<leisure\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", 
+              ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<extracurricular\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<essential\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<sport\>\"", 
+              ",", "\"\<sport\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<work\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", "\"\<sport\>\"",
+               ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", 
+              ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", ",", "\"\<work\>\"",
+               ",", "\"\<extracurricular\>\"", ",", "\"\<extracurricular\>\"",
+               ",", "\"\<leisure\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"", 
+              ",", "\"\<work\>\"", ",", "\"\<sport\>\"", ",", "\"\<sport\>\"",
+               ",", "\"\<work\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<work\>\"", ",", "\"\<sport\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", 
+              "\"\<leisure\>\"", ",", "\"\<leisure\>\"", ",", "\"\<work\>\"", 
+              ",", "\"\<essential\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<essential\>\"", ",", 
+              "\"\<essential\>\"", ",", "\"\<extracurricular\>\"", ",", 
+              "\"\<work\>\"", ",", "\"\<sport\>\"", ",", "\"\<work\>\"", ",", 
+              "\"\<work\>\""}], "}"}]}], "}"}], "]"}], ",", 
+         RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}]}], "]"}], 
+       "[", 
+       RowBox[{"#query", ",", "\"\<Probabilities\>\""}], "]"}], "&"}]}], 
+    "]"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.717621382990097*^9, 3.717621392882698*^9}, {
-  3.717621460800786*^9, 
-  3.7176215144591646`*^9}},ExpressionUUID->"5e972a8c-cdb4-40a6-9721-\
+   3.717621460800786*^9, 3.7176215144591646`*^9}, 3.7176356773490257`*^9, {
+   3.7176357323949356`*^9, 3.7176357403143373`*^9}, 3.7176358510670657`*^9, {
+   3.7176361770579495`*^9, 3.717636179959883*^9}, {3.7176362134666567`*^9, 
+   3.7176362196196404`*^9}},ExpressionUUID->"5e972a8c-cdb4-40a6-9721-\
 6099e2d50b68"],
 
-Cell[BoxData[
- RowBox[{"APIFunction", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"\<\"query\"\>", "\[Rule]", "\<\"String\"\>"}], "}"}], ",", 
-   RowBox[{
-    RowBox[{"c", "[", "#query", "]"}], "&"}]}], "]"}]], "Output",
- CellChangeTimes->{
-  3.7176215147181473`*^9, 3.7176216874557824`*^9, 3.7176271514727116`*^9, 
-   3.717627590472322*^9, 3.7176276643890333`*^9, {3.717628247749445*^9, 
-   3.717628276411134*^9}, {3.717628310823599*^9, 3.717628365558698*^9}, 
-   3.7176284398230977`*^9, 
-   3.717632565524661*^9},ExpressionUUID->"6d38314b-9e0b-424e-9350-\
-287a56fda496"]
-}, Open  ]],
-
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"BarChart", "[", 
-  RowBox[{
-   RowBox[{"c", "[", 
-    RowBox[{"\"\<exercise myself\>\"", ",", "\"\<Probabilities\>\""}], "]"}], 
-   ",", 
-   RowBox[{"ChartLabels", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.7176339534788494`*^9, 3.7176339581352277`*^9}, {
-  3.717633990880125*^9, 3.717634003309395*^9}, {3.717634087040877*^9, 
-  3.7176342801536493`*^9}},ExpressionUUID->"b83dcf0f-b49e-4456-9663-\
-b98807cd95a7"],
+ RowBox[{"CloudDeploy", "[", "api", "]"}]], "Input",
+ CellChangeTimes->{{3.717635479647902*^9, 3.717635514550671*^9}, {
+  3.717635583302359*^9, 
+  3.71763558448483*^9}},ExpressionUUID->"0a4e14f0-eedd-4588-b874-\
+b44d45a6928d"],
 
 Cell[BoxData[
- GraphicsBox[{
-   {Opacity[0], 
-    PointBox[{{0.45075018208302986`, 0.}, {5.451201747997087, 0.}}]}, {{}, 
-    {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
-     0.6649999999999999], Thickness[Small]}], 
-     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
-      0.6649999999999999], Thickness[Small]}], 
-      TagBox[
-       TooltipBox[
-        TagBox[
-         DynamicBox[{
-           FEPrivate`If[
-            CurrentValue["MouseOver"], 
-            EdgeForm[{
-              GrayLevel[0.5], 
-              AbsoluteThickness[1.5], 
-              Opacity[0.66]}], {}, {}], 
-           
-           RectangleBox[{0.5487982520029133, 0.}, {1.4512017479970867`, 
-            0.1347589727468841}, "RoundingRadius" -> 0]},
-          
-          ImageSizeCache->{{30.058405715227263`, 88.61898126987431}, {
-           9.745599919962899, 92.79138623121473}}],
-         StatusArea[#, 0.1347589727468841]& ,
-         TagBoxNote->"0.1347589727468841"],
-        StyleBox["0.1347589727468841`", {}, StripOnInput -> False]],
-       Annotation[#, 
-        Style[0.1347589727468841, {}], "Tooltip"]& ]}, 
-     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
-      0.6649999999999999], Thickness[Small]}], 
-      TagBox[
-       TooltipBox[
-        TagBox[
-         DynamicBox[{
-           FEPrivate`If[
-            CurrentValue["MouseOver"], 
-            EdgeForm[{
-              GrayLevel[0.5], 
-              AbsoluteThickness[1.5], 
-              Opacity[0.66]}], {}, {}], 
-           
-           RectangleBox[{1.5487982520029133`, 0.}, {2.4512017479970867`, 
-            0.14006690756790366`}, "RoundingRadius" -> 0]},
-          
-          ImageSizeCache->{{94.39833326690635, 152.95890882155336`}, {
-           6.494256840100604, 92.79138623121473}}],
-         StatusArea[#, 0.14006690756790366`]& ,
-         TagBoxNote->"0.14006690756790366"],
-        StyleBox["0.14006690756790366`", {}, StripOnInput -> False]],
-       Annotation[#, 
-        Style[0.14006690756790366`, {}], "Tooltip"]& ]}, 
-     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
-      0.6649999999999999], Thickness[Small]}], 
-      TagBox[
-       TooltipBox[
-        TagBox[
-         DynamicBox[{
-           FEPrivate`If[
-            CurrentValue["MouseOver"], 
-            EdgeForm[{
-              GrayLevel[0.5], 
-              AbsoluteThickness[1.5], 
-              Opacity[0.66]}], {}, {}], 
-           
-           RectangleBox[{2.5487982520029133`, 0.}, {3.4512017479970867`, 
-            0.17605990460924895`}, "RoundingRadius" -> 0]},
-          
-          ImageSizeCache->{{158.73826081858542`, 
-           217.29883637323246`}, {-15.55303382941888, 92.79138623121473}}],
-         StatusArea[#, 0.17605990460924895`]& ,
-         TagBoxNote->"0.17605990460924895"],
-        StyleBox["0.17605990460924895`", {}, StripOnInput -> False]],
-       Annotation[#, 
-        Style[0.17605990460924895`, {}], "Tooltip"]& ]}, 
-     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
-      0.6649999999999999], Thickness[Small]}], 
-      TagBox[
-       TooltipBox[
-        TagBox[
-         DynamicBox[{
-           FEPrivate`If[
-            CurrentValue["MouseOver"], 
-            EdgeForm[{
-              GrayLevel[0.5], 
-              AbsoluteThickness[1.5], 
-              Opacity[0.66]}], {}, {}], 
-           
-           RectangleBox[{3.5487982520029133`, 0.}, {4.451201747997087, 
-            0.2283567131449388}, "RoundingRadius" -> 0]},
-          
-          ImageSizeCache->{{223.0781883702645, 
-           281.63876392491153`}, {-47.58712472632594, 92.79138623121473}}],
-         StatusArea[#, 0.2283567131449388]& ,
-         TagBoxNote->"0.2283567131449388"],
-        StyleBox["0.2283567131449388`", {}, StripOnInput -> False]],
-       Annotation[#, 
-        Style[0.2283567131449388, {}], "Tooltip"]& ]}, 
-     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
-      0.6649999999999999], Thickness[Small]}], 
-      TagBox[
-       TooltipBox[
-        TagBox[
-         DynamicBox[{
-           FEPrivate`If[
-            CurrentValue["MouseOver"], 
-            EdgeForm[{
-              GrayLevel[0.5], 
-              AbsoluteThickness[1.5], 
-              Opacity[0.66]}], {}, {}], 
-           
-           RectangleBox[{4.548798252002913, 0.}, {5.451201747997087, 
-            0.32075750193102454`}, "RoundingRadius" -> 0]},
-          
-          ImageSizeCache->{{287.4181159219436, 
-           345.9786914765906}, {-104.18666396779516`, 92.79138623121473}}],
-         StatusArea[#, 0.32075750193102454`]& ,
-         TagBoxNote->"0.32075750193102454"],
-        StyleBox["0.32075750193102454`", {}, StripOnInput -> False]],
-       Annotation[#, 
-        Style[0.32075750193102454`, {}], 
-        "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-   StyleBox[
-    StyleBox[{
-      {Thickness[Tiny], 
-       LineBox[{{0.45075018208302986`, 0.}, {5.551210779315368, 0.}}], 
-       StyleBox[{}, "GraphicsLabel",
-        StripOnInput->False]}, 
-      StyleBox[{
-        {Thickness[Tiny], 
-         LineBox[{{0.5487982520029133, 0.}, 
-           Offset[{-1.102182119232618*^-15, -6.}, {0.5487982520029133, 0.}]}],
-          LineBox[{{5.451201747997087, 0.}, 
-           Offset[{-1.102182119232618*^-15, -6.}, {5.451201747997087, 
-            0.}]}], {{}, {}, {}, {}, {}, {
-           LineBox[{{1.4512017479970867`, 0.}, 
-             Offset[{-7.347880794884119*^-16, -4.}, {1.4512017479970867`, 
-              0.}]}], LineBox[{{1.5487982520029133`, 0.}, 
-             Offset[{-7.347880794884119*^-16, -4.}, {1.5487982520029133`, 
-              0.}]}], LineBox[{{2.4512017479970867`, 0.}, 
-             Offset[{-7.347880794884119*^-16, -4.}, {2.4512017479970867`, 
-              0.}]}], LineBox[{{2.5487982520029133`, 0.}, 
-             Offset[{-7.347880794884119*^-16, -4.}, {2.5487982520029133`, 
-              0.}]}], LineBox[{{3.4512017479970867`, 0.}, 
-             Offset[{-7.347880794884119*^-16, -4.}, {3.4512017479970867`, 
-              0.}]}], LineBox[{{3.5487982520029133`, 0.}, 
-             Offset[{-7.347880794884119*^-16, -4.}, {3.5487982520029133`, 
-              0.}]}], 
-           LineBox[{{4.451201747997087, 0.}, 
-             Offset[{-7.347880794884119*^-16, -4.}, {4.451201747997087, 
-              0.}]}], LineBox[{{4.548798252002913, 0.}, 
-             Offset[{-7.347880794884119*^-16, -4.}, {4.548798252002913, 
-              0.}]}]}, {}}}, 
-        StyleBox[
-         {Thickness[Tiny], 
-          InsetBox["\<\"essential\"\>", Offset[{0., -2.}, {1., 0.}], {0, 1}, 
-           Automatic, {1, 0}], 
-          InsetBox["\<\"extracurricular\"\>", Offset[{0., -2.}, {2., 0.}], {0, 1},
-            Automatic, {1, 0}], 
-          InsetBox["\<\"leisure\"\>", Offset[{0., -2.}, {3., 0.}], {0, 1}, 
-           Automatic, {1, 0}], 
-          InsetBox["\<\"sport\"\>", Offset[{0., -2.}, {4., 0.}], {0, 1}, 
-           Automatic, {1, 0}], 
-          InsetBox["\<\"work\"\>", Offset[{0., -2.}, {5., 0.}], {0, 1}, 
-           Automatic, {1, 0}]}, "GraphicsLabel",
-         StripOnInput->False]}, "GraphicsTicks",
-       StripOnInput->False]},
-     Antialiasing->False], "GraphicsAxes",
-    StripOnInput->False]},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{False, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{0.45075018208302986`, 0.},
-  CoordinatesToolOptions:>{"DisplayFunction" -> ({
-      Identity[
-       Part[#, 1]], 
-      Identity[
-       Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-      Identity[
-       Part[#, 1]], 
-      Identity[
-       Part[#, 2]]}& )},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, Automatic}, {{{1., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {1., 
-       FormBox["\"essential\"", TraditionalForm], 0}, {2., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {2., 
-       FormBox["\"extracurricular\"", TraditionalForm], 0}, {3., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {3., 
-       FormBox["\"leisure\"", TraditionalForm], 0}, {4., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {4., 
-       FormBox["\"sport\"", TraditionalForm], 0}, {5., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {5., 
-       FormBox["\"work\"", TraditionalForm], 0}}, {{1., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {2., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {3., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {4., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}, {5., 
-       FormBox[
-        TemplateBox[{0}, "Spacer1"], TraditionalForm], {0.004, 0}}}}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  PlotRange->{{All, All}, {All, All}},
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.02], 
-     Scaled[0.05]}},
-  Ticks->{None, Automatic}]], "Output",
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/616e918d-18d4-4cc5-b3aa-\
+2539608bf099\"",
+     "https://www.wolframcloud.com/objects/616e918d-18d4-4cc5-b3aa-\
+2539608bf099"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/616e918d-18d4-4cc5-b3aa-2539608bf099"],
+  SelectWithContents->True]], "Output",
  CellChangeTimes->{
-  3.7176339583982935`*^9, {3.717633992805789*^9, 3.7176340035529957`*^9}, {
-   3.717634087622883*^9, 
-   3.7176342628099794`*^9}},ExpressionUUID->"2567797d-32be-48a6-b279-\
-2479597e858d"]
-}, Open  ]]
+  3.717635489297077*^9, {3.717635528072489*^9, 3.717635544935272*^9}, 
+   3.717635585607424*^9, 3.717635685001979*^9, 3.717635743282583*^9, 
+   3.7176358537639046`*^9, 3.717636183843685*^9, 
+   3.7176362600955563`*^9},ExpressionUUID->"abd1695a-1302-4093-9208-\
+999cc4f32cac"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"BarChart", "[", 
+     RowBox[{
+      RowBox[{"c", "[", 
+       RowBox[{
+        RowBox[{"ToString", "[", "query", "]"}], ",", 
+        "\"\<Probabilities\>\""}], "]"}], ",", 
+      RowBox[{"ChartLabels", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"query", ",", "\"\<hello world\>\""}], "}"}]}], "]"}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.7176339534788494`*^9, 3.7176339581352277`*^9}, {
+  3.717633990880125*^9, 3.717634003309395*^9}, {3.717634087040877*^9, 
+  3.7176342801536493`*^9}, {3.717634412575904*^9, 3.717634475483694*^9}, {
+  3.717634571935582*^9, 
+  3.7176345742158785`*^9}},ExpressionUUID->"e9516e99-8a46-4507-bbe5-\
+688c6b65f679"]
 },
-WindowSize->{1350, 716},
-WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+WindowSize->{681, 716},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
 FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1543,20 +1986,21 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 206, 4, 28, "Input",ExpressionUUID->"16b7220e-a1be-4d25-ae58-4df1f75fc9d4"],
-Cell[767, 26, 724, 19, 28, "Input",ExpressionUUID->"aaf4c49f-7e09-4c16-b1fc-ab74eed0c828"],
 Cell[CellGroupData[{
-Cell[1516, 49, 821, 19, 48, "Input",ExpressionUUID->"f6c93fd9-abe4-408c-813f-88b9fd75fc6b"],
-Cell[2340, 70, 10130, 202, 71, "Output",ExpressionUUID->"19a4a624-5311-4260-a88b-fead8a26ab77"],
-Cell[12473, 274, 50423, 980, 569, "Output",ExpressionUUID->"148f4b06-cd6f-49d8-99c4-8a9f9518f6ce"]
+Cell[789, 28, 718, 18, 181, "Input",ExpressionUUID->"aaf4c49f-7e09-4c16-b1fc-ab74eed0c828"],
+Cell[1510, 48, 19209, 295, 2218, "Output",ExpressionUUID->"49f53cc3-2bb8-424c-a78d-8c5bfdfb9357"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[62933, 1259, 428, 11, 28, "Input",ExpressionUUID->"5e972a8c-cdb4-40a6-9721-6099e2d50b68"],
-Cell[63364, 1272, 574, 13, 32, "Output",ExpressionUUID->"6d38314b-9e0b-424e-9350-287a56fda496"]
+Cell[20756, 348, 923, 20, 67, "Input",ExpressionUUID->"f6c93fd9-abe4-408c-813f-88b9fd75fc6b"],
+Cell[21682, 370, 10378, 205, 71, "Output",ExpressionUUID->"06066284-1683-4bb5-8501-3685cf57ecff"],
+Cell[32063, 577, 50566, 982, 569, "Output",ExpressionUUID->"4922c8ce-e2a2-44ec-a8dd-f4dac0a58fe1"]
 }, Open  ]],
+Cell[82644, 1562, 23373, 357, 2993, "Input",ExpressionUUID->"5e972a8c-cdb4-40a6-9721-6099e2d50b68"],
 Cell[CellGroupData[{
-Cell[63975, 1290, 459, 10, 28, "Input",ExpressionUUID->"b83dcf0f-b49e-4456-9663-b98807cd95a7"],
-Cell[64437, 1302, 9311, 223, 241, "Output",ExpressionUUID->"2567797d-32be-48a6-b279-2479597e858d"]
-}, Open  ]]
+Cell[106042, 1923, 240, 5, 28, "Input",ExpressionUUID->"0a4e14f0-eedd-4588-b874-b44d45a6928d"],
+Cell[106285, 1930, 712, 17, 57, "Output",ExpressionUUID->"abd1695a-1302-4093-9208-999cc4f32cac"]
+}, Open  ]],
+Cell[107012, 1950, 763, 19, 48, "Input",ExpressionUUID->"e9516e99-8a46-4507-bbe5-688c6b65f679"]
 }
 ]
 *)

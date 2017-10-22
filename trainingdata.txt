@@ -164,361 +164,6 @@ I'll be watching a movie
 leisure
 I'll be listening to music
 leisure
-
-Solve rubiks cube
-leisure
-Compete in rubiks cube competition
-extracurricular
-buy chocolate
-essential
-eat apple
-essential
-play piano
-extracurricular
-play video games
-leisure
-finish math homework
-work
-drink wine
-essential
-play violin
-extracurricular
-drink coffee
-essential
-play badminton
-sport
-play tennis
-sport
-write essay
-work
-have cheerleading practice
-sport
-attend club meeting
-extracurricular
-write symphony
-extracurricular
-write proof for P = NP
-work
-prove the Riemann hypothesis
-work
-do psychology homework
-work
-prepare notes for tomorrow
-work
-meditate
-leisure
-write announcement
-work
-go horseback riding
-extracurricular
-I'm going to go play ball tomororow 
-sport
-I'm going to finish my history work tonight
-work
-I'm going to go gokarting
-leisure
-I'm playing paintball later
-leisure
-I'm taking a roadtrip at lunch
-leisure
-I'm going for a city ride tonight
-leisure
-I'm spinning my fidget spinner later
-leisure
-I'm playing my phone games later
-leisure
-I'm eating ass
-leisure
-I'm going to a Hackathon
-leisure
-I'm reading Spivak calculus
-work
-I'm reading Harry Potter later
-work
-I'm going to the gym to bodybuild
-sport
-I'm going to buy pizza
-essential
-I'm going to the arcade
-leisure
-I'll be swimming
-sport
-I'll be hoola-hooping
-sport
-Eat a salad
-essential
-Eat banana
-essential
-I'll be consuming slices of pizza
-essential
-I'll be going to the atrium to get sushi
-essential
-drink water
-essential
-drink champagne
-essential
-eat ramen
-essential
-I'll be fencing later
-sport
-I'll be swordfighting tonight
-sport
-I'll be watching a hockey game
-leisure
-I'll be playing in a hockey game
-sport
-I'll be reading the AoPS Volume 2
-work
-I'll be cooking food
-essential
-I'll be hoolahooping
-sport
-Sailing
-sport
-write emails
-work
-write psychology paper
-work
-Watch lectures on MIT OCW
-work
-I'll be doing my interview at Google 
-work
-I'll be watching TV
-leisure
-I'll be watching a movie
-leisure
-I'll be listening to music
-leisure
-I'll make jewelry
-leisure
-I'll paint a painting
-leisure
-I'll take some photos
-leisure
-I'll be going to cadets
-extracurricular
-I'll be finishing up my problem set
-work
-I'll be playing baseball
-sport
-I'll be going to wrestling practice
-sport
-I'll be going to martial arts practice
-sport
-I'll be getting food 
-essential
-I'll be doing archery
-sport
-I'll be playing ultimate frisbee
-sport
-I'll be doing cross country 
-sport
-I will draw a vase. 
-extracurricular
-I will draw fruit.
-extracurricular 
-I am to go to the library
-work
-I will drinking my energy drink
-essential
-I'll be creating a website for our project
-work
-I'll be reviewing my economics notes
-work
-I'll be driving across the country
-essential 
-I will go trick-or-treating
-leisure
-I will be drinking soylent
-essential
-I will go for a jog
-sport
-I will jog
-sport
-I will bake a pie
-essential
-I will build an app
-work
-I will study linear algebra
-work
-I will read my textbook
-work
-I will commute by train
-essential
-I will watch youtube videos
-leisure
-I will play waterpolo 
-sport
-I will play water polo
-sport
-I will make a jam sandwhich
-essential
-I will practice darts
-sport
-I will be writing my math contest
-extracurricular
-I will be competing in my badminton tournament
-sport
-I will be playing crochet
-sport
-I will play a card game
-leisure
-I will play with cards
-leisure
-I will be giving my piano recital
-extracurricular
-I will be writing notes for my test
-work
-I will review my notes for my test
-work
-I will memorize my English script
-work
-I will memorize my script
-work
-I will play with legos later
-leisure
-I will play my flute
-extracurricular
-I will play ping pong 
-sport
-I will play tennis 
-sport
-I will play with my brother
-leisure
-I will sleep
-essential
-I will learn Java development
-extracurricular
-I will learn Java development for class
-work
-I will write memos
-work
-I will prepare my presentation
-work
-I will write my letters
-work
-I will finish the app implementation
-work
-I will lift weights
-sport
-eat apple
-essential
-play piano
-extracurricular
-play video games
-leisure
-finish math homework
-work
-drink wine
-essential
-play violin
-extracurricular
-drink coffee
-essential
-play badminton
-sport
-play tennis
-sport
-write essay
-work
-have cheerleading practice
-sport
-attend club meeting
-extracurricular
-write symphony
-extracurricular
-write proof for P = NP
-work
-prove the Riemann hypothesis
-work
-do psychology homework
-work
-prepare notes for tomorrow
-work
-meditate
-leisure
-write announcement
-work
-go horseback riding
-extracurricular
-I'm going to go play ball tomororow 
-sport
-I'm going to finish my history work tonight
-work
-I'm going to go gokarting
-leisure
-I'm playing paintball later
-leisure
-I'm taking a roadtrip at lunch
-leisure
-I'm going for a city ride tonight
-leisure
-I'm spinning my fidget spinner later
-leisure
-I'm playing my phone games later
-leisure
-I'm eating ass
-leisure
-I'm going to a Hackathon
-leisure
-I'm reading Spivak calculus
-work
-I'm reading Harry Potter later
-work
-I'm going to the gym to bodybuild
-sport
-I'm going to buy pizza
-essential
-I'm going to the arcade
-leisure
-I'll be swimming
-sport
-I'll be hoola-hooping
-sport
-Eat a salad
-essential
-Eat banana
-essential
-I'll be consuming slices of pizza
-essential
-I'll be going to the atrium to get sushi
-essential
-drink water
-essential
-drink champagne
-essential
-eat ramen
-essential
-I'll be fencing later
-sport
-I'll be swordfighting tonight
-sport
-I'll be watching a hockey game
-leisure
-I'll be playing in a hockey game
-sport
-I'll be reading the AoPS Volume 2
-work
-I'll be cooking food
-essential
-I'll be hoolahooping
-sport
-Sailing
-sport
-write emails
-work
-write psychology paper
-work
-Watch lectures on MIT OCW
-work
-I'll be doing my interview at Google 
-work
-I'll be watching TV
-leisure
-I'll be watching a movie
-leisure
-I'll be listening to music
-leisure
 I'll make jewelry
 leisure
 I'll paint a painting
@@ -852,4 +497,104 @@ leisure
 I will perform a topological sort of a directed acyclic graph
 work
 I will build my startup
+work
+I will go to exercise club
+extracurricular
+I will do my data visualization
+work
+I will drink my soylent
+essential
+I will drink my diet coke 
+essential
+I will eat my chips
+essential
+I will invest my one hundred dollars
+work
+I will watch my android studio tutorials
+work
+I will push to gihub
+work
+I will play league of legends
+leisure
+I will play DOTA2
+leisure
+I will play Clash of Clans!
+leisure
+I'm gonna play Go
+leisure
+I will watch AlphaGo's games
+leisure
+I will train my biceps
+sport
+I will train my triceps
+sport
+I will watch video tutorials
+work
+I will train my quadriceps
+sport
+I will train my abdominals
+sport
+I will design the user interface
+work
+I will play texas hold'em 
+leisure
+I will install Linux
+work
+I will look up the word in a dictionary
+work
+I will use a dictionary to find the nth fibonacci number
+work
+I will write a database for my rabbit girls
+work
+I will practice programming on DMOJ
+work
+I will practice programming on USACO
+work
+I will write training data for this ML algo
+work
+I will read up on Markhov chains
+work
+I will do some situps
+sport
+I will push my code to the cloud
+work
+I will eat my pizza crust
+essential
+I will drink my sprite
+essential
+I will charge my laptop
+work
+I will listen to Post Malone's music
+leisure
+I will listen to 21 Savage's music
+leisure
+I will listen to Beethoven's music
+leisure
+I will listen to Chopin's music
+leisure
+I will listen to Scriabin's music
+leisure
+I will listen to Schoenberg's music
+leisure
+I will watch Martin Luther King's speech
+work
+I will drink an energy drink
+essential
+I will cut my hair
+essential
+I will brush my teeth
+essential
+I will comb my hair
+essential
+I will buy a new computer
+essential
+I will go to my robotics club meeting
+extracurricular
+I will write a Python library
+work
+I will smash in volleyball
+sport
+do biology homework
+work
+do chemistry homework
 work

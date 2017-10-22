@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Playground2</string>
+    <string name="testText">This is a test!</string>
+</resources>

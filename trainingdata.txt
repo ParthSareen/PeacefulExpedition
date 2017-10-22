@@ -1,0 +1,173 @@
+drink water
+essential
+do math
+work
+play piano
+extracurricular
+play video games
+leisure
+play badminton
+sport
+eat dinner
+essential
+solve physics problem
+work
+join key club
+extracurricular
+watch television
+leisure
+train for boating
+sport
+take a shower
+essential
+write english essay
+work
+sketch a vase
+extracurricular
+take a nap
+leisure
+compete in ultimate frisbee
+sport
+buy vegetables
+essential
+clean toilet
+work
+spend time wood working
+extracurricular
+do nothing
+leisure
+go swimming
+sport
+cook dinner
+essential
+collaborate on group project
+work
+knit
+extracurricular
+watch netflix
+leisure
+eat apple
+essential
+play piano
+extracurricular
+play video games
+leisure
+finish math homework
+work
+drink wine
+essential
+play violin
+extracurricular
+drink coffee
+essential
+play badminton
+sport
+play tennis
+sport
+write essay
+work
+have cheerleading practice
+sport
+attend club meeting
+extracurricular
+write symphony
+extracurricular
+write proof for P = NP
+work
+prove the Riemann hypothesis
+work
+do psychology homework
+work
+prepare notes for tomorrow
+work
+meditate
+leisure
+write announcement
+work
+go horseback riding
+extracurricular
+I'm going to go play ball tomororow 
+sport
+I'm going to finish my history work tonight
+work
+I'm going to go gokarting
+leisure
+I'm playing paintball later
+leisure
+I'm taking a roadtrip at lunch
+leisure
+I'm going for a city ride tonight
+leisure
+I'm spinning my fidget spinner later
+leisure
+I'm playing my phone games later
+leisure
+I'm eating ass
+leisure
+I'm going to a Hackathon
+leisure
+I'm reading Spivak calculus
+work
+I'm reading Harry Potter later
+work
+I'm going to the gym to bodybuild
+sport
+I'm going to buy pizza
+essential
+I'm going to the arcade
+leisure
+I'll be swimming
+sport
+I'll be hoola-hooping
+sport
+Eat a salad
+essential
+Eat banana
+essential
+I'll be consuming slices of pizza
+essential
+I'll be going to the atrium to get sushi
+essential
+drink water
+essential
+drink champagne
+essential
+eat ramen
+essential
+I'll be fencing later
+sport
+I'll be swordfighting tonight
+sport
+I'll be watching a hockey game
+leisure
+I'll be playing in a hockey game
+sport
+I'll be reading the AoPS Volume 2
+work
+I'll be cooking food
+essential
+I'll be hoolahooping
+sport
+Sailing
+sport
+write emails
+work
+write psychology paper
+work
+Watch lectures on MIT OCW
+work
+I'll be doing my interview at Google 
+work
+I'll be watching TV
+leisure
+I'll be watching a movie
+leisure
+I'll be listening to music
+leisure
+
+Solve rubiks cube
+leisure
+Compete in rubiks cube competition
+extracurricular
+buy chocolate
+essential

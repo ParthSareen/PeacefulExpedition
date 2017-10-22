@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/andrewwang/Documents/THacks/Scheduler/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/andrewwang/Documents/THacks/Scheduler/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/andrewwang/Documents/THacks/Scheduler/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
+        "source": "/Users/andrewwang/Documents/THacks/Scheduler/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    }
+]

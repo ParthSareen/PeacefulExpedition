@@ -1,0 +1,1317 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     64289,       1309]
+NotebookOptionsPosition[     63353,       1286]
+NotebookOutlinePosition[     63699,       1301]
+CellTagsIndexPosition[     63656,       1298]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7176212016723747`*^9, 
+  3.7176212060134387`*^9}},ExpressionUUID->"16b7220e-a1be-4d25-ae58-\
+4df1f75fc9d4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"training", "=", 
+   RowBox[{"Transpose", "[", 
+    RowBox[{"Partition", "[", 
+     RowBox[{
+      RowBox[{"DeleteStopwords", "[", 
+       RowBox[{"StringSplit", "[", 
+        RowBox[{
+         RowBox[{
+         "Import", "[", 
+          "\"\<C:\\\\Users\\\\Adam \
+Yu\\\\source\\\\repos\\\\PeacefulExpedition\\\\trainingdata.txt\>\"", "]"}], 
+         ",", "\"\<\\n\>\""}], "]"}], "]"}], ",", "2"}], "]"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.717620409031887*^9, 3.717620449034192*^9}, 
+   3.7176211790732846`*^9},ExpressionUUID->"aaf4c49f-7e09-4c16-b1fc-\
+ab74eed0c828"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"c", "=", 
+  RowBox[{"Classify", "[", 
+   RowBox[{"Normal", "[", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"training", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], ",", 
+      RowBox[{"training", "[", 
+       RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ClassifierInformation", "[", "c", "]"}]}], "Input",
+ CellChangeTimes->{{3.717620454867362*^9, 3.7176204795411963`*^9}, {
+  3.71762115970436*^9, 3.717621162853919*^9}, {3.7176211970745583`*^9, 
+  3.717621199863466*^9}},ExpressionUUID->"f6c93fd9-abe4-408c-813f-\
+88b9fd75fc6b"],
+
+Cell[BoxData[
+ TagBox[
+  TemplateBox[{RowBox[{
+      StyleBox[
+       TagBox["ClassifierFunction", "SummaryHead"], 
+       "NonInterpretableSummary"], 
+      StyleBox["[", "NonInterpretableSummary"], 
+      DynamicModuleBox[{
+       Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+       TemplateBox[{
+         PaneSelectorBox[{False -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource[
+                  "FEBitmaps", "SquarePlusIconMedium"]], 
+                 ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}]], 
+               GraphicsBox[{{
+                  PointSize[0.13], 
+                  GrayLevel[0.45], 
+                  
+                  PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                   1.1339776261519132`, 0.8056918676854272}, {
+                   0.5279892326667741, 0.6574306661126254}, {
+                   0.022147046479890797`, 1.4937877187998898`}}], 
+                  GrayLevel[0.7], 
+                  
+                  PointBox[{{-0.9815166384819979, 
+                   0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+                  GrayLevel[0.55], 
+                  AbsoluteThickness[1.5], 
+                  LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+                Axes -> {False, False}, AxesLabel -> {None, None}, 
+                 AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                   AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+                 Frame -> {{True, True}, {True, True}}, 
+                 FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                 Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.7]], 
+                 FrameTicks -> {{None, None}, {None, None}}, 
+                 GridLines -> {None, None}, 
+                 LabelStyle -> {FontFamily -> "Arial"}, 
+                 Method -> {"ScalingFunctions" -> None}, 
+                 PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> 
+                 True, PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+                 Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+                ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                FrameTicks -> None, FrameStyle -> Directive[
+                  Opacity[0.5], 
+                  Thickness[Tiny], 
+                  RGBColor[0.368417, 0.506779, 0.709798]], Background -> 
+                GrayLevel[0.94]], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Input type: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Text\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox["\"Classes: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{
+                    ",", "\",\"", "\"essential\"", "\"extracurricular\"", 
+                    "\"leisure\"", "\"sport\"", "\"work\""}, 
+                    "RowWithSeparators"], "SummaryItem"]}]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             BaselinePosition -> {1, 1}], True -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource[
+                  "FEBitmaps", "SquareMinusIconMedium"]], 
+                 ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}]], 
+               GraphicsBox[{{
+                  PointSize[0.13], 
+                  GrayLevel[0.45], 
+                  
+                  PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                   1.1339776261519132`, 0.8056918676854272}, {
+                   0.5279892326667741, 0.6574306661126254}, {
+                   0.022147046479890797`, 1.4937877187998898`}}], 
+                  GrayLevel[0.7], 
+                  
+                  PointBox[{{-0.9815166384819979, 
+                   0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+                  GrayLevel[0.55], 
+                  AbsoluteThickness[1.5], 
+                  LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+                Axes -> {False, False}, AxesLabel -> {None, None}, 
+                 AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                   AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+                 Frame -> {{True, True}, {True, True}}, 
+                 FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                 Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.7]], 
+                 FrameTicks -> {{None, None}, {None, None}}, 
+                 GridLines -> {None, None}, 
+                 LabelStyle -> {FontFamily -> "Arial"}, 
+                 Method -> {"ScalingFunctions" -> None}, 
+                 PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> 
+                 True, PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+                 Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+                ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                FrameTicks -> None, FrameStyle -> Directive[
+                  Opacity[0.5], 
+                  Thickness[Tiny], 
+                  RGBColor[0.368417, 0.506779, 0.709798]], Background -> 
+                GrayLevel[0.94]], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Input type: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Text\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox["\"Classes: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    
+                    TemplateBox[{
+                    ",", "\",\"", "\"essential\"", "\"extracurricular\"", 
+                    "\"leisure\"", "\"sport\"", "\"work\""}, 
+                    "RowWithSeparators"], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Markov\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    "\"Number of training examples: \"", 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["79", "SummaryItem"]}]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             BaselinePosition -> {1, 1}]}, 
+          Dynamic[Typeset`open$$], ImageSize -> Automatic]}, "SummaryPanel", 
+        DisplayFunction -> (
+         ButtonBox[#, Active -> False, Alignment -> Left, 
+          Appearance -> {
+           "Default" -> 
+            FrontEnd`FileName[{"Typeset", "SummaryBox"}, "Panel.9.png"]}, 
+          FrameMargins -> 7, BaseStyle -> {}, 
+          DefaultBaseStyle -> {"Panel", Background -> None}, BaselinePosition -> 
+          Baseline]& )], DynamicModuleValues :> {}], 
+      StyleBox["]", "NonInterpretableSummary"]}]},
+   "CopyTag",
+   DisplayFunction->(#& ),
+   InterpretationFunction->("ClassifierFunction[\[Ellipsis]]"& )],
+  False,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.71762048368875*^9, 3.7176210126251802`*^9, 3.717621077930091*^9, {
+   3.71762118840996*^9, 
+   3.717621210655511*^9}},ExpressionUUID->"30bc5c01-a0d2-4421-978d-\
+f15bf02810f7"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        FrameBox[
+         StyleBox["\<\"Classifier information\"\>", "SuggestionsBarText",
+          StripOnInput->False,
+          FontSize->12,
+          FontWeight->Bold],
+         FrameMargins->{{10, 5}, {-5, 5}},
+         FrameStyle->None,
+         StripOnInput->False],
+        Alignment->{Left, Bottom},
+        Background->RGBColor[0.93119, 0.93119, 0.93119],
+        Frame->{{False, False}, {True, False}},
+        FrameStyle->Opacity[0.1],
+        ItemSize->{Automatic, 1},
+        StripOnInput->False]},
+      {
+       ItemBox[
+        TagBox[
+         FrameBox[
+          TagBox[GridBox[{
+             {
+              
+              TemplateBox[{
+               TemplateBox[{5}, "Spacer1"],StyleBox["\"Input type\"", 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], "\<\"Text\"\>"},
+             {
+              TemplateBox[{TemplateBox[{5}, "Spacer1"],StyleBox["\"Classes\"", 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], 
+              
+              TemplateBox[{
+               ",","\",\"","\"essential\"","\"extracurricular\"",
+                "\"leisure\"","\"sport\"","\"work\""},
+               "RowWithSeparators"]},
+             {
+              TemplateBox[{TemplateBox[{5}, "Spacer1"],StyleBox["\"Method\"", 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], 
+              TagBox[
+               TooltipBox["\<\"Markov\"\>",
+                TemplateBox[{
+                  TagBox[
+                   
+                   DynamicModuleBox[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
+                    Data`UnorderedAssociation[
+                    "RowCount" -> 20, "Length" -> 3, "InitialType" -> 
+                    TypeSystem`Struct[{
+                    "Order", "AdditiveSmoothing", "MinimumTokenCount"}, {
+                    TypeSystem`Atom[Integer], 
+                    TypeSystem`Atom[Real], 
+                    TypeSystem`Atom[Integer]}], "Shape" -> 
+                    TypeSystem`PackageScope`DocumentShape[
+                    
+                    Association[{"Order"} -> 
+                    TypeSystem`PackageScope`AtomShape[34], {
+                    "AdditiveSmoothing"} -> 
+                    TypeSystem`PackageScope`AtomShape[60], {
+                    "MinimumTokenCount"} -> 
+                    TypeSystem`PackageScope`AtomShape[34]], 1], "InitialData" -> 
+                    TypeSystem`PackageScope`CacheHandle[1231871153], "Type" -> 
+                    TypeSystem`Struct[{
+                    "Order", "AdditiveSmoothing", "MinimumTokenCount"}, {
+                    TypeSystem`Atom[Integer], 
+                    TypeSystem`Atom[Real], 
+                    TypeSystem`Atom[Integer]}], "HandleQ" -> True, 
+                    "RowTarget" -> 20, "Data" -> 
+                    TypeSystem`PackageScope`CacheHandle[1231871153]], 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$ = 1, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+                    DynamicModule[{
+                    TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+                    Style[
+                    Grid[{{
+                    Item[
+                    Annotation[
+                    EventHandler[
+                    MouseAppearance[
+                    Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"Order\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Order\"", FontColor -> 
+                    RGBColor[0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 648400158][{
+                    Key["Order"]}]], 
+                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    648400158][
+                    GeneralUtilities`Slice[
+                    Key["Order"]]], "Mouse"], Background -> GrayLevel[0.95], 
+                    Alignment -> {Left, Baseline}], 
+                    Pane[
+                    Annotation[
+                    RawBoxes["0"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    648400158][
+                    GeneralUtilities`Slice[
+                    Key["Order"]]], "Mouse"], 
+                    ImageSize -> {{34, Full}, Automatic}, 
+                    Alignment -> {Left, Baseline}]}, {
+                    Item[
+                    Annotation[
+                    EventHandler[
+                    MouseAppearance[
+                    Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"AdditiveSmoothing\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"AdditiveSmoothing\"", FontColor -> 
+                    RGBColor[0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 648400158][{
+                    Key["AdditiveSmoothing"]}]], 
+                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    648400158][
+                    GeneralUtilities`Slice[
+                    Key["AdditiveSmoothing"]]], "Mouse"], Background -> 
+                    GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+                    Pane[
+                    Annotation[
+                    RawBoxes["0.1"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    648400158][
+                    GeneralUtilities`Slice[
+                    Key["AdditiveSmoothing"]]], "Mouse"], 
+                    ImageSize -> {{60, Full}, Automatic}, 
+                    Alignment -> {Left, Baseline}]}, {
+                    Item[
+                    Annotation[
+                    EventHandler[
+                    MouseAppearance[
+                    Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"MinimumTokenCount\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"MinimumTokenCount\"", FontColor -> 
+                    RGBColor[0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 648400158][{
+                    Key["MinimumTokenCount"]}]], 
+                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    648400158][
+                    GeneralUtilities`Slice[
+                    Key["MinimumTokenCount"]]], "Mouse"], Background -> 
+                    GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+                    Pane[
+                    Annotation[
+                    RawBoxes["0"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    648400158][
+                    GeneralUtilities`Slice[
+                    Key["MinimumTokenCount"]]], "Mouse"], 
+                    ImageSize -> {{34, Full}, Automatic}, 
+                    Alignment -> {Left, Baseline}]}}, 
+                    BaseStyle -> {ContextMenu -> {
+                    MenuItem["Copy position to clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], 
+                    MenuItem["Copy data to clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], Delimiter, 
+                    MenuItem["Paste position in new cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], 
+                    MenuItem["Paste data in new cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic]}, FontFamily -> "Verdana", 
+                    FontSize -> 12}, Alignment -> Left, RowMinHeight -> 1.5, 
+                    Dividers -> All, FrameStyle -> GrayLevel[0.85], 
+                    BaseStyle -> {FontFamily -> "Verdana", FontSize -> 12}], 
+                    LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> 
+                    False, ShowAutoStyles -> False]], 
+                    TypeSystem`NestedGrid`PackagePrivate`initialQ = True, 
+                    TypeSystem`NestedGrid`PackagePrivate`self = $Failed}, 
+                    Dynamic[
+                    TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+                    Module[{
+                    TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+                    TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`LookupCacheValue[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$["Data"]]}, 
+                    TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = 
+                    If[TypeSystem`NestedGrid`PackagePrivate`tmpData$ === 
+                    TypeSystem`NestedGrid`PackagePrivate`$NotCached, 
+                    TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+                    TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 648400158][
+                    TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+                    Not[
+                    FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+                    TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+                    TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+                    TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$; If[
+                    FailureQ[
+                    TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+                    TypeSystem`SparseGrid[
+                    TypeSystem`H["(data no longer present)"]], 
+                    If[GeneralUtilities`$DebugMode, 
+                    
+                    Row[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+                    "  ", 
+                    TypeSystem`NestedGrid`PackagePrivate`formatState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$]}], 
+                    TypeSystem`NestedGrid`PackagePrivate`renderedGrid]]], 
+                    TrackedSymbols :> {
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$}], 
+                    DynamicModuleValues :> {}], 
+                    TypeSystem`NestedGrid`PackagePrivate`$posCell$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+                    TypeSystem`NestedGrid`PackagePrivate`alignBar[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$][
+                    TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+                    TypeSystem`PackageScope`Pathbar[
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    648400158]]]], 
+                    TrackedSymbols :> {
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+                    TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Framed[
+                    Dynamic[
+                    Replace[
+                    MouseAnnotation[Null], {
+                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    648400158][Null] -> "", 
+                    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    648400158][
+                    Pattern[TypeSystem`NestedGrid`PackagePrivate`path, 
+                    Blank[]]] :> (
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+                    TypeSystem`NestedGrid`PackagePrivate`path; 
+                    TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+                    TypeSystem`NestedGrid`PackagePrivate`path, 
+                    TypeSystem`NestedGrid`PackagePrivate`makePathElements]), 
+                    Null :> Spacer[10], Blank[] :> Spacer[10]}], 
+                    TrackedSymbols :> {}], FrameStyle -> None, ImageMargins -> 
+                    0, FrameMargins -> 0, Alignment -> Top, 
+                    ImageSize -> {Automatic, 14}]}, 
+                    DynamicBox[
+                    ToBoxes[
+                    Column[
+                    If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, {
+                    TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+                    TypeSystem`NestedGrid`PackagePrivate`alignBar[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$][
+                    TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}, {
+                    TypeSystem`NestedGrid`PackagePrivate`$topBar$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+                    TypeSystem`NestedGrid`PackagePrivate`alignBar[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$][
+                    TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}], 
+                    Spacings -> 
+                    If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, 
+                    0, {{}, {0, 0.05, 0}}]], StandardForm], 
+                    TrackedSymbols :> {
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+                    Initialization :> Block[{$ContextPath = $ContextPath}, 
+                    Needs["TypeSystem`"]], DynamicModuleValues :> {}, 
+                    BaseStyle -> {LineBreakWithin -> False}, Deinitialization :> 
+                    TypeSystem`NestedGrid`PackagePrivate`deleteState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]], Deploy, 
+                   DefaultBaseStyle -> "Deploy"]}, "CopyTag", 
+                 DisplayFunction -> (#& ), 
+                 InterpretationFunction -> ("Dataset[<>]"& )]],
+               Annotation[#, 
+                Dataset[
+                 Association[
+                 "Order" -> 0, "AdditiveSmoothing" -> 0.1, 
+                  "MinimumTokenCount" -> 0], 
+                 
+                 TypeSystem`Struct[{
+                  "Order", "AdditiveSmoothing", "MinimumTokenCount"}, {
+                   TypeSystem`Atom[Integer], 
+                   TypeSystem`Atom[Real], 
+                   TypeSystem`Atom[Integer]}], 
+                 Association["ID" -> 47077256615067]], "Tooltip"]& ]},
+             {
+              
+              TemplateBox[{
+               TemplateBox[{5}, "Spacer1"],StyleBox["\"Accuracy\"", 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], 
+              TagBox[
+               TooltipBox[
+                
+                TemplateBox[{
+                 TemplateBox[{"68.75`3.", "\"%\"", "percent", "\"Percent\""}, 
+                   "QuantityPostfix", SyntaxForm -> Mod],StyleBox[
+                   TemplateBox[{"\" \[PlusMinus] \"", 
+                    
+                    TemplateBox[{
+                    "11.9678388469542422712`2.", "\"%\"", "percent", 
+                    "\"Percent\""}, "QuantityPostfix", SyntaxForm -> Mod]}, 
+                    "RowDefault"], {10, 
+                    Opacity[0.5]}, StripOnInput -> False]},
+                 "RowDefault"],
+                
+                TemplateBox[{
+                 "\"95% confidence interval: [\"", "0.4481432230609151413`3.",
+                   "\", \"", "0.9268567769390848587`3.", "\"]\""}, 
+                 "RowDefault"],
+                TooltipStyle->{}],
+               Annotation[#, 
+                
+                Row[{"95% confidence interval: [", 0.4481432230609151413`3., 
+                  ", ", 0.9268567769390848587`3., "]"}], "Tooltip"]& ]},
+             {
+              TemplateBox[{TemplateBox[{5}, "Spacer1"],StyleBox[
+                 TagBox[
+                  TooltipBox[
+                  "\"Loss\"", "\"Mean cross entropy\"", LabelStyle -> 
+                   "TextStyling"], 
+                  Annotation[#, "Mean cross entropy", "Tooltip"]& ], 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], 
+              TagBox[
+               TooltipBox[
+                TemplateBox[{"0.7397568928851062653`3.",StyleBox[
+                   
+                   TemplateBox[{
+                    "\" \[PlusMinus] \"", "0.1990682333780258995`2."}, 
+                    "RowDefault"], {10, 
+                    Opacity[0.5]}, StripOnInput -> False]},
+                 "RowDefault"],
+                
+                TemplateBox[{
+                 "\"95% confidence interval: [\"", "0.3416204261290544664`3.",
+                   "\", \"", "1.1378933596411580087`3.", "\"]\""}, 
+                 "RowDefault"],
+                TooltipStyle->{}],
+               Annotation[#, 
+                
+                Row[{"95% confidence interval: [", 0.3416204261290544664`3., 
+                  ", ", 1.1378933596411580087`3., "]"}], "Tooltip"]& ]},
+             {
+              
+              TemplateBox[{
+               TemplateBox[{5}, "Spacer1"],StyleBox["\"Evaluation time\"", 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], 
+              
+              TemplateBox[{
+               "82.4`",
+                RowBox[{
+                 "\"\[Micro]s\"", "\[InvisibleSpace]", "\"/\"", 
+                  "\[InvisibleSpace]", "\"example\""}],
+                "microseconds per example",FractionBox[
+                "\"Microseconds\"", "\"Examples\""]},
+               "Quantity"]},
+             {
+              
+              TemplateBox[{
+               TemplateBox[{5}, "Spacer1"],StyleBox["\"Classifier memory\"", 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], 
+              TemplateBox[{"145.`","\"kB\"","kilobytes","\"Kilobytes\""},
+               "Quantity"]},
+             {
+              
+              TemplateBox[{
+               TemplateBox[{5}, "Spacer1"],StyleBox[
+                "\"Training examples used\"", 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], 
+              TemplateBox[{"79","\"examples\"","examples","\"Examples\""},
+               "Quantity"]},
+             {
+              
+              TemplateBox[{
+               TemplateBox[{5}, "Spacer1"],StyleBox["\"Training time\"", 
+                 GrayLevel[0.4], StripOnInput -> False]},
+               "RowDefault"], 
+              TemplateBox[{"944.`","\"ms\"","milliseconds","\"Milliseconds\""},
+               "Quantity"]},
+             {
+              
+              DynamicModuleBox[{
+               MachineLearning`file5Automation`PackagePrivate`pos$$ = 1}, 
+               DynamicBox[ToBoxes[
+                 Show[
+                  Part[{
+                    Graphics[{{{{}, {{{}, {}, {
+                    Hue[0.67, 0.6, 0.6], 
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6]], 
+                    
+                    Line[{{2.302585092994046, 0.49767502735604724`}, {
+                    4.143134726391533, 0.1491895924843757}}]}, {
+                    Hue[0.9060679774997897, 0.6, 0.6], 
+                    Directive[
+                    Opacity[0]], 
+                    
+                    Line[{{2.302585092994046, 0.31535347056209273`}, {
+                    2.302585092994046, 0.3315111492783303}}]}}, {{
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6], 
+                    AbsolutePointSize[6]], 
+                    GeometricTransformation[
+                    Inset[
+                    Style["\[FilledCircle]", FontSize -> 8.96], {0., 0.}], {{{
+                    2.302585092994046, 0.49767502735604724`}}, {{
+                    4.143134726391533, 0.1491895924843757}}}]}, {
+                    Directive[
+                    Opacity[0]], 
+                    GeometricTransformation[
+                    Inset[
+                    Style["\[FilledSquare]", FontSize -> 8.96], {0., 0.}], {{{
+                    2.302585092994046, 0.31535347056209273`}}, {{
+                    2.302585092994046, 
+                    0.3315111492783303}}}]}, {}}}, {}, {}, {}, {}}}, {{{}, \
+{{{}, {}, {
+                    Hue[0.67, 0.6, 0.6], 
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    AbsoluteThickness[1.6], 
+                    RGBColor[0.368417, 0.506779, 0.709798]], 
+                    
+                    Line[{{2.302585092994046, 0.47566154501437957`}, {
+                    2.302585092994046, 0.5192143357765898}}]}, {
+                    Hue[0.9060679774997897, 0.6, 0.6], 
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    AbsoluteThickness[1.6], 
+                    RGBColor[0.368417, 0.506779, 0.709798]], 
+                    Line[{{4.143134726391533, 0.0804926284827812}, {
+                    4.143134726391533, 
+                    0.2134691227251911}}]}}}, {}, {}, {}, {}}}}, {
+                    DisplayFunction -> Identity, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& }, 
+                    DisplayFunction -> Identity, DisplayFunction -> Identity, 
+                    DisplayFunction -> Identity, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.02], 
+                    Scaled[0.05]}}, 
+                    AxesOrigin -> {2.228122940268343, 0.12389629479207698`}, 
+                    PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.1298292905470606, 0.49767502735604724`}}, 
+                    PlotRangeClipping -> True, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, DisplayFunction -> 
+                    Identity, AspectRatio -> GoldenRatio^(-1), 
+                    Axes -> {True, True}, AxesLabel -> {None, None}, 
+                    AxesOrigin -> {2.228122940268343, 0.12389629479207698`}, 
+                    DisplayFunction :> Identity, 
+                    Frame -> {{True, True}, {True, True}}, 
+                    FrameLabel -> {{None, None}, {
+                    "training examples used", None}}, FrameTicks -> {{
+                    Charting`ScaledTicks[{Log, Exp}], {}}, {
+                    Charting`ScaledTicks[{Log, Exp}], {}}}, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& }, 
+                    GridLinesStyle -> Directive[
+                    GrayLevel[0.5, 0.4]], ImageMargins -> 0, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, ImageSize -> 330, 
+                    Method -> {
+                    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Exp[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Exp[#]& )[
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.1298292905470606, 0.49767502735604724`}}, 
+                    PlotRangeClipping -> True, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.02], 
+                    Scaled[0.05]}}, Ticks -> {
+                    Charting`ScaledTicks[{Log, Exp}], 
+                    Charting`ScaledTicks[{Log, Exp}]}}], 
+                    Graphics[{{{}, {{{}, {}, {
+                    Hue[0.67, 0.6, 0.6], 
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6]], 
+                    
+                    Line[{{2.302585092994046, 0.30721845247721113`}, {
+                    4.143134726391533, 0.47139386993921945`}}]}, {
+                    Hue[0.9060679774997897, 0.6, 0.6], 
+                    Directive[
+                    Opacity[0]], 
+                    
+                    Line[{{2.302585092994046, 0.39282822494934955`}, {
+                    2.302585092994046, 0.3686621429726534}}]}}, {{
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6], 
+                    AbsolutePointSize[6]], 
+                    GeometricTransformation[
+                    Inset[
+                    Style["\[FilledCircle]", FontSize -> 8.96], {0., 0.}], {{{
+                    2.302585092994046, 0.30721845247721113`}}, {{
+                    4.143134726391533, 0.47139386993921945`}}}]}, {
+                    Directive[
+                    Opacity[0]], 
+                    GeometricTransformation[
+                    Inset[
+                    Style["\[FilledSquare]", FontSize -> 8.96], {0., 0.}], {{{
+                    2.302585092994046, 0.39282822494934955`}}, {{
+                    2.302585092994046, 
+                    0.3686621429726534}}}]}, {}}}, {}, {}, {}, {}}}, {
+                    DisplayFunction -> Identity, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Identity, Identity}][#, #2, {6,
+                     6}]& }, DisplayFunction -> Identity, DisplayFunction -> 
+                    Identity, DisplayFunction -> Identity, 
+                    PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.05], 0}}, 
+                    AxesOrigin -> {2.228122940268343, 0.274402484436658}, 
+                    PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.30721845247721113`, 1}}, PlotRangeClipping -> 
+                    True, ImagePadding -> {{30, 10}, {35, 0}}, 
+                    DisplayFunction -> Identity, AspectRatio -> 
+                    GoldenRatio^(-1), Axes -> {True, True}, 
+                    AxesLabel -> {None, None}, 
+                    AxesOrigin -> {2.228122940268343, 0.274402484436658}, 
+                    DisplayFunction :> Identity, 
+                    Frame -> {{True, True}, {True, True}}, 
+                    FrameLabel -> {{None, None}, {
+                    "training examples used", None}}, 
+                    FrameTicks -> {{Automatic, None}, {
+                    Charting`ScaledTicks[{Log, Exp}], {}}}, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Identity, Identity}][#, #2, {6,
+                     6}]& }, GridLinesStyle -> Directive[
+                    GrayLevel[0.5, 0.4]], ImageMargins -> 0, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, ImageSize -> 330, 
+                    Method -> {
+                    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.30721845247721113`, 1}}, PlotRangeClipping -> 
+                    True, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.05], 0}}, Ticks -> {
+                    Charting`ScaledTicks[{Log, Exp}], Automatic}}], 
+                    Graphics[{{{{}, {}, {}, {}, {}, {}}}}, {
+                    DisplayFunction -> Identity, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& }, 
+                    DisplayFunction -> Identity, DisplayFunction -> Identity, 
+                    DisplayFunction -> Identity, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.02], 
+                    Scaled[0.05]}}, 
+                    AxesOrigin -> {2.228122940268343, 0.12389629479207698`}, 
+                    PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.1298292905470606, 0.49767502735604724`}}, 
+                    PlotRangeClipping -> True, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, DisplayFunction -> 
+                    Identity, AspectRatio -> GoldenRatio^(-1), 
+                    Axes -> {True, True}, AxesLabel -> {None, None}, 
+                    AxesOrigin -> {2.228122940268343, 0.12389629479207698`}, 
+                    DisplayFunction :> Identity, 
+                    Frame -> {{True, True}, {True, True}}, 
+                    FrameLabel -> {{None, None}, {
+                    "training examples used", None}}, FrameTicks -> {{
+                    Charting`ScaledTicks[{Log, Exp}], {}}, {
+                    Charting`ScaledTicks[{Log, Exp}], {}}}, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& }, 
+                    GridLinesStyle -> Directive[
+                    GrayLevel[0.5, 0.4]], ImageMargins -> 0, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, ImageSize -> 330, 
+                    Method -> {
+                    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Exp[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Exp[#]& )[
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.1298292905470606, 0.49767502735604724`}}, 
+                    PlotRangeClipping -> True, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.02], 
+                    Scaled[0.05]}}, Ticks -> {
+                    Charting`ScaledTicks[{Log, Exp}], 
+                    Charting`ScaledTicks[{Log, Exp}]}}]}, 
+                   MachineLearning`file5Automation`PackagePrivate`pos$$], 
+                  PlotLabel -> Grid[{{
+                    Button[
+                    
+                    MachineLearning`file5Automation`PackagePrivate`\
+buttonGraphics[
+                    Line[{{0, 0.8}, {-1, 0}, {0, -0.8}}]], 
+                    MachineLearning`file5Automation`PackagePrivate`pos$$ = 
+                    Max[MachineLearning`file5Automation`PackagePrivate`pos$$ - 
+                    1, 1], Appearance -> "Frameless"], 
+                    Part[{
+                    Tooltip[
+                    "Learning curve", 
+                    "mean cross entropy for best algorithm at each training \
+size"], "Accuracy", 
+                    Tooltip[
+                    "Learning curves for all algorithms", 
+                    "mean cross entropy at each training size"]}, 
+                    MachineLearning`file5Automation`PackagePrivate`pos$$], 
+                    Button[
+                    
+                    MachineLearning`file5Automation`PackagePrivate`\
+buttonGraphics[
+                    Line[{{0, 0.8}, {1, 0}, {0, -0.8}}]], 
+                    MachineLearning`file5Automation`PackagePrivate`pos$$ = 
+                    Min[MachineLearning`file5Automation`PackagePrivate`pos$$ + 
+                    1, 
+                    Length[{
+                    Graphics[{{{{}, {{{}, {}, {
+                    Hue[0.67, 0.6, 0.6], 
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6]], 
+                    
+                    Line[{{2.302585092994046, 0.49767502735604724`}, {
+                    4.143134726391533, 0.1491895924843757}}]}, {
+                    Hue[0.9060679774997897, 0.6, 0.6], 
+                    Directive[
+                    Opacity[0]], 
+                    
+                    Line[{{2.302585092994046, 0.31535347056209273`}, {
+                    2.302585092994046, 0.3315111492783303}}]}}, {{
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6], 
+                    AbsolutePointSize[6]], 
+                    GeometricTransformation[
+                    Inset[
+                    Style["\[FilledCircle]", FontSize -> 8.96], {0., 0.}], {{{
+                    2.302585092994046, 0.49767502735604724`}}, {{
+                    4.143134726391533, 0.1491895924843757}}}]}, {
+                    Directive[
+                    Opacity[0]], 
+                    GeometricTransformation[
+                    Inset[
+                    Style["\[FilledSquare]", FontSize -> 8.96], {0., 0.}], {{{
+                    2.302585092994046, 0.31535347056209273`}}, {{
+                    2.302585092994046, 
+                    0.3315111492783303}}}]}, {}}}, {}, {}, {}, {}}}, {{{}, \
+{{{}, {}, {
+                    Hue[0.67, 0.6, 0.6], 
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    AbsoluteThickness[1.6], 
+                    RGBColor[0.368417, 0.506779, 0.709798]], 
+                    
+                    Line[{{2.302585092994046, 0.47566154501437957`}, {
+                    2.302585092994046, 0.5192143357765898}}]}, {
+                    Hue[0.9060679774997897, 0.6, 0.6], 
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    AbsoluteThickness[1.6], 
+                    RGBColor[0.368417, 0.506779, 0.709798]], 
+                    
+                    Line[{{4.143134726391533, 0.0804926284827812}, {
+                    4.143134726391533, 
+                    0.2134691227251911}}]}}}, {}, {}, {}, {}}}}, {
+                    DisplayFunction -> Identity, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& }, 
+                    DisplayFunction -> Identity, DisplayFunction -> Identity, 
+                    DisplayFunction -> Identity, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.02], 
+                    Scaled[0.05]}}, 
+                    AxesOrigin -> {2.228122940268343, 0.12389629479207698`}, 
+                    PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.1298292905470606, 0.49767502735604724`}}, 
+                    PlotRangeClipping -> True, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, DisplayFunction -> 
+                    Identity, AspectRatio -> GoldenRatio^(-1), 
+                    Axes -> {True, True}, AxesLabel -> {None, None}, 
+                    AxesOrigin -> {2.228122940268343, 0.12389629479207698`}, 
+                    DisplayFunction :> Identity, 
+                    Frame -> {{True, True}, {True, True}}, 
+                    FrameLabel -> {{None, None}, {
+                    "training examples used", None}}, FrameTicks -> {{
+                    Charting`ScaledTicks[{Log, Exp}], {}}, {
+                    Charting`ScaledTicks[{Log, Exp}], {}}}, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& }, 
+                    GridLinesStyle -> Directive[
+                    GrayLevel[0.5, 0.4]], ImageMargins -> 0, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, ImageSize -> 330, 
+                    Method -> {
+                    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Exp[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Exp[#]& )[
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.1298292905470606, 0.49767502735604724`}}, 
+                    PlotRangeClipping -> True, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.02], 
+                    Scaled[0.05]}}, Ticks -> {
+                    Charting`ScaledTicks[{Log, Exp}], 
+                    Charting`ScaledTicks[{Log, Exp}]}}], 
+                    Graphics[{{{}, {{{}, {}, {
+                    Hue[0.67, 0.6, 0.6], 
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6]], 
+                    
+                    Line[{{2.302585092994046, 0.30721845247721113`}, {
+                    4.143134726391533, 0.47139386993921945`}}]}, {
+                    Hue[0.9060679774997897, 0.6, 0.6], 
+                    Directive[
+                    Opacity[0]], 
+                    
+                    Line[{{2.302585092994046, 0.39282822494934955`}, {
+                    2.302585092994046, 0.3686621429726534}}]}}, {{
+                    Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6], 
+                    AbsolutePointSize[6]], 
+                    GeometricTransformation[
+                    Inset[
+                    Style["\[FilledCircle]", FontSize -> 8.96], {0., 0.}], {{{
+                    2.302585092994046, 0.30721845247721113`}}, {{
+                    4.143134726391533, 0.47139386993921945`}}}]}, {
+                    Directive[
+                    Opacity[0]], 
+                    GeometricTransformation[
+                    Inset[
+                    Style["\[FilledSquare]", FontSize -> 8.96], {0., 0.}], {{{
+                    2.302585092994046, 0.39282822494934955`}}, {{
+                    2.302585092994046, 
+                    0.3686621429726534}}}]}, {}}}, {}, {}, {}, {}}}, {
+                    DisplayFunction -> Identity, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Identity, Identity}][#, #2, {6,
+                     6}]& }, DisplayFunction -> Identity, DisplayFunction -> 
+                    Identity, DisplayFunction -> Identity, 
+                    PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.05], 0}}, 
+                    AxesOrigin -> {2.228122940268343, 0.274402484436658}, 
+                    PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.30721845247721113`, 1}}, PlotRangeClipping -> 
+                    True, ImagePadding -> {{30, 10}, {35, 0}}, 
+                    DisplayFunction -> Identity, AspectRatio -> 
+                    GoldenRatio^(-1), Axes -> {True, True}, 
+                    AxesLabel -> {None, None}, 
+                    AxesOrigin -> {2.228122940268343, 0.274402484436658}, 
+                    DisplayFunction :> Identity, 
+                    Frame -> {{True, True}, {True, True}}, 
+                    FrameLabel -> {{None, None}, {
+                    "training examples used", None}}, 
+                    FrameTicks -> {{Automatic, None}, {
+                    Charting`ScaledTicks[{Log, Exp}], {}}}, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Identity, Identity}][#, #2, {6,
+                     6}]& }, GridLinesStyle -> Directive[
+                    GrayLevel[0.5, 0.4]], ImageMargins -> 0, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, ImageSize -> 330, 
+                    Method -> {
+                    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.30721845247721113`, 1}}, PlotRangeClipping -> 
+                    True, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.05], 0}}, Ticks -> {
+                    Charting`ScaledTicks[{Log, Exp}], Automatic}}], 
+                    
+                    Graphics[{{{{}, {}, {}, {}, {}, {}}}}, {
+                    DisplayFunction -> Identity, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& }, 
+                    DisplayFunction -> Identity, DisplayFunction -> Identity, 
+                    DisplayFunction -> Identity, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.02], 
+                    Scaled[0.05]}}, 
+                    AxesOrigin -> {2.228122940268343, 0.12389629479207698`}, 
+                    PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.1298292905470606, 0.49767502735604724`}}, 
+                    PlotRangeClipping -> True, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, DisplayFunction -> 
+                    Identity, AspectRatio -> GoldenRatio^(-1), 
+                    Axes -> {True, True}, AxesLabel -> {None, None}, 
+                    AxesOrigin -> {2.228122940268343, 0.12389629479207698`}, 
+                    DisplayFunction :> Identity, 
+                    Frame -> {{True, True}, {True, True}}, 
+                    FrameLabel -> {{None, None}, {
+                    "training examples used", None}}, FrameTicks -> {{
+                    Charting`ScaledTicks[{Log, Exp}], {}}, {
+                    Charting`ScaledTicks[{Log, Exp}], {}}}, 
+                    GridLines -> {
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& , 
+                    Charting`ScaledTickValues[{Log, Exp}][#, #2, {6, 6}]& }, 
+                    GridLinesStyle -> Directive[
+                    GrayLevel[0.5, 0.4]], ImageMargins -> 0, 
+                    ImagePadding -> {{30, 10}, {35, 0}}, ImageSize -> 330, 
+                    Method -> {
+                    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Exp[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Exp[#]& )[
+                    Part[#, 1]], 
+                    (Exp[#]& )[
+                    Part[#, 2]]}& )}}, PlotRange -> {{2.2604042203517403`, 
+                    Log[79]}, {0.1298292905470606, 0.49767502735604724`}}, 
+                    PlotRangeClipping -> True, PlotRangePadding -> {{
+                    Scaled[0.02], 0}, {
+                    Scaled[0.02], 
+                    Scaled[0.05]}}, Ticks -> {
+                    Charting`ScaledTicks[{Log, Exp}], 
+                    Charting`ScaledTicks[{Log, Exp}]}}]}]], Appearance -> 
+                    "Frameless"]}}, Alignment -> {Center, Baseline}, 
+                    ItemSize -> {{3, 20, 3}, {2}}]], StandardForm],
+                ImageSizeCache->{330., {117., 121.}}],
+               DynamicModuleValues:>{}], "\[SpanFromLeft]"}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {Right, {Left}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+            GridBoxDividers->{"Columns" -> {False, {
+                 Opacity[0.15]}, False}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {Automatic, {Automatic}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{1.}}, "RowsIndexed" -> {}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], 
+                Offset[1.1199999999999999`], {
+                 Offset[1.75]}, 
+                Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[0.8]}, 
+                Offset[0.2]}, "RowsIndexed" -> {}}],
+           "Grid"],
+          FrameMargins->{{5, 5}, {10, 5}},
+          FrameStyle->None,
+          StripOnInput->False],
+         Deploy,
+         DefaultBaseStyle->"Deploy"],
+        Alignment->Center,
+        BaseStyle->{
+         FontWeight -> "Light", FontSize -> 12, FontFamily -> "Segoe UI", 
+          NumberMarks -> False, Deployed -> False},
+        StripOnInput->False]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9802, 0.9802, 0.9802],
+    FrameMargins->{{0, 0}, {0, 0}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   StripOnInput->False,
+   LineBreakWithin->False],
+  Deploy,
+  DefaultBaseStyle->"Deploy"]], "Output",
+ CellChangeTimes->{
+  3.71762048368875*^9, 3.7176210126251802`*^9, 3.717621077930091*^9, {
+   3.71762118840996*^9, 
+   3.7176212108041167`*^9}},ExpressionUUID->"a9f58168-5a90-4ff6-acbd-\
+fb4a2f9f4526"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"api", "=", 
+  RowBox[{"APIFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<query\>\"", "\[Rule]", "\"\<String\>\""}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"c", "[", "#query", "]"}], "&"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.717621382990097*^9, 3.717621392882698*^9}, {
+  3.717621460800786*^9, 
+  3.7176215144591646`*^9}},ExpressionUUID->"5e972a8c-cdb4-40a6-9721-\
+6099e2d50b68"],
+
+Cell[BoxData[
+ RowBox[{"APIFunction", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"query\"\>", "\[Rule]", "\<\"String\"\>"}], "}"}], ",", 
+   RowBox[{
+    RowBox[{"c", "[", "#query", "]"}], "&"}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.7176215147181473`*^9},ExpressionUUID->"79ccc5e5-d69b-427e-82a4-\
+89380bf14e7c"]
+}, Open  ]]
+},
+WindowSize->{681, 716},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 206, 4, 28, "Input",ExpressionUUID->"16b7220e-a1be-4d25-ae58-4df1f75fc9d4"],
+Cell[767, 26, 620, 17, 162, "Input",ExpressionUUID->"aaf4c49f-7e09-4c16-b1fc-ab74eed0c828"],
+Cell[CellGroupData[{
+Cell[1412, 47, 629, 15, 48, "Input",ExpressionUUID->"f6c93fd9-abe4-408c-813f-88b9fd75fc6b"],
+Cell[2044, 64, 9877, 199, 71, "Output",ExpressionUUID->"30bc5c01-a0d2-4421-978d-f15bf02810f7"],
+Cell[11924, 265, 50619, 991, 569, "Output",ExpressionUUID->"a9f58168-5a90-4ff6-acbd-fb4a2f9f4526"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[62580, 1261, 428, 11, 28, "Input",ExpressionUUID->"5e972a8c-cdb4-40a6-9721-6099e2d50b68"],
+Cell[63011, 1274, 326, 9, 65, "Output",ExpressionUUID->"79ccc5e5-d69b-427e-82a4-89380bf14e7c"]
+}, Open  ]]
+}
+]
+*)
+

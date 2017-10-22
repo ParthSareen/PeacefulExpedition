@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Playground</string>
+    <string name="btnTest">Test button!</string>
+</resources>

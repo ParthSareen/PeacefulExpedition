@@ -116,3 +116,30 @@ I'll be watching a movie
 leisure
 I'll be listening to music
 leisure
+<<<<<<< HEAD
+=======
+I'll make jewelry
+leisure
+I'll paint a painting
+leisure
+I'll take some photos
+leisure
+I'll be going to cadets
+extracurricular
+I'll be finishing up my problem set
+work
+I'll be playing baseball
+sport
+I'll be going to wrestling practice
+sport
+I'll be going to martial arts practice
+sport
+I'll be getting food 
+essential
+I'll be doing archery
+sport
+I'll be playing ultimate frisbee
+sport
+I'll be doing cross country 
+sport
+>>>>>>> 787ca3ca03b2316e2b982687652f9bdeb198f5fc

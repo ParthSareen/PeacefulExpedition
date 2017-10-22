@@ -450,7 +450,102 @@ I will perform a topological sort of a directed acyclic graph
 work
 I will build my startup
 work
-
+I will go to exercise club
+extracurricular
+I will do my data visualization
+work
+I will drink my soylent
+essential
+I will drink my diet coke 
+essential
+I will eat my chips
+esstential
+I will invest my one hundred dollars
+work
+I will watch my android studio tutorials
+work
+I will push to gihub
+work
+I will play league of legends
+leisure
+I will play DOTA2
+leisure
+I will play Clash of Clans!
+leisure
+I'm gonna play Go
+leisure
+I will watch AlphaGo's games
+leisure
+I will train my biceps
+sport
+I will train my triceps
+sport
+I will watch video tutorials
+work
+I will train my quadriceps
+sport
+I will train my abdominals
+sport
+I will design the user interface
+work
+I will play texas hold'em 
+leisure
+I will install Linux
+work
+I will look up the word in a dictionary
+work
+I will use a dictionary to find the nth fibonacci number
+work
+I will write a database for my rabbit girls
+work
+I will practice programming on DMOJ
+work
+I will practice programming on USACO
+work
+I will write training data for this ML algo
+work
+I will read up on Markhov chains
+work
+I will do some situps
+sport
+I will push my code to the cloud
+work
+I will eat my pizza crust
+essential
+I will drink my sprite
+essential
+I will charge my laptop
+work
+I will listen to Post Malone's music
+leisure
+I will listen to 21 Savage's music
+leisure
+I will listen to Beethoven's music
+leisure
+I will listen to Chopin's music
+leisure
+I will listen to Scriabin's music
+leisure
+I will listen to Schoenberg's music
+leisure
+I will watch Martin Luther King's speech
+work
+I will drink an energy drink
+essential
+I will cut my hair
+essential
+I will brush my teeth
+essential
+I will comb my hair
+essential
+I will buy a new computer
+essential
+I will go to my robotics club meeting
+extracurricular
+I will write a Python library
+work
+I will smash in volleyball
+sport
 
 
 

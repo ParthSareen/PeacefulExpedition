@@ -1,87 +1,91 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:3:5-47
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
 application
-ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:5:5-19:19
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f1e7208a7bdecb012c29806ffe9f7b5b2eaf7571/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/e2c8ebeafeb7ee1885c63531d7db6e79efbfd13e/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/8c370b1f2c366790322283f9d84000315ce5808d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/42a9404cd60c12b3475191734ddbc46d2bd1f72b/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f71707f905aa4fa475e8daf43b434ba5573662ae/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/7c6d82a61e0ea09c4dc28d8e360151da2a08c5ba/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/b0eaffa065b357908617b1a6e1f28617a67ae745/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/ef2bca39cabe9e4313518e9d769e2aecf2acf838/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/3afb06c0ed18881cb00a24ed9d24c5a4f4ed6804/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/andrewwang/.android/build-cache/781f4fbaa7c8527f34fec5af4e4cce54fedb3596/output/AndroidManifest.xml:9:5-20
+ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02666841cc9ebb89051b0d1efc1a0123e94b8d18\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\a4bec288814caf2245437cb2d3749656dd97b043\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\c17c2caaafb54b2ff05e507be36c299499a9ecef\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02a4056c4f0826a9b91bf84a081d971a83ae8e53\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\af4e4a22a37b023cdf28a00d624692cf95385d56\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\e0ac8ac104293e591433b14faff0d846fb2388fb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\ebc4c14241ca29c0bb4a5a6fa363d9bddadc382b\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\77b81ca084b03a64526d7c7857a02b6c6ff864be\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\ae4a455260b5b1676f0ebc2a6477bcbdeb1dd382\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\cyamo\.android\build-cache\3db449cab0381cffc05e3950259c35c05bfc7a34\output\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:10:9-35
 	android:roundIcon
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:9:9-54
 	android:allowBackup
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:11:9-40
-activity#com.example.andrewwang.scheduler.MainActivity
-ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:12:9-18:20
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:11:9-40
+activity#thacks2.scheduler.MainActivity
+ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:12:19-47
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:12:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:16:27-74
+activity#thacks2.scheduler.OverviewActivity
+ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:19:9-63
+	android:name
+		ADDED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml:19:19-51
 uses-sdk
-INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f1e7208a7bdecb012c29806ffe9f7b5b2eaf7571/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/e2c8ebeafeb7ee1885c63531d7db6e79efbfd13e/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/8c370b1f2c366790322283f9d84000315ce5808d/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/42a9404cd60c12b3475191734ddbc46d2bd1f72b/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f71707f905aa4fa475e8daf43b434ba5573662ae/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/7c6d82a61e0ea09c4dc28d8e360151da2a08c5ba/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/b0eaffa065b357908617b1a6e1f28617a67ae745/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/ef2bca39cabe9e4313518e9d769e2aecf2acf838/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/3afb06c0ed18881cb00a24ed9d24c5a4f4ed6804/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/andrewwang/.android/build-cache/781f4fbaa7c8527f34fec5af4e4cce54fedb3596/output/AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02666841cc9ebb89051b0d1efc1a0123e94b8d18\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\a4bec288814caf2245437cb2d3749656dd97b043\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\c17c2caaafb54b2ff05e507be36c299499a9ecef\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02a4056c4f0826a9b91bf84a081d971a83ae8e53\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\af4e4a22a37b023cdf28a00d624692cf95385d56\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\e0ac8ac104293e591433b14faff0d846fb2388fb\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\ebc4c14241ca29c0bb4a5a6fa363d9bddadc382b\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\77b81ca084b03a64526d7c7857a02b6c6ff864be\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\ae4a455260b5b1676f0ebc2a6477bcbdeb1dd382\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\cyamo\.android\build-cache\3db449cab0381cffc05e3950259c35c05bfc7a34\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f1e7208a7bdecb012c29806ffe9f7b5b2eaf7571/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02666841cc9ebb89051b0d1efc1a0123e94b8d18\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/andrewwang/Documents/THacks/Scheduler/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cyamo\Documents\GitHub\PeacefulExpedition\Scheduler\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f1e7208a7bdecb012c29806ffe9f7b5b2eaf7571/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/e2c8ebeafeb7ee1885c63531d7db6e79efbfd13e/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/8c370b1f2c366790322283f9d84000315ce5808d/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/42a9404cd60c12b3475191734ddbc46d2bd1f72b/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f71707f905aa4fa475e8daf43b434ba5573662ae/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/7c6d82a61e0ea09c4dc28d8e360151da2a08c5ba/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/b0eaffa065b357908617b1a6e1f28617a67ae745/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/ef2bca39cabe9e4313518e9d769e2aecf2acf838/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/3afb06c0ed18881cb00a24ed9d24c5a4f4ed6804/output/AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02666841cc9ebb89051b0d1efc1a0123e94b8d18\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\a4bec288814caf2245437cb2d3749656dd97b043\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\c17c2caaafb54b2ff05e507be36c299499a9ecef\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02a4056c4f0826a9b91bf84a081d971a83ae8e53\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\af4e4a22a37b023cdf28a00d624692cf95385d56\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\e0ac8ac104293e591433b14faff0d846fb2388fb\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\ebc4c14241ca29c0bb4a5a6fa363d9bddadc382b\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\77b81ca084b03a64526d7c7857a02b6c6ff864be\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\ae4a455260b5b1676f0ebc2a6477bcbdeb1dd382\output\AndroidManifest.xml:25:5-27:41
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f1e7208a7bdecb012c29806ffe9f7b5b2eaf7571/output/AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02666841cc9ebb89051b0d1efc1a0123e94b8d18\output\AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/andrewwang/.android/build-cache/f1e7208a7bdecb012c29806ffe9f7b5b2eaf7571/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\cyamo\.android\build-cache\02666841cc9ebb89051b0d1efc1a0123e94b8d18\output\AndroidManifest.xml:26:9-47

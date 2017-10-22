@@ -1,6 +1,6 @@
 # taskr
 
-[title](https://parthsareen.github.io/)
+[promotional site](https://parthsareen.github.io/)
 
 ## About
 

@@ -67,12 +67,12 @@
       <file leaf-file-name="OverviewActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/thacks2/scheduler/OverviewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="166" column="77" selection-start-line="166" selection-start-column="77" selection-end-line="166" selection-end-column="77" />
+            <state relative-caret-position="463">
+              <caret line="181" column="4" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1381#9962#0" expanded="true" />
-                <element signature="e#9961#9962#0" expanded="true" />
+                <element signature="e#1381#9965#0" expanded="true" />
+                <element signature="e#9964#9965#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2592,8 +2592,8 @@
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1381#9962#0" expanded="true" />
-            <element signature="e#9961#9962#0" expanded="true" />
+            <element signature="e#1381#9965#0" expanded="true" />
+            <element signature="e#9964#9965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2682,8 +2682,8 @@
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1381#9962#0" expanded="true" />
-            <element signature="e#9961#9962#0" expanded="true" />
+            <element signature="e#1381#9965#0" expanded="true" />
+            <element signature="e#9964#9965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2846,12 +2846,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/thacks2/scheduler/OverviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="166" column="77" selection-start-line="166" selection-start-column="77" selection-end-line="166" selection-end-column="77" />
+        <state relative-caret-position="463">
+          <caret line="181" column="4" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1381#9962#0" expanded="true" />
-            <element signature="e#9961#9962#0" expanded="true" />
+            <element signature="e#1381#9965#0" expanded="true" />
+            <element signature="e#9964#9965#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -162,7 +162,7 @@ public class OverviewActivity extends AppCompatActivity {
                             gridLayout.setPadding(20, 20, 20, 20);
 
                             GridLayout.Spec colSpec = GridLayout.spec(0, GridLayout.BASELINE);
-                            GridLayout.Spec titleRowSpec `= GridLayout.spec(0);
+                            GridLayout.Spec titleRowSpec = GridLayout.spec(0);
                             GridLayout.Spec urgencyRowSpec = GridLayout.spec(1);
                             GridLayout.Spec timeRowSpec = GridLayout.spec(2);
 
@@ -179,7 +179,7 @@ public class OverviewActivity extends AppCompatActivity {
                             gridLayout.addView(titleText, new GridLayout.LayoutParams(titleRowSpec , colSpec));
                             gridLayout.addView(urgencyText, new GridLayout.LayoutParams(urgencyRowSpec , colSpec));
                             gridLayout.addView(timeText, new GridLayout.LayoutParams(timeRowSpec , colSpec));
-
+z   
                             gridLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 
                             asdf.add(gridLayout);
